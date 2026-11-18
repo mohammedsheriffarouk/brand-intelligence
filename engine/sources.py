@@ -36,7 +36,7 @@ def sync_seed(con):
 
 
 def test_feed(url):
-    r, err = net.get(url)
+    r, err = net.get(url, attempts=1)
     if not r:
         return False, err
     f = feedparser.parse(r.content)
@@ -59,7 +59,7 @@ def discover_feeds(html, base):
 def validate_source(row):
     notes = []
     url = row["url"]
-    r, err = net.get(url)
+    r, err = net.get(url, attempts=1)
     homepage_ok = r is not None
     html = r.text if r else ""
     if not homepage_ok:

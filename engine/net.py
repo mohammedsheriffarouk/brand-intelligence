@@ -32,15 +32,15 @@ def allowed_by_robots(url):
     return _robots[base].can_fetch(settings()["user_agent"], url)
 
 
-def get(url, check_robots=False, **kw):
+def get(url, check_robots=False, attempts=None, **kw):
     """Returns (response|None, error|None). Never raises."""
     cfg = settings()
     if check_robots and not allowed_by_robots(url):
         return None, "blocked by robots.txt"
     err = None
-    for i in range(cfg["retry"]["attempts_per_run"]):
+    for i in range(attempts or cfg["retry"]["attempts_per_run"]):
         try:
-            r = session().get(url, timeout=cfg["request_timeout"], allow_redirects=True, **kw)
+            r = session().get(url, timeout=(6, cfg["request_timeout"]), allow_redirects=True, **kw)
             if r.status_code == 200:
                 return r, None
             err = f"HTTP {r.status_code}"
@@ -48,5 +48,7 @@ def get(url, check_robots=False, **kw):
                 break  # no point retrying now; logged and retried next run
         except Exception as e:
             err = f"{type(e).__name__}: {e}"[:200]
+            if "SSLError" in err or "NameResolution" in err:
+                break
         time.sleep(cfg["retry"]["backoff_seconds"] * (i + 1))
     return None, err
