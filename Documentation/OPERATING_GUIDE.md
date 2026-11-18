@@ -38,7 +38,7 @@ Repo → Settings → Secrets and variables → Actions:
 | *(اختياري)* `GEMINI_API_KEY` | تحليل AI أعمق، ومعاه غيّر `ai.provider: gemini` |
 | *(اختياري)* `SMTP_USER`/`SMTP_PASSWORD`/`EMAIL_TO` | لو حبيت SMTP بدل السكريبت |
 
-### 6) أول تشغيل
+### 5) أول تشغيل
 Actions → **Validate all sources (manual)** → Run workflow (بيختبر الـ 100 مصدر كلهم، حوالي 10-15 دقيقة). بعدها **Daily collection & brief** → Run workflow.
 
 ## التشغيل اليومي
