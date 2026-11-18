@@ -123,9 +123,10 @@ def gemini_generate(prompt):
     """Calls the first Gemini model that exists for this key (model names change over time). Returns parsed JSON."""
     global _working_model
     cfg = settings()["ai"]
-    models = [_working_model] if _working_model else list(dict.fromkeys([cfg.get("model")] + cfg.get("model_fallbacks", [])))
+    models = [_working_model] if _working_model else list(dict.fromkeys(available_models() + [cfg.get("model")] + cfg.get("model_fallbacks", [])))
     import time
     last = None
+    tried = []
     for m in [x for x in models if x]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
         for attempt in range(3):
@@ -140,12 +141,43 @@ def gemini_generate(prompt):
             break
         if r.status_code in (404, 429, 500, 502, 503, 504):
             last = f"{m}: HTTP {r.status_code}"
+            tried.append(f"{m}={r.status_code}:{_err(r)}")
             continue
         if r.status_code != 200:
             raise RuntimeError(f"{m}: HTTP {r.status_code} {r.text[:150]}")
         _working_model = m
         return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
-    raise RuntimeError(last or "no Gemini model configured")
+    raise RuntimeError("all models failed: " + " | ".join(tried)[:600] if tried else (last or "no Gemini model configured"))
+
+
+def _err(r):
+    try:
+        return str(r.json().get("error", {}).get("message", ""))[:90]
+    except Exception:
+        return r.text[:90]
+
+
+_models_cache = None
+
+
+def available_models():
+    """Ask the API which flash models this key can call (names change over time), best first."""
+    global _models_cache
+    if _models_cache is not None:
+        return _models_cache
+    _models_cache = []
+    try:
+        r = net.session().get("https://generativelanguage.googleapis.com/v1beta/models", timeout=30,
+                              headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip()}, params={"pageSize": 200})
+        names = [m["name"].split("/", 1)[1] for m in r.json().get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+        flash = [n for n in names if "flash" in n and not any(x in n for x in ("image", "tts", "audio", "live", "exp", "thinking"))]
+        rank = lambda n: (("lite" in n), ("preview" in n), -len(n))
+        _models_cache = sorted(flash, key=rank)[:6]
+        log_once(f"available flash models: {_models_cache}")
+    except Exception as e:
+        log_once(f"model list failed: {type(e).__name__}")
+    return _models_cache
 
 
 def gemini_enabled():
@@ -190,7 +222,8 @@ def arabize(recs, log=print, limit=60):
             log(f"[arabic] {len(top)} stories translated + analysed by Gemini")
             return recs
     except Exception as e:
-        log(f"[arabic] Gemini failed, falling back to free translation: {e}"[:200])
+        log(f"[arabic] Gemini failed, falling back to free translation: {e}"[:700])
+        log(f"[arabic] diagnostics: {[x for x in ERRORS if 'model' in x]}"[:400])
     pending = [r for r in top if not r.get("headline_ar")]
     if not pending:
         return recs
