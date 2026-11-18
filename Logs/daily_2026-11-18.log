@@ -1,0 +1,232 @@
+08:12:19 [validate] A01 Creative Boom: working (tested) | rss | rss ok: 20 entries
+08:12:20 [validate] A02 Design Week: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:12:22 [validate] A03 Transform Magazine: not found | search_discovery | no working RSS; will use Google News site: search
+08:12:24 [validate] A04 Brand New: working (tested) | rss | rss ok: 87 entries
+08:12:32 [validate] A05 The Brand Identity: not found | search_discovery | no working RSS; will use Google News site: search
+08:12:33 [validate] A06 BP&O: working (tested) | rss | rss ok: 12 entries
+08:12:33 [validate] A07 It's Nice That: working (tested) | rss | rss ok: 20 entries
+08:12:33 [validate] A08 Creative Review: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:12:36 [validate] A09 World Brand Design Society: not found | search_discovery | no working RSS; will use Google News site: search
+08:12:38 [validate] A10 Brandemia: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:12:39 [validate] A11 Dezeen (Design): working (tested) | rss | rss ok: 50 entries
+08:12:40 [validate] A12 Fast Company Co.Design: working (tested) | rss | homepage: HTTP 403; rss ok: 20 entries
+08:12:41 [validate] A13 Brandingmag: working (tested) | rss | rss ok: 20 entries
+08:12:41 [validate] A14 Branding Strategy Insider: working (tested) | rss | rss ok: 5 entries
+08:12:45 [validate] B01 Interbrand: not found | search_discovery | no working RSS; will use Google News site: search
+08:12:48 [validate] B02 Landor: not found | search_discovery | no working RSS; will use Google News site: search
+08:12:50 [validate] B03 Wolff Olins: not found | search_discovery | no working RSS; will use Google News site: search
+08:12:52 [validate] B04 COLLINS: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:19 [validate] B05 Pentagram: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:20 [validate] B06 Lippincott: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:20 [validate] B07 Siegel+Gale: working (tested) | rss | rss ok: 10 entries
+08:13:23 [validate] B08 FutureBrand: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:25 [validate] B09 Koto: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:26 [validate] B10 JKR: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:30 [validate] B11 DesignStudio: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:34 [validate] B12 Ragged Edge: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:36 [validate] B13 Mucho: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:51 [validate] B14 How&How: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:53 [validate] B15 Studio Dumbar: not found | search_discovery | no working RSS; will use Google News site: search
+08:13:59 [validate] C01 Interbrand Best Global Brands: not found | search_discovery | no working RSS; will use Google News site: search
+08:14:03 [validate] C02 Kantar BrandZ: not found | search_discovery | no working RSS; will use Google News site: search
+08:14:04 [validate] C03 Brand Finance: working (tested) | rss | rss ok: 8 entries
+08:14:15 [validate] C04 WARC: not found | search_discovery | no working RSS; will use Google News site: search
+08:14:20 [validate] C05 IPA: not found | search_discovery | no working RSS; will use Google News site: search
+08:14:22 [validate] C06 Effie: working (tested) | rss | rss ok: 1 entries
+08:17:51 [validate] C07 McKinsey Insights: working (tested) | rss | homepage: ReadTimeout: HTTPSConnectionPool(host='www.mckinsey.com', port=443): Read timed out. (read timeout=20); rss ok: 50 entries
+08:17:59 [validate] C08 BCG Insights: unverified (site unreachable) | search_discovery | homepage: HTTP 404; no working RSS; will use Google News site: search
+08:18:00 [validate] C09 Bain Insights: not found | search_discovery | no working RSS; will use Google News site: search
+08:18:54 [validate] C10 Deloitte Insights: not found | search_discovery | no working RSS; will use Google News site: search
+08:18:57 [validate] C11 Harvard Business Review: not found | search_discovery | no working RSS; will use Google News site: search
+08:19:00 [validate] C12 Think with Google: working (tested) | rss | rss ok: 30 entries
+08:19:00 [validate] D01 Communication Arts: working (tested) | rss | rss ok: 2 entries
+08:19:01 [validate] D02 The Dieline: working (tested) | rss | rss ok: 10 entries
+08:19:14 [validate] D03 Packaging of the World: working (tested) | rss | homepage: HTTP 307; rss ok: 10 entries
+08:19:15 [validate] D04 Fonts In Use: working (tested) | rss | rss ok: 20 entries
+08:19:15 [validate] D05 Typewolf: working (tested) | rss | rss ok: 10 entries
+08:19:16 [validate] D06 LogoLounge: working (tested) | rss | rss ok: 12 entries
+08:27:04 [validate] D07 Awwwards: unverified (site unreachable) | search_discovery | homepage: ConnectionError: HTTPSConnectionPool(host='www.awwwards.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='www.awwwards.com', port=443): Failed to e; no working RSS; will use Google News site: search
+08:27:07 [validate] D08 Mindsparkle Mag: working (tested) | rss | rss ok: 15 entries
+08:27:07 [validate] D09 AIGA Eye on Design: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:27:07 [validate] D10 The FWA: working (tested) | rss | rss ok: 35 entries
+08:27:11 [validate] E01 Adobe News: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:12 [validate] E02 Adobe Illustrator Release Notes: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:27:12 [validate] E03 Adobe Photoshop What's New: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:27:15 [validate] E04 Adobe Firefly Blog: unverified (site unreachable) | search_discovery | homepage: HTTP 404; no working RSS; will use Google News site: search
+08:27:15 [validate] E05 Figma Release Notes: working (tested) | rss | rss ok: 475 entries
+08:27:16 [validate] E06 Canva Newsroom: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:27:18 [validate] E07 Framer Updates: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:21 [validate] E08 Midjourney Updates: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:21 [validate] E09 OpenAI News: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:27:22 [validate] E10 Google Labs: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:24 [validate] E11 Runway Blog: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:32 [validate] E12 Monotype Resources: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:35 [validate] E13 Anthropic News: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:38 [validate] F01 Kantar Insights: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:42 [validate] F02 Ipsos: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:47 [validate] F03 NielsenIQ Insights: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:54 [validate] F04 GWI Reports: not found | search_discovery | no working RSS; will use Google News site: search
+08:27:55 [validate] F05 Edelman Insights: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:27:55 [validate] G01 Campaign Middle East: working (tested) | rss | rss ok: 10 entries
+08:27:56 [validate] G02 Communicate: working (tested) | rss | rss ok: 10 entries
+08:28:01 [validate] G03 ArabAd: not found | search_discovery | no working RSS; will use Google News site: search
+08:28:01 [validate] G04 The Drum: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:28:01 [validate] G05 Marketing Week: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:28:05 [validate] G06 Enterprise: not found | search_discovery | no working RSS; will use Google News site: search
+08:28:08 [validate] G07 Zawya: not found | search_discovery | no working RSS; will use Google News site: search
+08:28:12 [validate] G08 MEED: not found | search_discovery | no working RSS; will use Google News site: search
+08:28:21 [validate] G09 Saudi Press Agency: not found | search_discovery | no working RSS; will use Google News site: search
+08:28:21 [validate] G10 Arab News (Business): unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:30:12 [validate] G11 Argaam: unverified (site unreachable) | search_discovery | homepage: HTTP 202; no working RSS; will use Google News site: search
+08:30:20 [validate] G12 The National (Business): not found | search_discovery | no working RSS; will use Google News site: search
+08:30:21 [validate] G13 Gulf News (Business): working (tested) | rss | rss ok: 47 entries
+08:30:21 [validate] G14 Khaleej Times (Business): unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:30:22 [validate] G15 Times of Oman: working (tested) | rss | rss ok: 30 entries
+08:30:22 [validate] G16 Muscat Daily: unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:32:35 [validate] G17 Oman News Agency: unverified (site unreachable) | search_discovery | homepage: SSLError: HTTPSConnectionPool(host='omannews.gov.om', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify f; no working RSS; will use Google News site: search
+08:32:35 [validate] G18 Ahram Online (Business): unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:32:37 [validate] G19 Daily News Egypt: working (tested) | rss | rss ok: 10 entries
+08:32:40 [validate] G20 Wamda: working (tested) | rss | rss ok: 20 entries
+08:32:41 [validate] G21 Campaign (UK/Global): unverified (site unreachable) | search_discovery | homepage: HTTP 403; no working RSS; will use Google News site: search
+08:32:41 [validate] G22 Adweek: working (tested) | rss | rss ok: 10 entries
+08:32:50 [validate] G23 Al Eqtisadiah (Arabic): not found | search_discovery | no working RSS; will use Google News site: search
+08:32:56 [validate] G24 Al-Mal News (Arabic): not found | search_discovery | no working RSS; will use Google News site: search
+08:33:00 [validate] H01 D&AD: not found | search_discovery | no working RSS; will use Google News site: search
+08:33:02 [validate] H02 Red Dot: not found | search_discovery | no working RSS; will use Google News site: search
+08:33:10 [validate] H03 Pentawards: not found | search_discovery | no working RSS; will use Google News site: search
+08:33:13 [validate] H04 The One Club: not found | search_discovery | no working RSS; will use Google News site: search
+08:33:15 [validate] H05 Transform Awards: not found | search_discovery | no working RSS; will use Google News site: search
+08:33:18 [validate] H06 Brand Impact Awards: not found | search_discovery | no working RSS; will use Google News site: search
+08:33:19 [validate] H07 ADC: not found | search_discovery | no working RSS; will use Google News site: search
+08:34:11 [validate] H08 Dubai Lynx: not found | search_discovery | no working RSS; will use Google News site: search
+08:35:02 [validate] H09 Cannes Lions: not found | search_discovery | no working RSS; will use Google News site: search
+08:35:02 [collect] A01 Creative Boom via rss: ok (20 items)
+08:35:03 [collect] A02 Design Week via google_news: ok (0 items)
+08:35:03 [collect] A03 Transform Magazine via google_news: ok (10 items)
+08:35:04 [collect] A04 Brand New via rss: ok (40 items)
+08:35:04 [collect] A05 The Brand Identity via google_news: ok (30 items)
+08:35:05 [collect] A06 BP&O via rss: ok (12 items)
+08:35:05 [collect] A07 It's Nice That via rss: ok (20 items)
+08:35:05 [collect] A08 Creative Review via google_news: ok (2 items)
+08:35:05 [collect] A09 World Brand Design Society via google_news: ok (2 items)
+08:35:05 [collect] A10 Brandemia via google_news: ok (0 items)
+08:35:06 [collect] A11 Dezeen (Design) via rss: ok (40 items)
+08:35:06 [collect] A12 Fast Company Co.Design via rss: ok (20 items)
+08:35:07 [collect] A13 Brandingmag via rss: ok (20 items)
+08:35:08 [collect] A14 Branding Strategy Insider via rss: ok (5 items)
+08:35:08 [collect] B01 Interbrand via google_news: ok (1 items)
+08:35:08 [collect] B02 Landor via google_news: ok (0 items)
+08:35:08 [collect] B03 Wolff Olins via google_news: ok (0 items)
+08:35:09 [collect] B04 COLLINS via google_news: ok (0 items)
+08:35:09 [collect] B05 Pentagram via google_news: ok (3 items)
+08:35:09 [collect] B06 Lippincott via google_news: ok (0 items)
+08:35:09 [collect] B07 Siegel+Gale via rss: ok (10 items)
+08:35:09 [collect] B08 FutureBrand via google_news: ok (40 items)
+08:35:10 [collect] B09 Koto via google_news: ok (0 items)
+08:35:10 [collect] B10 JKR via google_news: ok (0 items)
+08:35:10 [collect] B11 DesignStudio via google_news: ok (0 items)
+08:35:10 [collect] B12 Ragged Edge via google_news: ok (0 items)
+08:35:10 [collect] B13 Mucho via google_news: ok (1 items)
+08:35:10 [collect] B14 How&How via google_news: ok (22 items)
+08:35:10 [collect] B15 Studio Dumbar via google_news: ok (0 items)
+08:35:11 [collect] C01 Interbrand Best Global Brands via google_news: ok (0 items)
+08:35:11 [collect] C02 Kantar BrandZ via google_news: ok (2 items)
+08:35:12 [collect] C03 Brand Finance via rss: ok (8 items)
+08:35:12 [collect] C04 WARC via google_news: ok (7 items)
+08:35:12 [collect] C05 IPA via google_news: ok (0 items)
+08:35:14 [collect] C06 Effie via rss: ok (1 items)
+08:35:14 [collect] C07 McKinsey Insights via rss: ok (40 items)
+08:35:14 [collect] C08 BCG Insights via google_news: ok (0 items)
+08:35:14 [collect] C09 Bain Insights via google_news: ok (14 items)
+08:35:14 [collect] C10 Deloitte Insights via google_news: ok (1 items)
+08:35:14 [collect] C11 Harvard Business Review via google_news: ok (34 items)
+08:35:15 [collect] C12 Think with Google via rss: ok (30 items)
+08:35:15 [collect] D01 Communication Arts via rss: ok (2 items)
+08:35:15 [collect] D02 The Dieline via rss: ok (10 items)
+08:35:17 [collect] D03 Packaging of the World via rss: ok (10 items)
+08:35:17 [collect] D04 Fonts In Use via rss: ok (20 items)
+08:35:17 [collect] D05 Typewolf via rss: ok (10 items)
+08:35:18 [collect] D06 LogoLounge via rss: ok (12 items)
+08:35:18 [collect] D07 Awwwards via google_news: ok (40 items)
+08:35:19 [collect] D08 Mindsparkle Mag via rss: ok (15 items)
+08:35:19 [collect] D09 AIGA Eye on Design via google_news: ok (9 items)
+08:35:19 [collect] D10 The FWA via rss: ok (35 items)
+08:35:20 [collect] E01 Adobe News via google_news: ok (1 items)
+08:35:20 [collect] E02 Adobe Illustrator Release Notes via google_news: ok (5 items)
+08:35:20 [collect] E03 Adobe Photoshop What's New via google_news: ok (1 items)
+08:35:20 [collect] E04 Adobe Firefly Blog via google_news: ok (1 items)
+08:35:20 [collect] E05 Figma Release Notes via rss: ok (40 items)
+08:35:20 [collect] E06 Canva Newsroom via google_news: ok (0 items)
+08:35:20 [collect] E07 Framer Updates via google_news: ok (1 items)
+08:35:21 [collect] E08 Midjourney Updates via google_news: ok (0 items)
+08:35:21 [collect] E09 OpenAI News via google_news: ok (0 items)
+08:35:21 [collect] E10 Google Labs via google_news: ok (3 items)
+08:35:21 [collect] E11 Runway Blog via google_news: ok (0 items)
+08:35:21 [collect] E12 Monotype Resources via google_news: ok (1 items)
+08:35:22 [collect] E13 Anthropic News via google_news: ok (0 items)
+08:35:22 [collect] F01 Kantar Insights via google_news: ok (0 items)
+08:35:22 [collect] F02 Ipsos via google_news: ok (40 items)
+08:35:22 [collect] F03 NielsenIQ Insights via google_news: ok (9 items)
+08:35:22 [collect] F04 GWI Reports via google_news: ok (0 items)
+08:35:22 [collect] F05 Edelman Insights via google_news: ok (0 items)
+08:35:23 [collect] G01 Campaign Middle East via rss: ok (10 items)
+08:35:23 [collect] G02 Communicate via rss: ok (10 items)
+08:35:24 [collect] G03 ArabAd via google_news: ok (0 items)
+08:35:24 [collect] G04 The Drum via google_news: ok (36 items)
+08:35:24 [collect] G05 Marketing Week via google_news: ok (14 items)
+08:35:24 [collect] G06 Enterprise via google_news: ok (0 items)
+08:35:24 [collect] G07 Zawya via google_news: ok (40 items)
+08:35:24 [collect] G08 MEED via google_news: ok (4 items)
+08:35:25 [collect] G09 Saudi Press Agency via google_news: ok (40 items)
+08:35:25 [collect] G10 Arab News (Business) via google_news: ok (0 items)
+08:35:25 [collect] G11 Argaam via google_news: ok (40 items)
+08:35:25 [collect] G12 The National (Business) via google_news: ok (18 items)
+08:35:25 [collect] G13 Gulf News (Business) via rss: ok (40 items)
+08:35:26 [collect] G14 Khaleej Times (Business) via google_news: ok (40 items)
+08:35:26 [collect] G15 Times of Oman via rss: ok (30 items)
+08:35:26 [collect] G16 Muscat Daily via google_news: ok (7 items)
+08:35:27 [collect] G17 Oman News Agency via google_news: ok (40 items)
+08:35:27 [collect] G18 Ahram Online (Business) via google_news: ok (40 items)
+08:35:28 [collect] G19 Daily News Egypt via rss: ok (10 items)
+08:35:30 [collect] G20 Wamda via rss: ok (20 items)
+08:35:31 [collect] G21 Campaign (UK/Global) via google_news: ok (8 items)
+08:35:31 [collect] G22 Adweek via rss: ok (10 items)
+08:35:31 [collect] G23 Al Eqtisadiah (Arabic) via google_news: ok (1 items)
+08:35:31 [collect] G24 Al-Mal News (Arabic) via google_news: ok (0 items)
+08:35:31 [collect] H01 D&AD via google_news: ok (5 items)
+08:35:32 [collect] H02 Red Dot via google_news: ok (30 items)
+08:35:32 [collect] H03 Pentawards via google_news: ok (2 items)
+08:35:32 [collect] H04 The One Club via google_news: ok (2 items)
+08:35:32 [collect] H05 Transform Awards via google_news: ok (4 items)
+08:35:32 [collect] H06 Brand Impact Awards via google_news: ok (0 items)
+08:35:32 [collect] H07 ADC via google_news: ok (0 items)
+08:35:33 [collect] H08 Dubai Lynx via google_news: ok (0 items)
+08:35:33 [collect] H09 Cannes Lions via google_news: ok (5 items)
+08:35:33 [discover] 'rebrand OR rebranding "new logo"': 8 items
+08:35:33 [discover] '"brand identity" unveils': 22 items
+08:35:34 [discover] '"brand value" Brand Finance OR Kantar OR Interbrand': 12 items
+08:35:34 [discover] 'branding agency acquires OR acquisition': 23 items
+08:35:34 [discover] 'rebrand Saudi OR KSA "new identity"': 3 items
+08:35:34 [discover] 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"': 4 items
+08:35:34 [discover] 'rebrand Oman OR Muscat': 0 items
+08:35:34 [discover] 'rebrand Egypt OR Cairo "new identity" OR "new logo"': 0 items
+08:35:35 [discover] 'هوية بصرية جديدة': 18 items
+08:35:35 [discover] 'شعار جديد علامة تجارية السعودية': 20 items
+08:35:35 [discover] 'هوية جديدة مصر شركة': 20 items
+08:35:35 [discover] 'Adobe OR Figma OR Canva new feature designers': 9 items
+08:35:35 [process] 1335 new records, 43 duplicates prevented/linked
+08:35:37 [score] 0 high, 4 follow, 1258 rejected
+08:35:41 [report] Brand_Intelligence_Daily_2026-11-18.html | pdf=yes | png=yes
+08:35:45 [email] sent via Apps Script
+08:35:48 [telegram] no chat id yet: send any message to your bot, then it will be detected next run
+08:35:51 [telegram] no chat id yet: send any message to your bot, then it will be detected next run
+08:35:54 [sheets] Sources: 102 rows -> ok
+08:35:57 [sheets] News: 200 rows -> ok
+08:36:01 [sheets] News: 200 rows -> ok
+08:36:03 [sheets] News: 200 rows -> ok
+08:36:07 [sheets] News: 200 rows -> ok
+08:36:11 [sheets] News: 200 rows -> ok
+08:36:14 [sheets] News: 200 rows -> ok
+08:36:17 [sheets] News: 135 rows -> ok
+08:36:19 [sheets] Runs: 1 rows -> ok
+08:36:19 [done] ok {"sources_checked": 102, "sources_failed": 0, "items_seen": 1345, "items_new": 1302, "duplicates_prevented": 43} ['email:sent', 'telegram:skipped-no-chat', 'alerts:0']

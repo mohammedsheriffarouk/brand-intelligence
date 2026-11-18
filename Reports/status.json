@@ -2,15 +2,15 @@
  "status": {
   "Total registered sources": 102,
   "Active sources": 102,
-  "Working RSS feeds": 0,
-  "Sources using other methods": 102,
-  "Pending validation": 102,
-  "Total collected articles": 0,
-  "New articles today": 0,
+  "Working RSS feeds": 29,
+  "Sources using other methods": 73,
+  "Pending validation": 0,
+  "Total collected articles": 1335,
+  "New articles today": 1302,
   "High priority articles (all time)": 0,
-  "Duplicate articles prevented": 0,
+  "Duplicate articles prevented": 43,
   "Failed sources (current)": 0,
-  "Last successful execution (UTC)": "never",
+  "Last successful execution (UTC)": "2026-11-18T08:35:51+00:00",
   "Next scheduled execution (UTC, approx.)": "2026-11-19 04:17"
  },
  "failed_sources": []
