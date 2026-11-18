@@ -1,0 +1,9 @@
+# Edit Configuration/control/rebuild.txt (any change) to re-score + rebuild without sending.
+name: Rebuild on control-file change
+on: {push: {paths: ["Configuration/control/rebuild.txt"]}}
+permissions: {contents: write, pages: write, id-token: write}
+jobs:
+  rebuild:
+    uses: ./.github/workflows/_run.yml
+    with: {command: rescore}
+    secrets: inherit

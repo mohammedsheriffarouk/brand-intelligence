@@ -1,0 +1,9 @@
+# Edit Configuration/control/resend.txt (any change) to rebuild AND re-send today's brief.
+name: Rebuild + resend on control-file change
+on: {push: {paths: ["Configuration/control/resend.txt"]}}
+permissions: {contents: write, pages: write, id-token: write}
+jobs:
+  resend:
+    uses: ./.github/workflows/_run.yml
+    with: {command: "rescore --resend"}
+    secrets: inherit
