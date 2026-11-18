@@ -1,6 +1,7 @@
 /**
  * Brand Intelligence — Google Sheets bridge (paste into Extensions → Apps Script of your sheet).
- * 1) Project Settings → Script properties → add  SECRET = <long random string>  (same value as GitHub secret SHEETS_SECRET)
+ * 1) Select function "setup" in the toolbar → Run → Allow. It creates a random SECRET; copy it from the Execution log
+ *    into the GitHub secret SHEETS_SECRET.
  * 2) Deploy → New deployment → Web app → Execute as: Me · Who has access: Anyone → copy URL → GitHub secret SHEETS_WEBAPP_URL
  * doPost: the pipeline writes rows and sends the email brief via MailApp (requires SECRET).
  * doGet : the Viewer reads published news as JSON (read-only, no secrets, only News columns).
@@ -47,6 +48,15 @@ function doPost(e) {
     if (appends.length) sh.getRange(sh.getLastRow() + 1, 1, appends.length, header.length).setValues(appends);
     return out_({ok: true, appended: appends.length, updated: updated});
   } finally { lock.releaseLock(); }
+}
+
+function setup() {
+  var props = PropertiesService.getScriptProperties();
+  var secret = props.getProperty('SECRET');
+  if (!secret) { secret = Utilities.getUuid().replace(/-/g, '') + Utilities.getUuid().replace(/-/g, ''); props.setProperty('SECRET', secret); }
+  ['News', 'Sources', 'Runs'].forEach(function (n) { if (!SpreadsheetApp.getActive().getSheetByName(n)) SpreadsheetApp.getActive().insertSheet(n); });
+  MailApp.getRemainingDailyQuota();   // asks for e-mail permission now, not at 6 am
+  Logger.log('SHEETS_SECRET = ' + secret);
 }
 
 function doGet(e) {
