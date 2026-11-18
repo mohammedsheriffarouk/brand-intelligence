@@ -76,11 +76,20 @@ def restore(text, names):
     return text
 
 
+ERRORS = []
+
+
+def log_once(msg):
+    if msg not in ERRORS:
+        ERRORS.append(msg)
+
+
 def free_translate(texts):
     try:
         from deep_translator import GoogleTranslator
         tr = GoogleTranslator(source="auto", target="ar")
-    except Exception:
+    except Exception as e:
+        ERRORS.append(f"{type(e).__name__}: {e}"[:160])
         return [None] * len(texts)
     out = []
     for t in texts:
@@ -90,7 +99,8 @@ def free_translate(texts):
         try:
             p, names = protect(t[:1500])
             out.append(restore(tr.translate(p) or "", names))
-        except Exception:
+        except Exception as e:
+            ERRORS.append(f"{type(e).__name__}: {e}"[:160])
             out.append(None)
     return out
 
@@ -133,6 +143,7 @@ def gemini_enabled():
 
 def gemini_batch(recs):
     if not gemini_enabled():
+        log_once("Gemini not enabled (provider or GEMINI_API_KEY missing)")
         return None
     items = json.dumps([{"headline": r["headline"], "summary": r.get("teaser") or "", "type": TYPE_AR.get(code(r), "")}
                         for r in recs], ensure_ascii=False)
@@ -179,5 +190,5 @@ def arabize(recs, log=print, limit=60):
         if h:
             ok += 1
             r.update(headline_ar=h, summary_ar=s or "", translation="google-translate")
-    log(f"[arabic] {ok}/{len(pending)} stories machine-translated (free)")
+    log(f"[arabic] {ok}/{len(pending)} stories machine-translated (free)" + (f" | first error: {ERRORS[0]}" if ERRORS else ""))
     return recs

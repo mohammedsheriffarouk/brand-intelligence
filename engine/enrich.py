@@ -22,6 +22,9 @@ TEXT:
 {text}"""
 
 
+RESOLVE_ERRORS = []
+
+
 def resolve_google_news(url):
     """Google News RSS links are redirects; decode to the publisher's original article URL."""
     if "news.google.com" not in url:
@@ -31,8 +34,9 @@ def resolve_google_news(url):
         res = gnewsdecoder(url, interval=0.3)
         if res.get("status") and res.get("decoded_url"):
             return res["decoded_url"]
-    except Exception:
-        pass
+        RESOLVE_ERRORS.append(str(res.get("message") or res)[:160])
+    except Exception as e:
+        RESOLVE_ERRORS.append(f"{type(e).__name__}: {e}"[:160])
     return None
 
 
@@ -148,5 +152,6 @@ def enrich(records, log=print, image_limit=40):
                     llm_budget -= 1
             except Exception as e:
                 log(f"[ai] {rec['news_id']} failed, kept rule analysis: {e}"[:200])
-    log(f"[enrich] {resolved} Google News links resolved to original articles, {enriched} publisher summaries added")
+    log(f"[enrich] {resolved} Google News links resolved to original articles, {enriched} publisher summaries added"
+        + (f" | first decode error: {RESOLVE_ERRORS[0]}" if RESOLVE_ERRORS else ""))
     return records
