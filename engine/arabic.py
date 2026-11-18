@@ -97,6 +97,8 @@ def free_translate(texts):
             out.append("")
             continue
         try:
+            import time
+            time.sleep(0.4)   # free endpoint allows ~5 requests/second
             p, names = protect(t[:1500])
             out.append(restore(tr.translate(p) or "", names))
         except Exception as e:
@@ -122,16 +124,25 @@ def gemini_generate(prompt):
     global _working_model
     cfg = settings()["ai"]
     models = [_working_model] if _working_model else list(dict.fromkeys([cfg.get("model")] + cfg.get("model_fallbacks", [])))
+    import time
     last = None
     for m in [x for x in models if x]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
-        r = net.session().post(url, params={"key": os.environ["GEMINI_API_KEY"].strip()}, timeout=120, json={
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2}})
-        if r.status_code == 404:
-            last = f"{m}: not available"
+        for attempt in range(3):
+            # key goes in a header, never in the URL, so it can't leak into logs or error messages
+            r = net.session().post(url, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip()}, timeout=120, json={
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2}})
+            if r.status_code in (429, 500, 502, 503, 504):
+                last = f"{m}: HTTP {r.status_code}"
+                time.sleep(8 * (attempt + 1))
+                continue
+            break
+        if r.status_code in (404, 429, 500, 502, 503, 504):
+            last = f"{m}: HTTP {r.status_code}"
             continue
-        r.raise_for_status()
+        if r.status_code != 200:
+            raise RuntimeError(f"{m}: HTTP {r.status_code} {r.text[:150]}")
         _working_model = m
         return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
     raise RuntimeError(last or "no Gemini model configured")

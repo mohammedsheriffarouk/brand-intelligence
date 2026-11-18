@@ -32,7 +32,7 @@ def resolve_google_news(url):
     try:
         from googlenewsdecoder import gnewsdecoder
         res = gnewsdecoder(url, interval=0.3)
-        if res.get("status") and res.get("decoded_url"):
+        if (res.get("status") or res.get("success")) and res.get("decoded_url"):
             return res["decoded_url"]
         RESOLVE_ERRORS.append(str(res.get("message") or res)[:160])
     except Exception as e:
