@@ -35,3 +35,16 @@
 09:05:25 [sheets] News: 200 rows -> ok
 09:05:30 [sheets] News: 139 rows -> ok
 09:05:33 [sheets] Runs: 1 rows -> ok
+09:09:48 [enrich] 19 Google News links resolved to original articles, 9 publisher summaries added
+09:10:58 [arabic] Gemini failed, falling back to free translation: gemini-2.0-flash: HTTP 404
+09:11:52 [arabic] 0/40 stories machine-translated (free) | first error: TooManyRequests: Server Error: You made too many requests to the server.According to google, you are allowed to make 5 requests per secondand up to 200k request
+09:11:52 [rescore] 1339 articles re-scored, 238 marked as non-article pages
+09:11:56 [sheets] Sources: 102 rows -> ok
+09:11:59 [sheets] News: 200 rows -> ok
+09:12:04 [sheets] News: 200 rows -> ok
+09:12:07 [sheets] News: 200 rows -> ok
+09:12:11 [sheets] News: 200 rows -> ok
+09:12:16 [sheets] News: 200 rows -> ok
+09:12:20 [sheets] News: 200 rows -> ok
+09:12:23 [sheets] News: 139 rows -> ok
+09:12:25 [sheets] Runs: 1 rows -> ok
