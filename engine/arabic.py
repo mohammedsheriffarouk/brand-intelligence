@@ -214,7 +214,9 @@ def arabize(recs, log=print, limit=60):
             r["why_ar"] = WHY_AR.get(c, DEFAULT_WHY)
         if not r.get("angle_ar"):
             r["angle_ar"] = ANGLE_AR.get(c, DEFAULT_ANGLE)
-    top = [r for r in ranked[:limit] if r.get("translation") != "gemini"]   # don't re-spend quota on done ones
+    # don't re-spend quota on done ones, but redo stories whose publisher summary arrived after translation
+    top = [r for r in ranked[:limit] if r.get("translation") != "gemini"
+           or (len(r.get("teaser") or "") > 60 and not r.get("summary_ar"))]
     if not top:
         return recs
     done = False
