@@ -252,3 +252,26 @@
 08:40:38 [sheets] News: 3 rows -> ok
 08:40:40 [sheets] Runs: 1 rows -> ok
 08:40:40 [done] ok {"sources_checked": 0, "sources_failed": 0, "items_seen": 140, "items_new": 1, "duplicates_prevented": 139} ['email:duplicate-prevented', 'telegram:skipped-no-chat', 'alerts:0']
+08:46:11 [discover] 'rebrand OR rebranding "new logo"': 8 items
+08:46:11 [discover] '"brand identity" unveils': 22 items
+08:46:12 [discover] '"brand value" Brand Finance OR Kantar OR Interbrand': 13 items
+08:46:12 [discover] 'branding agency acquires OR acquisition': 23 items
+08:46:12 [discover] 'rebrand Saudi OR KSA "new identity"': 3 items
+08:46:12 [discover] 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"': 4 items
+08:46:12 [discover] 'rebrand Oman OR Muscat': 0 items
+08:46:13 [discover] 'rebrand Egypt OR Cairo "new identity" OR "new logo"': 0 items
+08:46:13 [discover] 'هوية بصرية جديدة': 18 items
+08:46:13 [discover] 'شعار جديد علامة تجارية السعودية': 20 items
+08:46:14 [discover] 'هوية جديدة مصر شركة': 20 items
+08:46:14 [discover] 'Adobe OR Figma OR Canva new feature designers': 9 items
+08:46:14 [process] 1 new records, 139 duplicates prevented/linked, 0 non-article pages skipped
+08:46:14 [score] 0 high, 0 follow, 1 rejected
+08:46:20 [report] Brand_Intelligence_Daily_2026-11-18.html | pdf=yes | png=yes
+08:46:21 [email] already sent for this report — no duplicate
+08:46:21 [telegram] getUpdates ok=True updates=1 kinds=['message']
+08:46:21 [telegram] chat id auto-detected and saved
+08:46:23 [telegram] sent
+08:46:25 [sheets] Sources: 102 rows -> ok
+08:46:28 [sheets] News: 1 rows -> ok
+08:46:31 [sheets] Runs: 1 rows -> ok
+08:46:31 [done] ok {"sources_checked": 0, "sources_failed": 0, "items_seen": 140, "items_new": 1, "duplicates_prevented": 139} ['email:duplicate-prevented', 'telegram:sent', 'alerts:0']

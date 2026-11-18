@@ -1,10 +1,10 @@
 # Brand Intelligence Daily Brief
-*Wednesday 18 November 2026 · generated 18 Nov 2026 10:40 (Cairo)*
+*Wednesday 18 November 2026 · generated 18 Nov 2026 10:46 (Cairo)*
 
 **79** Stories · **0** High priority · **15** Regional · **11** Tools & AI
 
 ## Executive summary
-- 79 relevant stories (0 high priority) out of 1303 collected.
+- 79 relevant stories (0 high priority) out of 1304 collected.
 - Lead story: Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand — FutureBrand.
 - Top regional story: KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business (GCC, Middle East).
 - Top tool/AI update: ADC – The First Living, AI-Driven Brand Identity.
