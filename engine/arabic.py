@@ -214,14 +214,22 @@ def arabize(recs, log=print, limit=60):
             r["why_ar"] = WHY_AR.get(c, DEFAULT_WHY)
         if not r.get("angle_ar"):
             r["angle_ar"] = ANGLE_AR.get(c, DEFAULT_ANGLE)
-    top = ranked[:limit]
+    top = [r for r in ranked[:limit] if r.get("translation") != "gemini"]   # don't re-spend quota on done ones
     if not top:
         return recs
     done = False
     try:
+        import time
         for i in range(0, len(top), 10):
             chunk = top[i:i + 10]
-            res = gemini_batch(chunk)
+            try:
+                res = gemini_batch(chunk)
+            except RuntimeError as e:
+                if "503" not in str(e) and "429" not in str(e):
+                    raise
+                log("[arabic] Gemini busy, waiting 60s and retrying this batch once")
+                time.sleep(60)
+                res = gemini_batch(chunk)
             if res is None:
                 break
             for r, d in zip(chunk, res):
