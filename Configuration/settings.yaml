@@ -1,0 +1,53 @@
+# Brand Intelligence — main settings. Secrets are NEVER stored here (use GitHub Secrets / env vars).
+
+timezone: Africa/Cairo
+fresh_window_hours: 48          # an article is "new" only if PUBLISHED within this window (not just discovered)
+max_items_per_feed: 40
+request_timeout: 20
+user_agent: "BrandIntelligenceBot/1.0 (+personal research; respects robots.txt)"
+retry:
+  attempts_per_run: 2           # quick retries inside one run
+  backoff_seconds: 4
+  disable_after_consecutive_failures: 10   # source flagged "failing" (still retried weekly), never treated as empty
+
+# Search discovery (Google News RSS — free, no key). Used for:
+#  1) sources with no working RSS  -> "site:domain" query
+#  2) thematic/regional discovery  -> queries below
+search_discovery:
+  enabled: true
+  provider: google_news_rss
+  lookback: 2d
+  queries:
+    - {q: 'rebrand OR rebranding "new logo"', geo: Global, lang: en}
+    - {q: '"brand identity" unveils', geo: Global, lang: en}
+    - {q: '"brand value" Brand Finance OR Kantar OR Interbrand', geo: Global, lang: en}
+    - {q: 'branding agency acquires OR acquisition', geo: Global, lang: en}
+    - {q: 'rebrand Saudi OR KSA "new identity"', geo: Saudi Arabia, lang: en}
+    - {q: 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"', geo: UAE, lang: en}
+    - {q: 'rebrand Oman OR Muscat', geo: Oman, lang: en}
+    - {q: 'rebrand Egypt OR Cairo "new identity" OR "new logo"', geo: Egypt, lang: en}
+    - {q: 'هوية بصرية جديدة', geo: Middle East, lang: ar}
+    - {q: 'شعار جديد علامة تجارية السعودية', geo: Saudi Arabia, lang: ar}
+    - {q: 'هوية جديدة مصر شركة', geo: Egypt, lang: ar}
+    - {q: 'Adobe OR Figma OR Canva new feature designers', geo: Global, lang: en}
+
+# Optional AI layer. provider: none | gemini | anthropic
+#  none      -> rule-based analysis only (free, deterministic)  [DEFAULT]
+#  gemini    -> Google AI Studio free tier (needs GEMINI_API_KEY secret; free tier has rate limits and Google may use free-tier data to improve products)
+#  anthropic -> Claude API (PAID, separate from a Claude subscription; needs ANTHROPIC_API_KEY)
+ai:
+  provider: none
+  model: gemini-2.5-flash
+  max_articles_per_day: 20       # hard cap so nothing silently accumulates cost/quota
+  only_if_score_at_least: 60
+  fetch_article_text: true       # reads article page (robots.txt respected) for top items only; summaries only, never republished
+
+notifications:
+  email_enabled: true            # needs SMTP_USER, SMTP_PASSWORD, EMAIL_TO secrets
+  send_empty_status_email: false # short "nothing meaningful today" email
+  telegram_enabled: true         # needs TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID secrets
+  critical_alert_score: 92       # instant Telegram alert for exceptional stories
+  report_base_url: ""            # e.g. https://<user>.github.io/brand-intelligence  (auto from env PAGES_URL if empty)
+
+scoring:
+  bands: {high: 85, follow: 70, research: 55}

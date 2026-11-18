@@ -1,0 +1,14 @@
+name: Monthly industry report + source re-validation
+on:
+  schedule: [{cron: "53 5 1 * *"}]   # 1st of month 05:53 UTC
+  workflow_dispatch: {}
+jobs:
+  validate:
+    uses: ./.github/workflows/_run.yml
+    with: {command: validate}
+    secrets: inherit
+  monthly:
+    needs: validate
+    uses: ./.github/workflows/_run.yml
+    with: {command: monthly}
+    secrets: inherit

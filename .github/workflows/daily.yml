@@ -1,0 +1,9 @@
+name: Daily collection & brief
+on:
+  schedule: [{cron: "17 4 * * *"}]   # 04:17 UTC = 06:17 Cairo (07:17 in Egyptian summer time)
+  workflow_dispatch: {}
+jobs:
+  daily:
+    uses: ./.github/workflows/_run.yml
+    with: {command: daily}
+    secrets: inherit

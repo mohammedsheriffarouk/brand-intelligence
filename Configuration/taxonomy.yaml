@@ -1,0 +1,70 @@
+# News taxonomy + keyword rules used by the rule-based classifier. Add keywords freely (lowercase).
+news_types:
+  N01: {name: New Brand Launch, kw: ["launches new brand", "brand launch", "new brand", "unveils brand", "debut brand", "علامة تجارية جديدة", "إطلاق علامة"]}
+  N02: {name: Rebranding, kw: ["rebrand", "rebranding", "new identity", "new visual identity", "brand refresh", "refreshed identity", "identity overhaul", "renames", "new name", "هوية جديدة", "هوية بصرية", "إعادة تصميم الهوية"]}
+  N03: {name: Logo Redesign, kw: ["new logo", "logo redesign", "redesigned logo", "logo refresh", "logotype", "wordmark", "monogram", "شعار جديد"]}
+  N04: {name: Brand Strategy, kw: ["brand strategy", "positioning", "brand purpose", "brand platform", "brand promise", "brand experience"]}
+  N05: {name: Brand Architecture, kw: ["brand architecture", "masterbrand", "sub-brand", "endorsed brand", "brand portfolio", "house of brands", "branded house"]}
+  N06: {name: Brand Campaign, kw: ["campaign", "ad campaign", "tvc", "commercial", "spot", "حملة"]}
+  N07: {name: Business Growth, kw: ["growth", "expansion", "grew", "record year", "customers", "users", "نمو"]}
+  N08: {name: Financial Results, kw: ["revenue", "profit", "earnings", "results", "quarter", "q1", "q2", "q3", "q4", "net income", "sales rose", "أرباح", "إيرادات"]}
+  N09: {name: Brand Valuation, kw: ["brand value", "most valuable brands", "brand finance", "brandz", "best global brands", "brand equity", "brand strength", "قيمة العلامة"]}
+  N10: {name: Design Tool Update, kw: ["release notes", "new feature", "update", "now available", "beta", "plugin", "figma", "illustrator", "photoshop", "canva", "framer", "indesign"]}
+  N11: {name: AI Innovation, kw: ["ai", "generative", "gen ai", "firefly", "midjourney", "model", "llm", "agent", "openai", "gemini", "runway", "ذكاء اصطناعي"]}
+  N12: {name: Design Trend, kw: ["trend", "trends", "aesthetic", "colour of the year", "color of the year", "design trends"]}
+  N13: {name: Research Report, kw: ["report", "survey", "study", "index", "research", "found that", "per cent of", "percent of", "دراسة", "تقرير"]}
+  N14: {name: Industry Acquisition, kw: ["acquires", "acquisition", "acquired", "merger", "merges", "buys", "stake", "استحواذ"]}
+  N15: {name: Agency News, kw: ["agency", "studio", "appoints", "hires", "creative director", "new client", "wins account", "pitch", "وكالة"]}
+  N16: {name: Award & Recognition, kw: ["award", "awards", "shortlist", "winner", "wins", "grand prix", "pencil", "lions", "جائزة"]}
+  N17: {name: Typography & Fonts, kw: ["typeface", "font", "typography", "type foundry", "custom type", "variable font", "خط عربي", "خط"]}
+  N18: {name: Packaging Innovation, kw: ["packaging", "pack design", "label", "bottle", "carton", "تغليف"]}
+  N19: {name: Consumer Behaviour, kw: ["consumers", "consumer behaviour", "consumer behavior", "shoppers", "gen z", "millennials", "loyalty", "trust", "المستهلك"]}
+  N20: {name: Market Expansion, kw: ["enters", "expands to", "opens in", "launch in", "entry into", "market entry", "يدخل السوق", "توسع"]}
+
+industries:
+  Technology & Software: ["software", "app", "tech", "saas", "platform", "ai", "startup", "digital"]
+  Healthcare & Pharma: ["health", "hospital", "pharma", "medical", "clinic", "wellness"]
+  Finance & Banking: ["bank", "fintech", "insurance", "payments", "finance", "investment", "بنك"]
+  Food & Beverage: ["food", "beverage", "drink", "restaurant", "coffee", "beer", "snack", "café", "cafe"]
+  Retail & E-commerce: ["retail", "store", "e-commerce", "ecommerce", "shop", "marketplace", "supermarket"]
+  Fashion & Luxury: ["fashion", "luxury", "apparel", "beauty", "cosmetics", "jewellery", "jewelry"]
+  Automotive: ["car", "automotive", "vehicle", "ev", "motors", "auto"]
+  Hospitality & Tourism: ["hotel", "tourism", "travel", "airline", "airport", "resort", "destination"]
+  Education: ["university", "school", "education", "learning", "academy"]
+  Real Estate: ["real estate", "property", "developer", "residential", "giga-project", "giga project", "عقار"]
+  Government & Public Sector: ["government", "ministry", "city", "council", "public sector", "national", "vision 2030", "وزارة"]
+  Entertainment & Media: ["media", "tv", "streaming", "music", "film", "gaming", "entertainment", "publisher"]
+  FMCG: ["fmcg", "cpg", "consumer goods", "household", "unilever", "p&g", "nestle", "nestlé"]
+  Telecom: ["telecom", "mobile operator", "5g", "stc", "etisalat", "e&", "vodafone", "orange", "zain", "omantel"]
+  Sports: ["sport", "football", "club", "league", "olympic", "fifa", "racing", "f1"]
+
+geography:
+  Egypt: ["egypt", "egyptian", "cairo", "alexandria", "giza", "مصر", "القاهرة"]
+  Saudi Arabia: ["saudi", "ksa", "riyadh", "jeddah", "neom", "vision 2030", "السعودية", "الرياض"]
+  UAE: ["uae", "emirates", "emirati", "dubai", "abu dhabi", "sharjah", "الإمارات", "دبي"]
+  Oman: ["oman", "omani", "muscat", "عمان", "مسقط"]
+  GCC: ["gcc", "gulf", "qatar", "doha", "bahrain", "kuwait", "الخليج"]
+  Other MENA: ["jordan", "lebanon", "morocco", "tunisia", "algeria", "iraq", "mena", "beirut", "amman"]
+  Middle East: ["middle east", "الشرق الأوسط"]
+  North America: ["us ", "u.s.", "usa", "america", "new york", "canada", "california"]
+  Europe: ["uk", "london", "europe", "germany", "france", "paris", "netherlands", "amsterdam", "spain", "italy"]
+  Asia Pacific: ["china", "japan", "india", "australia", "singapore", "korea", "asia"]
+
+agencies: ["interbrand", "landor", "wolff olins", "collins", "pentagram", "lippincott", "siegel+gale", "siegel + gale",
+  "futurebrand", "koto", "jkr", "jones knowles ritchie", "designstudio", "ragged edge", "mucho", "how&how", "studio dumbar",
+  "superunion", "saffron", "venturethree", "wpp", "omnicom", "publicis", "dentsu", "ipg", "havas", "mother", "droga5",
+  "ogilvy", "mccann", "tbwa", "leo burnett", "vml", "impact bbdo", "fp7", "leo burnett mena", "base design", "turner duckworth",
+  "bulletproof", "elmwood", "robot food", "dutchscot", "manual", "order", "mother design", "dixonbaxi", "porto rocha", "gretel"]
+
+big_brands: ["apple", "google", "microsoft", "amazon", "meta", "nike", "coca-cola", "pepsi", "mcdonald", "samsung", "toyota",
+  "mercedes", "bmw", "louis vuitton", "chanel", "gucci", "starbucks", "netflix", "spotify", "airbnb", "uber", "visa", "mastercard",
+  "aramco", "stc", "sabic", "emirates", "etihad", "saudia", "riyadh air", "neom", "adnoc", "e&", "talabat", "careem", "noon",
+  "orange", "vodafone", "omantel", "banque misr", "cib", "national bank of egypt", "fawry", "jaguar", "burberry", "unilever", "ikea"]
+
+# Terms whose presence means a financial/commercial claim exists (triggers verification rules)
+financial_terms: ["revenue", "profit", "brand value", "valuation", "market cap", "market capitalization", "market share",
+  "roi", "earnings", "billion", "million", "per cent", "percent", "%", "$", "usd", "sar", "aed", "egp", "omr", "£", "€"]
+
+# AI-tool / design-tool product names for Tool Update analysis
+tools: ["figma", "illustrator", "photoshop", "indesign", "firefly", "express", "canva", "framer", "midjourney", "runway",
+  "chatgpt", "dall-e", "sora", "gemini", "imagen", "veo", "claude", "affinity", "procreate", "glyphs", "fontlab", "webflow", "spline"]

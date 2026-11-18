@@ -1,0 +1,7 @@
+name: Validate all sources (manual)
+on: {workflow_dispatch: {}}
+jobs:
+  validate:
+    uses: ./.github/workflows/_run.yml
+    with: {command: validate}
+    secrets: inherit

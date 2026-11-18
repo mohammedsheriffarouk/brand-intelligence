@@ -1,0 +1,9 @@
+name: Weekly intelligence report
+on:
+  schedule: [{cron: "41 5 * * 6"}]   # Saturday 05:41 UTC
+  workflow_dispatch: {}
+jobs:
+  weekly:
+    uses: ./.github/workflows/_run.yml
+    with: {command: weekly}
+    secrets: inherit

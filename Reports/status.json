@@ -1,0 +1,17 @@
+{
+ "status": {
+  "Total registered sources": 102,
+  "Active sources": 102,
+  "Working RSS feeds": 0,
+  "Sources using other methods": 102,
+  "Pending validation": 102,
+  "Total collected articles": 0,
+  "New articles today": 0,
+  "High priority articles (all time)": 0,
+  "Duplicate articles prevented": 0,
+  "Failed sources (current)": 0,
+  "Last successful execution (UTC)": "never",
+  "Next scheduled execution (UTC, approx.)": "2026-11-19 04:17"
+ },
+ "failed_sources": []
+}
