@@ -130,20 +130,23 @@ def score(rec, source):
     nums = bool(rec.get("financial_data"))
     base_imp = {"N09": 14, "N14": 13, "N08": 12, "N02": 12, "N01": 10, "N03": 10, "N20": 10, "N11": 9, "N07": 9,
                 "N13": 9, "N10": 8}.get(t, 6)
-    imp = min(20, base_imp + (4 if big else 0) + (2 if nums else 0))
-    inn = min(15, 6 + (4 if re.search(r"\b(first|new|launch|unveil|introduc|debut)", head) else 0)
+    rel_rating_ = int(source.get("reliability") or 0)
+    quality_branding = rel >= 16 and rel_rating_ >= 4 and t in ("N01", "N02", "N03", "N05", "N17", "N18")
+    imp = min(20, base_imp + (4 if big else 0) + (2 if nums else 0) + (3 if quality_branding else 0))
+    inn = min(15, 6 + (4 if re.search(r"\b(first|new|launch|unveil|introduc|debut|rebrand|refresh|reveal)", head) else 0)
               + (3 if t in ("N10", "N11", "N17") else 0) + (2 if rec.get("date_status") == "fresh" else 0))
     rel_rating = int(source.get("reliability") or 0)
     cred = rel_rating * 3 if rel_rating else 6
-    ev = 4 + (4 if source.get("official") == "official" else 0) + (3 if nums else 0) \
-        + (2 if rec.get("related_companies") else 0) + (2 if len(body) > 200 else 0)
+    ev = 6 + (4 if source.get("official") == "official" else 0) + (3 if nums else 0) \
+        + (3 if rec.get("related_companies") else 0) + (2 if len(body) > 200 else 0) + (2 if rel_rating >= 4 else 0)
     flags = []
     if nums and source.get("official") != "official" and rel_rating < 4:
         ev = min(ev, 8)
         flags.append("financial claim from non-official, lower-reliability source")
     ev = min(15, ev)
-    con = min(10, (5 if _hits(head, ["logo", "identity", "rebrand", "packaging", "typeface", "campaign", "هوية", "شعار"]) else 1)
-              + (3 if big else 0) + (2 if t in ("N10", "N11") else 0) + (2 if rec.get("image_url") else 0))
+    con = min(10, (6 if _hits(head, ["logo", "identity", "rebrand", "packaging", "typeface", "campaign", "هوية", "شعار"]) else 1)
+              + (3 if big else 0) + (2 if t in ("N10", "N11") else 0) + (1 if rec.get("image_url") else 0)
+              + (1 if any(g in MENA for g in rec["geography"]) else 0))
     subtotal = rel + imp + inn + cred + ev + con
     reg = max([REGIONAL_PTS.get(g, 0) for g in rec["geography"]] or [0])
     reg_applied = reg if subtotal >= 50 else 0

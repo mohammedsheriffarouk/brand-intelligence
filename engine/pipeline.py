@@ -100,6 +100,39 @@ def run_daily(notify_on=True, force=False):
     return status
 
 
+def rescore(log=None):
+    """Re-apply current classification/scoring rules to every stored article (after rule changes) and resync the Sheet."""
+    log = log or Logger("rescore")
+    con = db.connect()
+    srcs = db.rows(con, "SELECT * FROM sources")
+    by_id = {s["source_id"]: s for s in srcs}
+    by_domain = {urlparse(s["url"]).netloc.replace("www.", ""): s for s in srcs}
+    rows = db.rows(con, "SELECT * FROM news")
+    junk = 0
+    for row in rows:
+        if process.is_junk(row["headline"]):
+            row.update(priority="Reject", editorial_status="Rejected (non-article page)", overall_score="0")
+            junk += 1
+        else:
+            old_geo = db.loads(row.get("geography"), [])
+            rec = {k: row.get(k) for k in ("news_id", "headline", "url", "published_at", "image_url", "source_id",
+                                           "source_name", "date_status", "duplicate_of", "via")}
+            rec["teaser"] = (row.get("detailed_summary") or "").replace("[Publisher excerpt] ", "").replace("Not Disclosed", "")
+            rec["geo_hint"] = next((g for g in old_geo if g in analyze.MENA), None)
+            analyze.analyze(rec, _source_for(rec, by_id, by_domain))
+            rec.pop("_type", None)
+            row.update({k: v for k, v in rec.items() if k not in ("teaser", "geo_hint")})
+            if row.get("duplicate_of"):
+                row["editorial_status"] = "duplicate (linked to original)"
+        db.upsert(con, "news", row, "news_id")
+    con.commit()
+    log(f"[rescore] {len(rows)} articles re-scored, {junk} marked as non-article pages")
+    db.export(con)
+    sheets.sync(con, rows, log)
+    report.build(con, "daily")
+    dashboard(con)
+
+
 def run_periodic(kind, notify_on=True):
     log = Logger(kind)
     con = db.connect()

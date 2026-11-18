@@ -41,6 +41,14 @@ def date_status(pub, now):
     return "fresh"
 
 
+JUNK = re.compile(r"@|\b(log ?in|sign ?in|sign up|subscribe|contact us|privacy policy|cookie|page not found|404|careers?|jobs at|terms of use)\b", re.I)
+
+
+def is_junk(title):
+    """Non-article pages that search engines index on agency/vendor sites (office pages, emails, login pages)."""
+    return bool(JUNK.search(title)) or len(re.findall(r"\w+", title)) < 4
+
+
 def process(con, raw_items, log=print):
     """Returns (new_records, duplicates_prevented)."""
     now = datetime.now(timezone.utc)
@@ -49,7 +57,11 @@ def process(con, raw_items, log=print):
         con, "SELECT title_key, news_id FROM news WHERE collected_at >= ?",
         ((now - timedelta(days=14)).isoformat(),))}
     new, dupes, batch_keys = [], 0, set()
+    junk = 0
     for it in raw_items:
+        if is_junk(it["headline"]):
+            junk += 1
+            continue
         dk = hashlib.sha1(canonical(it["url"]).encode()).hexdigest()[:20]
         if dk in known or dk in batch_keys:
             dupes += 1
@@ -72,5 +84,5 @@ def process(con, raw_items, log=print):
             recent_titles[tk] = rec["news_id"]
         batch_keys.add(dk)
         new.append(rec)
-    log(f"[process] {len(new)} new records, {dupes} duplicates prevented/linked")
+    log(f"[process] {len(new)} new records, {dupes} duplicates prevented/linked, {junk} non-article pages skipped")
     return new, dupes

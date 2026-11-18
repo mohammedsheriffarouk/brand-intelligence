@@ -1,5 +1,5 @@
 """Collection engine: RSS first, Google News RSS search discovery second. Failed != empty."""
-import re
+import html, re
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus, urlparse
 
@@ -34,7 +34,7 @@ def parse_feed(content, source, via):
     f = feedparser.parse(content)
     items = []
     for e in f.entries[: settings()["max_items_per_feed"]]:
-        title = (e.get("title") or "").strip()
+        title = html.unescape(e.get("title") or "").strip()
         link = e.get("link")
         if not title or not link:
             continue

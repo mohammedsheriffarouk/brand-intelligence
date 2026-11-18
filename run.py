@@ -4,6 +4,7 @@
   python run.py daily             # collect -> process -> classify/score -> DB -> reports -> sheet -> notify
   python run.py weekly | monthly  # periodic reports + notifications
   python run.py status            # print dashboard numbers
+  python run.py rescore           # re-apply scoring rules to all stored articles + resync Sheet
   flags: --no-notify  --force (ignore source frequency)"""
 import json, sys
 
@@ -22,6 +23,8 @@ if __name__ == "__main__":
         sys.exit(0 if pipeline.run_daily(notify_on, force="--force" in sys.argv) == "ok" else 1)
     elif cmd in ("weekly", "monthly"):
         pipeline.run_periodic(cmd, notify_on)
+    elif cmd == "rescore":
+        pipeline.rescore()
     elif cmd == "status":
         print(json.dumps(pipeline.dashboard(db.connect()), indent=1))
     else:
