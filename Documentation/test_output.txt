@@ -1,3 +1,4 @@
-tests/test_pipeline.py::test_end_to_end PASSED                           [ 50%]
-tests/test_pipeline.py::test_weekly_monthly PASSED                       [100%]
-============================== 2 passed in 11.47s ==============================
+tests/test_pipeline.py::test_end_to_end PASSED                           [ 33%]
+tests/test_pipeline.py::test_weekly_monthly PASSED                       [ 66%]
+tests/test_pipeline.py::test_email_via_apps_script_and_chat_autodetect PASSED [100%]
+============================== 3 passed in 14.80s ==============================

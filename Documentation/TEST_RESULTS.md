@@ -1,6 +1,6 @@
 # Test Results
 
-## Phase 5a — Offline end-to-end tests (2026-11-18, Claude workspace) — **PASSED (2/2)**
+## Phase 5a — Offline end-to-end tests (2026-11-18, Claude workspace) — **PASSED (3/3)**
 Run with `python -m pytest -v tests` against **synthetic fixture feeds** (example.com, clearly fake), because the build workspace has no outbound web access.
 
 | Area | Verified |
@@ -15,7 +15,7 @@ Run with `python -m pytest -v tests` against **synthetic fixture feeds** (exampl
 | No fabrication | Rebrand fields not in source = "Not Disclosed" |
 | Database | SQLite + news/sources CSV & JSON exports |
 | Reports | Daily HTML + MD + **PDF + PNG brief card** generated; weekly report generated; status dashboard + viewer + data JSON |
-| Notifications | Email (subject format, PDF attached) and Telegram (photo/message/document) called once; **no duplicate send** on re-run (mocked transports) |
+| Notifications | Email via SMTP and via Apps Script (PDF attached), Telegram chat-id auto-detect, and Telegram (photo/message/document) called once; **no duplicate send** on re-run (mocked transports) |
 
 `Documentation/test_output.txt` has the raw pytest output.
 

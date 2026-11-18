@@ -2,13 +2,19 @@
  * Brand Intelligence — Google Sheets bridge (paste into Extensions → Apps Script of your sheet).
  * 1) Project Settings → Script properties → add  SECRET = <long random string>  (same value as GitHub secret SHEETS_SECRET)
  * 2) Deploy → New deployment → Web app → Execute as: Me · Who has access: Anyone → copy URL → GitHub secret SHEETS_WEBAPP_URL
- * doPost: the pipeline writes rows (requires SECRET).
+ * doPost: the pipeline writes rows and sends the email brief via MailApp (requires SECRET).
  * doGet : the Viewer reads published news as JSON (read-only, no secrets, only News columns).
  */
 function doPost(e) {
   var body = JSON.parse(e.postData.contents);
   var secret = PropertiesService.getScriptProperties().getProperty('SECRET');
   if (!secret || body.secret !== secret) return out_({ok: false, error: 'unauthorized'});
+  if (body.action === 'email') {   // send the daily brief from YOUR Gmail (no SMTP / App Password needed)
+    var opts = {htmlBody: body.html, name: 'Brand Intelligence'};
+    if (body.pdf_base64) opts.attachments = [Utilities.newBlob(Utilities.base64Decode(body.pdf_base64), 'application/pdf', body.pdf_name || 'report.pdf')];
+    MailApp.sendEmail(body.to || Session.getEffectiveUser().getEmail(), body.subject, body.text || '', opts);
+    return out_({ok: true, emailed: true});
+  }
   var lock = LockService.getScriptLock(); lock.waitLock(30000);
   try {
     var ss = SpreadsheetApp.getActive();

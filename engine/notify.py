@@ -69,9 +69,10 @@ def email_html(rep):
 def send_email(rep, log=print):
     cfg = settings()["notifications"]
     key = f"email:{rep['fname']}"
-    need = ["SMTP_USER", "SMTP_PASSWORD", "EMAIL_TO"]
-    if not cfg["email_enabled"] or not all(os.getenv(k) for k in need):
-        log("[email] skipped: disabled or SMTP_USER/SMTP_PASSWORD/EMAIL_TO not set")
+    smtp_ok = all(os.getenv(k) for k in ["SMTP_USER", "SMTP_PASSWORD", "EMAIL_TO"])
+    script_ok = os.getenv("SHEETS_WEBAPP_URL") and os.getenv("SHEETS_SECRET")
+    if not cfg["email_enabled"] or not (smtp_ok or script_ok):
+        log("[email] skipped: disabled, or neither SMTP nor Apps Script (SHEETS_WEBAPP_URL/SECRET) configured")
         return "skipped"
     if _sent().get(key):
         log("[email] already sent for this report — no duplicate")
@@ -80,8 +81,27 @@ def send_email(rep, log=print):
         log("[email] nothing meaningful; status email disabled")
         return "skipped-empty"
     kind = rep["kind"].capitalize()
+    subject = f"Brand Intelligence {kind} Brief — {rep['label']}"
+    if not smtp_ok:   # send through the Google Apps Script web app (MailApp, from the user's own Gmail)
+        import base64
+        pdf = rep.get("pdf")
+        payload = {"secret": os.environ["SHEETS_SECRET"], "action": "email", "to": os.getenv("EMAIL_TO", ""),
+                   "subject": subject, "html": email_html(rep), "text": f"{len(rep['rows'])} stories. {report_url(rep)}",
+                   "pdf_name": Path(pdf).name if pdf and Path(pdf).exists() else None,
+                   "pdf_base64": base64.b64encode(Path(pdf).read_bytes()).decode() if pdf and Path(pdf).exists() else None}
+        try:
+            r = net.session().post(os.environ["SHEETS_WEBAPP_URL"], data=json.dumps(payload).encode(),
+                                   headers={"Content-Type": "text/plain;charset=utf-8"}, timeout=120)
+            if '"emailed":true' not in r.text.replace(" ", ""):
+                raise RuntimeError(r.text[:200])
+            _mark(key)
+            log("[email] sent via Apps Script")
+            return "sent"
+        except Exception as e:
+            log(f"[email] FAILED (Apps Script): {e}")
+            return f"failed: {e}"
     msg = EmailMessage()
-    msg["Subject"] = f"Brand Intelligence {kind} Brief — {rep['label']}"
+    msg["Subject"] = subject
     msg["From"], msg["To"] = os.environ["SMTP_USER"], os.environ["EMAIL_TO"]
     msg.set_content(f"Brand Intelligence {kind} — {rep['label']}\n{len(rep['rows'])} stories. Full report: {report_url(rep) or 'attached'}")
     msg.add_alternative(email_html(rep), subtype="html")
@@ -99,6 +119,28 @@ def send_email(rep, log=print):
     except Exception as e:
         log(f"[email] FAILED: {e}")
         return f"failed: {e}"
+
+
+CHAT_FILE = ROOT / "Configuration" / "telegram_chat.json"
+
+
+def chat_id(log=print):
+    """TELEGRAM_CHAT_ID secret, else saved file, else auto-detect from the last message sent to the bot."""
+    if os.getenv("TELEGRAM_CHAT_ID"):
+        return os.environ["TELEGRAM_CHAT_ID"]
+    if CHAT_FILE.exists():
+        return json.loads(CHAT_FILE.read_text())["chat_id"]
+    try:
+        r = net.session().get(f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN']}/getUpdates", timeout=30).json()
+        chats = [u[k]["chat"]["id"] for u in r.get("result", []) for k in ("message", "my_chat_member") if k in u]
+        if chats:
+            CHAT_FILE.write_text(json.dumps({"chat_id": str(chats[-1])}))
+            log(f"[telegram] chat id auto-detected and saved")
+            return str(chats[-1])
+    except Exception as e:
+        log(f"[telegram] chat id detection failed: {e}")
+    log("[telegram] no chat id yet: send any message to your bot, then it will be detected next run")
+    return None
 
 
 def _tg(method, data=None, files=None):
@@ -128,13 +170,15 @@ def telegram_text(rep):
 def send_telegram(rep, log=print):
     cfg = settings()["notifications"]
     key = f"telegram:{rep['fname']}"
-    if not cfg["telegram_enabled"] or not (os.getenv("TELEGRAM_BOT_TOKEN") and os.getenv("TELEGRAM_CHAT_ID")):
-        log("[telegram] skipped: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID not set")
+    if not cfg["telegram_enabled"] or not os.getenv("TELEGRAM_BOT_TOKEN"):
+        log("[telegram] skipped: TELEGRAM_BOT_TOKEN not set")
         return "skipped"
     if _sent().get(key):
         log("[telegram] already sent — no duplicate")
         return "duplicate-prevented"
-    chat = os.environ["TELEGRAM_CHAT_ID"]
+    chat = chat_id(log)
+    if not chat:
+        return "skipped-no-chat"
     try:
         text = telegram_text(rep)
         if rep.get("png") and Path(rep["png"]).exists():
@@ -154,14 +198,17 @@ def send_telegram(rep, log=print):
 
 def critical_alerts(records, log=print):
     cfg = settings()["notifications"]
-    if not (cfg["telegram_enabled"] and os.getenv("TELEGRAM_BOT_TOKEN") and os.getenv("TELEGRAM_CHAT_ID")):
+    if not (cfg["telegram_enabled"] and os.getenv("TELEGRAM_BOT_TOKEN")):
+        return 0
+    chat = chat_id(log)
+    if not chat:
         return 0
     n = 0
     for r in records:
         if int(r.get("overall_score") or 0) >= cfg["critical_alert_score"] and r.get("date_status") == "fresh" \
                 and not r.get("duplicate_of") and not _sent().get("alert:" + r["news_id"]):
             try:
-                _tg("sendMessage", {"chat_id": os.environ["TELEGRAM_CHAT_ID"], "parse_mode": "HTML",
+                _tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML",
                                     "text": f"🚨 <b>High-impact:</b> <a href=\"{E(r['url'])}\">{E(r['headline'])}</a>\n{E(r['source_name'])} · {r['overall_score']}/100"})
                 _mark("alert:" + r["news_id"])
                 n += 1

@@ -163,3 +163,32 @@ def test_weekly_monthly(env):
     assert pipeline.run_daily(notify_on=False) == "ok"
     assert pipeline.run_periodic("weekly", notify_on=False) == "ok"
     assert list((env / "Reports" / "Weekly").glob("*.html"))
+
+
+def test_email_via_apps_script_and_chat_autodetect(env, monkeypatch):
+    from engine import notify, pipeline
+    calls = {"post": [], "tg": []}
+
+    class R:
+        def __init__(self, t): self.text = t
+        def json(self): return json.loads(self.text)
+
+    class S:
+        def post(self, url, data=None, **k):
+            calls["post"].append(json.loads(data))
+            return R('{"ok": true, "emailed": true}')
+        def get(self, url, **k):
+            return R('{"ok": true, "result": [{"message": {"chat": {"id": 4242}}}]}')
+
+    monkeypatch.setattr(notify.net, "session", lambda: S())
+    monkeypatch.setattr(notify, "_tg", lambda m, data=None, files=None: calls["tg"].append(data["chat_id"]))
+    monkeypatch.setenv("SHEETS_WEBAPP_URL", "https://script.example.com/exec")
+    monkeypatch.setenv("SHEETS_SECRET", "s3cret")
+    monkeypatch.setenv("TELEGRAM_BOT_TOKEN", "t")
+    import engine.sheets
+    monkeypatch.setattr(engine.sheets, "push", lambda *a, **k: True)
+    assert pipeline.run_daily(notify_on=True) == "ok"
+    mail = [c for c in calls["post"] if c.get("action") == "email"]
+    assert len(mail) == 1 and mail[0]["secret"] == "s3cret" and mail[0]["pdf_base64"]
+    assert calls["tg"] and set(calls["tg"]) == {"4242"}
+    assert json.loads((env / "Configuration" / "telegram_chat.json").read_text())["chat_id"] == "4242"
