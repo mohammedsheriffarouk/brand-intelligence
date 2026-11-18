@@ -1,120 +1,120 @@
 # النشرة اليومية للبراندنج
-*الأربعاء 18 نوفمبر 2026 · 18 Nov 2026 11:00 (القاهرة)*
+*الأربعاء 18 نوفمبر 2026 · 18 Nov 2026 11:05 (القاهرة)*
 
 **79** خبر · **0** أولوية عالية · **15** إقليمي · **11** أدوات و AI
 
 ## الملخص التنفيذي
 - 79 خبر مهم (0 أولوية عالية) من أصل 1304 خبر اتجمعوا.
-- الخبر الأبرز: Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand (FutureBrand).
-- أهم خبر إقليمي: KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business (الخليج، الشرق الأوسط).
-- أهم تحديث أدوات / AI: ADC – The First Living, AI-Driven Brand Identity.
+- الخبر الأبرز: FutureBrand تطلق تموضعاً جديداً يتمحور حول سلوك البراند (FutureBrand).
+- أهم خبر إقليمي: KFH-Bahrain يكشف عن KFH Private كهوية بصرية جديدة للخدمات المصرفية الخاصة (الخليج، الشرق الأوسط).
+- أهم تحديث أدوات / AI: ADC تطلق أول visual identity تفاعلية وحية مدفوعة بالـ AI.
 
 ## أهم الأخبار (5)
 
-### [Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand](https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5)
+### [FutureBrand تطلق تموضعاً جديداً يتمحور حول سلوك البراند](https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5)
 *Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand*
 *إعادة هوية (Rebranding) · FutureBrand · 17 نوفمبر 2026 · يستحق المتابعة 80/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يوضح الخبر كيف تعيد وكالات الـ branding العالمية صياغة الـ positioning الخاص بها لربط استراتيجية الهوية بسلوك البراند الفعلي.
+- **زاوية محتوى:** تحليل تحول تركيز وكالات الـ branding الكبرى من مجرد تصميم visual identity إلى هندسة brand behaviour متكامل.
 
-### [KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business](https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5)
+### [KFH-Bahrain يكشف عن KFH Private كهوية بصرية جديدة للخدمات المصرفية الخاصة](https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5)
 *KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business*
 *إطلاق علامة جديدة · Zawya · 16 نوفمبر 2026 · يستحق المتابعة 77/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** علامة جديدة بتدخل السوق: فرصة تدرس اختيارات الاسم والـ positioning والهوية من أول يوم.
-- **زاوية محتوى:** تحليل علامة جديدة: الاسم والـ positioning والهوية.
+- **ليه مهم:** يبرز التوسع في قطاع الـ private banking الخليجي وحاجته لهويات بصرية تعكس الفخامة والموثوقية العالية.
+- **زاوية محتوى:** كيفية تصميم visual identity تخاطب عملاء الثروات وإدارة الأصول في البنوك الخليجية.
 
-### [BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5)
+### [BrandMe تقدم rebrand لمنتج تمور الشوكولاتة الأصلي في دبي](https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5)
 *BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles*
 *إعادة هوية (Rebranding) · Transform magazine · 17 نوفمبر 2026 · يستحق المتابعة 75/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يوضح أهمية تحديث الـ packaging والـ identity للمنتجات التراثية الشهيرة للمحافظة على تنافسيتها أمام المنتجات المعاصرة.
+- **زاوية محتوى:** كيف تطور packaging لمنتج تراثي في الخليج ليلائم معايير الرفوف العالمية دون فقدان أصالته؟
 
-### [PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles](https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5)
+### [PPHA تغير اسمها وتطلق rebrand باسم Archie Homes بعد عام من النمو القياسي](https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5)
 *PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles*
 *إعادة هوية (Rebranding) · Transform magazine · 16 نوفمبر 2026 · يستحق المتابعة 72/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يعكس دور الـ rebrand وتغيير الاسم كأداة استراتيجية أساسية لدعم التحول المؤسسي وتتويج مراحل النمو السريع.
+- **زاوية محتوى:** متى يكون تغيير اسم البراند والـ identity بالكامل خطوة ضرورية للشركات بعد تحقيق قفزات نمو؟
 
-### [Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles](https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5)
+### [استوديو Evers + de Gier يصمم rebrand لافتاً لـ Theater Amsterdam](https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5)
 *Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles*
 *إعادة هوية (Rebranding) · Transform magazine · 16 نوفمبر 2026 · للبحث فقط 69/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يقدم نموذجاً ملهماً لكيفية تصميم visual identity جريئة للقطاعات الثقافية والمسارح لجذب انتباه الجمهور الحديث.
+- **زاوية محتوى:** دراسة حالة حول استخدام الجرأة البصرية في rebrand المؤسسات الفنية والمسارح لصناعة حضور لا يمكن تجاهله.
 
 ## البراندنج وإعادة الهوية (6)
 
-### [Orb Case Study: Rebrand to $335M Adyen Sale](https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5)
+### [دراسة حالة من استوديو Orb: كيف ساهم الـ rebrand في صفقة بيع لـ Adyen بقيمة 335 مليون دولار](https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5)
 *Orb Case Study: Rebrand to $335M Adyen Sale*
 *إعادة هوية (Rebranding) · How&How · 10 نوفمبر 2026 · للبحث فقط 69/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
+- **ليه مهم:** يثبت القيمة المالية المباشرة وتأثير الـ rebrand الاستراتيجي على رفع تقييم الشركات وجاذبيتها لصفقات الاستحواذ الضخمة.
 - **رقم:** $335M: Unlabelled figure (Publisher claim — official source)
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **زاوية محتوى:** كيف يرفع الـ branding الاحترافي قيمة الشركات الناشئة ويسهل صفقات الاستحواذ بمئات الملايين؟
 
-### [M/OTG brings a bold, timeless visual identity to heritage kosher brand J&J Dairy](https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/)
+### [استوديو M/OTG يقدم visual identity كلاسيكية وجريئة لعلامة J&J Dairy](https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/)
 *M/OTG brings a bold, timeless visual identity to heritage kosher brand J&J Dairy*
 *Packaging · BP&O · 17 نوفمبر 2026 · للبحث فقط 66/100*
 
-- **الملخص:** American kosher brand J&J Dairy dates all the way back to the 1940s, when two brothers-in-law began making kosher cream cheese. Based in Elizabethport, New Jersey, the company has since expanded its range considerably,…
-- **ليه مهم:** الـ Packaging هو نقطة لقاء العلامة بالرف، وقيمته البصرية عالية للمحتوى.
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **الملخص:** يعود تاريخ علامة J&J Dairy الأمريكية للألبان إلى أربعينيات القرن الماضي عندما بدأ صهران بتصنيع الجبن الكريمي في نيوجيرسي. ومنذ ذلك الوقت وسعت الشركة تشكيلتها بصورة ملحوظة لتشمل القشدة والزبدة والزبادي ومشروبات الكابتشينو المثلج.
+- **ليه مهم:** يقدم دراسة ملهمة في كيفية تجديد packaging ومنتجات الأغذية التاريخية بمظهر عصري يحترم إرثها القديم.
+- **زاوية محتوى:** نصائح عملية لتصميم packaging لمنتجات التجزئة الغذائية التي تمتلك إرثاً يعود لعقود دون إفساد رابط الثقة مع المستهلك القديم.
 
-### [Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby](https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/)
+### [استوديو Ragged Edge يبتكر visual identity مرحة لتطبيق Fintech الشهير Tabby](https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/)
 *Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby*
 *إعادة هوية (Rebranding) · BP&O · 3 نوفمبر 2026 · للبحث فقط 66/100*
 
-- **الملخص:** Tabby is a Middle East-born fintech app, founded by Hosam Arab and Daniil Barkalov in 2019 and now billed as “the money app that lets you spend, send, save and boss money around”. Not quite sure what “bossing” money…
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **الملخص:** انطلق تطبيق Fintech الإقليمي Tabby عام 2019 ويُسوّق حالياً بصفته تطبيقاً مالياً يتيح للمستخدمين الإنفاق والتحويل والادخار وإدارة الأموال. وتتمثل الوظيفة الأساسية للتطبيق في تمكين العملاء من تقسيم مدفوعات مشترياتهم إلى أربع دفعات.
+- **ليه مهم:** يوضح تحول لغة الـ fintech البصرية في الشرق الأوسط من الطابع البنكي الرسمي إلى أسلوب مرح وأقرب للمستهلك اليومي.
+- **زاوية محتوى:** تحليل أسباب تخلي تطبيقات الـ Fintech الكبرى في المنطقة عن الطابع المؤسسي التقليدي لصالح هويات بصرية مرحة وجريئة.
 
-### [Boundless Brand Design creates a new brand world and packaging for PG tips](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5)
+### [Boundless Brand Design يبتكر Brand World و Packaging جديدين لعلامة PG tips](https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5)
 *Boundless Brand Design creates a new brand world and packaging for PG tips*
 *إطلاق علامة جديدة · Pentawards · 12 نوفمبر 2026 · للبحث فقط 66/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** علامة جديدة بتدخل السوق: فرصة تدرس اختيارات الاسم والـ positioning والهوية من أول يوم.
-- **زاوية محتوى:** تحليل علامة جديدة: الاسم والـ positioning والهوية.
+- **ليه مهم:** يلهم المصممين في كيفية بناء brand world متكامل يربط تجربة الرف والـ packaging بالقصة الإعلانية للعلامة التجارية.
+- **زاوية محتوى:** مفهوم بناء الـ Brand World في مشاريع الـ FMCG والـ Packaging وتأثيره على حضور المنتج في السوق.
 
-### [Air Heel Plantar Fasciitis - Air India unveils new logo plane colour scheme after rebranding India Today](https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5)
+### [Air India تكشف عن تصميم ألوان الطائرات والـ Logo الجديد ضمن مسار الـ Rebrand](https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5)
 *Air Heel Plantar Fasciitis - Air India unveils new logo plane colour scheme after rebranding India Today*
 *إعادة هوية (Rebranding) · ascoltitv.it · 16 نوفمبر 2026 · للبحث فقط 65/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يوضح التحديات التقنية والجمالية الخاصة بتطبيق الـ visual identity على أساطيل الطيران والأسطح ثلاثية الأبعاد واسعة النطاق.
+- **زاوية محتوى:** تحديات تطبيق الـ Livery Design في خطوط الطيران: كيف ينتقل الـ logo ونظام الألوان بنجاح من الشاشة إلى بدن الطائرة؟
 
-### [Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company](https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5)
+### [Gulf Helicopters تعلن عن Rebrand لتتحول إلى Global Helicopter Company](https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5)
 *Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company*
 *إعادة هوية (Rebranding) · The Peninsula Qatar · 16 نوفمبر 2026 · للبحث فقط 65/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يعكس كيف يقود التوسع من النطاق الإقليمي إلى الدولي ضرورة إعادة هيكلة الاسم والـ corporate identity بما يناسب الأسواق العالمية.
+- **زاوية محتوى:** متى يستدعي التحول من نطاق إقليمي إلى منافس دولي تغيير اسم البراند وإعادة بناء الـ brand architecture؟
 
 ## الأثر التجاري وقيمة العلامة (6)
 
-### [Nike spent years reinventing Air. Meet the new Tuned Air (exclusive)](https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
+### [Nike تكشف عن تقنية Tuned Air الجديدة لإعادة ابتكار تقنيتها التاريخية](https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
 *Nike spent years reinventing Air. Meet the new Tuned Air (exclusive)*
 *نتائج مالية · Fast Company Co.Design · 16 نوفمبر 2026 · للبحث فقط 65/100*
 
-- **الملخص:** For half a century, Nike has been synonymous with Air. The cushioning—developed at NASA, then incorporated inside a 1978 running shoe and the Air Max 1—came to represent Nike’s commitment to cutting-edge innovation.…
-- **ليه مهم:** أرقام مالية فعلية للسياق التجاري، من غير ما نفترض إن البراندنج هو السبب.
-- **زاوية محتوى:** قصة أعمال بالأرقام، مع توضيح صريح للي البراندنج يقدر ومايقدرش يدّعيه.
+- **الملخص:** ارتبط اسم Nike على مدار نصف قرن بابتكار تقنية Air التي طُوّرت داخل NASA وتحولت لرمز أساسي لالتزام العلامة بالابتكار الرياضي. واليوم، وبعد سنوات من التحديات، تعول الشركة على الجيل المطور Tuned Air عبر إطلاقه في حذاء ركض جديد لانتشالها من ركودها السابق.
+- **ليه مهم:** يبرز كيف تستخدم البراندات العالمية العملاقة ابتكارات المنتجات وتسمياتها كأداة قوية لإعادة تنشيط الـ brand perception.
+- **زاوية محتوى:** كيف تستخدم Nike إطلاق وتسمية التقنيات الجديدة كاستراتيجية branding مباشرة لتخطي الأزمات وتجديد الـ brand equity؟
 
 ### [Sabika secures new investment to expand gold and silver trading platform](https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform)
 *Sabika secures new investment to expand gold and silver trading platform*
-*نمو أعمال · Wamda · 16 نوفمبر 2026 · للبحث فقط 60/100*
+*نمو أعمال · Wamda · 16 نوفمبر 2026 · للبحث فقط 61/100*
 
 - **الملخص:** Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…
 - **ليه مهم:** سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).
@@ -155,46 +155,46 @@
 
 ## الأدوات والذكاء الاصطناعي (6)
 
-### [ADC – The First Living, AI-Driven Brand Identity](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5)
+### [ADC تطلق أول visual identity تفاعلية وحية مدفوعة بالـ AI](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5)
 *ADC – The First Living, AI-Driven Brand Identity*
 *ذكاء اصطناعي · Red Dot Design Award · 15 نوفمبر 2026 · للبحث فقط 67/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
+- **ليه مهم:** يفتح آفاقاً رائدة أمام مصممي الهويات البصرية لدمج تقنيات الـ dynamic identity والذكاء الاصطناعي في الأنظمة البصرية التكيفية.
+- **زاوية محتوى:** هل يمثل هذا المشروع بداية النهاية لأدلة الهوية الثابتة لصالح visual identities حية تتغير بالـ AI؟
 
-### [Wa'ed Ventures backs Saudi cybersecurity startup COGNNA](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
+### [صندوق Wa'ed Ventures يدعم شركة COGNNA السعودية المتخصصة في الأمن السيبراني](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
 *Wa'ed Ventures backs Saudi cybersecurity startup COGNNA*
 *ذكاء اصطناعي · Wamda · 16 نوفمبر 2026 · للبحث فقط 66/100*
 
-- **الملخص:** Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
+- **الملخص:** حصدت شركة الأمن السيبراني السعودية COGNNA استثماراً جديداً من صندوق Wa'ed Ventures التابع لشركة Saudi Aramco. وسيدعم هذا التمويل خطط توسع الشركة وتطوير منصتها Nexus المدعومة بتقنيات الـ AI لإدارة التهديدات والاستجابة للحوادث.
+- **ليه مهم:** يعكس حجم النشاط الاستثماري في قطاع الـ tech السعودي وما يتطلبه من بناء هويات بصرية تقنية موثوقة وعالمية المستوى.
 - **رقم:** $500 m: Unlabelled figure (Publisher claim — not independently verified)
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
+- **زاوية محتوى:** كيف تصمم visual identity موثوقة لشركات الـ cybersecurity المعتمدة على الـ AI لجذب الاستثمار الإقليمي؟
 
-### [The young rebel alliance trying to get people to love technology again](https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
+### [حركة تصميمية متمردة تسعى لإعادة الدفء الإنساني للأجهزة التكنولوجية](https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
 *The young rebel alliance trying to get people to love technology again*
 *ذكاء اصطناعي · Fast Company Co.Design · 17 نوفمبر 2026 · للبحث فقط 63/100*
 
-- **الملخص:** In a spare and cavernous former eyewear emporium near the luxury stores of San Francisco’s Union Square, a motley group of tech devices is spread out across display counters and pedestals. One is a desktop computer…
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
+- **الملخص:** يستعرض متجر تجريبي في سان فرانسيسكو أجهزة إلكترونية غريبة مثل حاسوب كرتوني بشكل ضفدع ولابتوب بأزرار مصنوعة من اللباد. ويبدو المكان كنسخة غير مألوفة من متاجر التكنولوجيا حيث يعرض أجهزة دافئة تقدم تجربة استخدام لم يتوقع الجمهور وجودها.
+- **ليه مهم:** يلهم المصممين بالخروج من قوالب التصميم التقني الباردة نحو تصاميم مرحة ذات ملامس دافئة وشخصية فريدة للمستخدم.
+- **زاوية محتوى:** هل انتهى عصر التصاميم التكنولوجية الباردة وبدأ عصر الـ playful tech design والتجارب البصرية الدافئة؟
 
-### [AI companies are missing a key reason people hate data centers: They’re ugly](https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
+### [شركات الـ AI تتجاهل سبباً أساسياً لرفض مراكز البيانات: قبح التصميم الخارجي](https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
 *AI companies are missing a key reason people hate data centers: They’re ugly*
 *ذكاء اصطناعي · Fast Company Co.Design · 16 نوفمبر 2026 · للبحث فقط 63/100*
 
-- **الملخص:** The U.S. is experiencing a huge boom in AI investment, and data centers are at the epicenter. But amid power outages, criticisms around water usage, and moral quandaries, the infrastructure is facing intense backlash…
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
+- **الملخص:** تواجه مراكز بيانات الذكاء الاصطناعي في الولايات المتحدة موجة رفض مجتمعي متصاعدة بالرغم من وعود عمالقة التقنية بدعم التوظيف المحلي والاستثمار في المجتمع. وتغفل التحالفات التقنية حقيقة جوهرية مفادها أن المواطنين يرفضون الإقامة بجوار منشآت ضخمة قبيحة بصرياً.
+- **ليه مهم:** يسلط الضوء على الأهمية القصوى للـ environmental branding والتصميم المكاني في إدماج المنشآت التقنية داخل البيئات المجتمعية.
+- **زاوية محتوى:** دور التصميم و environmental branding في تحسين تقبل المجتمعات للبنية التحتية الضخمة الخاصة بشركات الذكاء الاصطناعي.
 
-### [Turner Duckworth London’s Maker’s Mark Update Celebrates the Brand’s Wax-Dipped Handmade Tradition](https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/)
+### [استوديو Turner Duckworth London يحدث الهوية البصرية لـ Maker’s Mark بالاحتفاء بلمسة الشمع اليدوية](https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/)
 *Turner Duckworth London’s Maker’s Mark Update Celebrates the Brand’s Wax-Dipped Handmade Tradition*
 *تحديث أداة تصميم · The Dieline · 17 نوفمبر 2026 · للبحث فقط 63/100*
 
-- **الملخص:** The Maker's Mark visual identity gets a global refresh by Turner Duckworth London, that leans into the brand's tradition of hand-dipping bottles into red wax. The post Turner Duckworth London’s Maker’s Mark Update…
-- **ليه مهم:** تغيير الأدوات بيأثر على شغل المصممين وإنتاجية الاستوديو.
-- **زاوية محتوى:** شرح سريع "الجديد للمصممين" مع استخدامات عملية.
+- **الملخص:** شهدت الهوية البصرية لعلامة Maker’s Mark تحديثاً عالمياً على يد وكالة Turner Duckworth في لندن. ويركز هذا التحديث الجديد على تقاليد العلامة العريقة المتمثلة في غمس الزجاجات يدوياً داخل الشمع الأحمر.
+- **ليه مهم:** يعرض براعة استوديو Turner Duckworth في استخلاص جوهر الـ craftsmanship وتحويله إلى بطل بصري أساسي للعلامة.
+- **زاوية محتوى:** كيف تستخرج عنصراً يدوياً أصيلاً وتجعله المحور البصري الأساسي في تحديث الـ identity لبراند عالمي؟
 
 ### [Intuitus Unveils Native Edge-AI Vision Frameworks Under Its Distinctive Brand Identity "INTUITUS"– MAKING SENSE OF WHAT IS SENSED](https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5)
 *Intuitus Unveils Native Edge-AI Vision Frameworks Under Its Distinctive Brand Identity "INTUITUS"– MAKING SENSE OF WHAT IS SENSED*
@@ -258,7 +258,7 @@
 
 ### [Social media stopped being social. Most brands did not notice](https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/)
 *Social media stopped being social. Most brands did not notice*
-*سلوك المستهلك · Communicate · 17 نوفمبر 2026 · للبحث فقط 61/100*
+*سلوك المستهلك · Communicate · 17 نوفمبر 2026 · للبحث فقط 62/100*
 
 - **الملخص:** In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…
 - **ليه مهم:** تغيّر سلوك المستهلك لازم ينعكس على استراتيجية العلامة ورسائلها.
@@ -275,34 +275,34 @@
 
 ## الشرق الأوسط والخليج ومصر (6)
 
-### [Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby](https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/)
+### [استوديو Ragged Edge يبتكر visual identity مرحة لتطبيق Fintech الشهير Tabby](https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/)
 *Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby*
 *إعادة هوية (Rebranding) · BP&O · 3 نوفمبر 2026 · للبحث فقط 66/100*
 
-- **الملخص:** Tabby is a Middle East-born fintech app, founded by Hosam Arab and Daniil Barkalov in 2019 and now billed as “the money app that lets you spend, send, save and boss money around”. Not quite sure what “bossing” money…
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **الملخص:** انطلق تطبيق Fintech الإقليمي Tabby عام 2019 ويُسوّق حالياً بصفته تطبيقاً مالياً يتيح للمستخدمين الإنفاق والتحويل والادخار وإدارة الأموال. وتتمثل الوظيفة الأساسية للتطبيق في تمكين العملاء من تقسيم مدفوعات مشترياتهم إلى أربع دفعات.
+- **ليه مهم:** يوضح تحول لغة الـ fintech البصرية في الشرق الأوسط من الطابع البنكي الرسمي إلى أسلوب مرح وأقرب للمستهلك اليومي.
+- **زاوية محتوى:** تحليل أسباب تخلي تطبيقات الـ Fintech الكبرى في المنطقة عن الطابع المؤسسي التقليدي لصالح هويات بصرية مرحة وجريئة.
 
-### [Wa'ed Ventures backs Saudi cybersecurity startup COGNNA](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
+### [صندوق Wa'ed Ventures يدعم شركة COGNNA السعودية المتخصصة في الأمن السيبراني](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
 *Wa'ed Ventures backs Saudi cybersecurity startup COGNNA*
 *ذكاء اصطناعي · Wamda · 16 نوفمبر 2026 · للبحث فقط 66/100*
 
-- **الملخص:** Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
+- **الملخص:** حصدت شركة الأمن السيبراني السعودية COGNNA استثماراً جديداً من صندوق Wa'ed Ventures التابع لشركة Saudi Aramco. وسيدعم هذا التمويل خطط توسع الشركة وتطوير منصتها Nexus المدعومة بتقنيات الـ AI لإدارة التهديدات والاستجابة للحوادث.
+- **ليه مهم:** يعكس حجم النشاط الاستثماري في قطاع الـ tech السعودي وما يتطلبه من بناء هويات بصرية تقنية موثوقة وعالمية المستوى.
 - **رقم:** $500 m: Unlabelled figure (Publisher claim — not independently verified)
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
+- **زاوية محتوى:** كيف تصمم visual identity موثوقة لشركات الـ cybersecurity المعتمدة على الـ AI لجذب الاستثمار الإقليمي؟
 
-### [Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company](https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5)
+### [Gulf Helicopters تعلن عن Rebrand لتتحول إلى Global Helicopter Company](https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5)
 *Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company*
 *إعادة هوية (Rebranding) · The Peninsula Qatar · 16 نوفمبر 2026 · للبحث فقط 65/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.
-- **زاوية محتوى:** Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.
+- **ليه مهم:** يعكس كيف يقود التوسع من النطاق الإقليمي إلى الدولي ضرورة إعادة هيكلة الاسم والـ corporate identity بما يناسب الأسواق العالمية.
+- **زاوية محتوى:** متى يستدعي التحول من نطاق إقليمي إلى منافس دولي تغيير اسم البراند وإعادة بناء الـ brand architecture؟
 
 ### [Social media stopped being social. Most brands did not notice](https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/)
 *Social media stopped being social. Most brands did not notice*
-*سلوك المستهلك · Communicate · 17 نوفمبر 2026 · للبحث فقط 61/100*
+*سلوك المستهلك · Communicate · 17 نوفمبر 2026 · للبحث فقط 62/100*
 
 - **الملخص:** In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…
 - **ليه مهم:** تغيّر سلوك المستهلك لازم ينعكس على استراتيجية العلامة ورسائلها.
@@ -311,7 +311,7 @@
 
 ### [Sabika secures new investment to expand gold and silver trading platform](https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform)
 *Sabika secures new investment to expand gold and silver trading platform*
-*نمو أعمال · Wamda · 16 نوفمبر 2026 · للبحث فقط 60/100*
+*نمو أعمال · Wamda · 16 نوفمبر 2026 · للبحث فقط 61/100*
 
 - **الملخص:** Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…
 - **ليه مهم:** سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).
@@ -349,15 +349,15 @@
 21. Fonts In Use: https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website
 22. BP&O: https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-design/
 23. Fast Company Co.Design: https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus-logo?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
-24. The Eastern Herald: https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5
-25. Dezeen (Design): https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/
-26. Communicate: https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/
-27. IMPACT Magazine: https://news.google.com/rss/articles/CBMitgFBVV95cUxNRDI0MVNQQXNTNkZGcTl6cFNUcldpLUpJWHJVbHd3Vkw4R3FDckZXSGJGTzlDd0N4MW9ncnpQMGVpcEJ1ZThiaUtWWmhCdzBTVkg4QlAyZlVPOFVhUmRkand6MmFUTjB6RlFqNUNKUnd4RTdoVXNqczhkN0JmdmtMMHQ5SVp4dXhvMnB4X1gzVDh6N3R2RjRWbzlBTlVoMHRzNmp0Y3BqaFVEbXdyQUZRVlJyZk1HUQ?oc=5
-28. MediaNews4U: https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGdGNlJyTjg2OEU2b3RVTDZ5dm9HUGUzNWpOeHVpejNSa0JQRHZwOEVzbFZQMDJGSFhaa3czbTVTNU9QVXdVeVNYem9McFNHdDNLczZIQVNOVWhLNkZJNW9RNzNfZ2RCX19PbmgxcGhTUHBxZHFPRTFWaGhLejF2ZFpLMEJtRndESDVJQ2ZOYUtzaC0wNmFYbXcySUI5MFlhNG5zd0RhXzU?oc=5
-29. Transform magazine: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl81SFZHd2FHYnRfYTd4bjNhSThoS2NtdUotd2o2NGtxMXdQZ0lvbTJJQzlSNnVFM0p6cnlpa0owbkdtWDU4NFJTX0pXZlphTWxJOTBMXzY0MlFBc0M1VjM0dUVYXzVpSkpuOGdubzRDWU54Z09tRm51cS03d3JodThjZS1Ma3d1cDlKVnRtQ2lOaXdLZ1RpVkgwdWx3VldpemlIMTV6RlhZd2Q0d2RUdlQzQ1hhUm1V?oc=5
-30. Branding Strategy Insider: https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/
-31. The Dieline: https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/
-32. Wamda: https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform
+24. Communicate: https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/
+25. The Eastern Herald: https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5
+26. Dezeen (Design): https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/
+27. Wamda: https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform
+28. IMPACT Magazine: https://news.google.com/rss/articles/CBMitgFBVV95cUxNRDI0MVNQQXNTNkZGcTl6cFNUcldpLUpJWHJVbHd3Vkw4R3FDckZXSGJGTzlDd0N4MW9ncnpQMGVpcEJ1ZThiaUtWWmhCdzBTVkg4QlAyZlVPOFVhUmRkand6MmFUTjB6RlFqNUNKUnd4RTdoVXNqczhkN0JmdmtMMHQ5SVp4dXhvMnB4X1gzVDh6N3R2RjRWbzlBTlVoMHRzNmp0Y3BqaFVEbXdyQUZRVlJyZk1HUQ?oc=5
+29. MediaNews4U: https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGdGNlJyTjg2OEU2b3RVTDZ5dm9HUGUzNWpOeHVpejNSa0JQRHZwOEVzbFZQMDJGSFhaa3czbTVTNU9QVXdVeVNYem9McFNHdDNLczZIQVNOVWhLNkZJNW9RNzNfZ2RCX19PbmgxcGhTUHBxZHFPRTFWaGhLejF2ZFpLMEJtRndESDVJQ2ZOYUtzaC0wNmFYbXcySUI5MFlhNG5zd0RhXzU?oc=5
+30. Transform magazine: https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl81SFZHd2FHYnRfYTd4bjNhSThoS2NtdUotd2o2NGtxMXdQZ0lvbTJJQzlSNnVFM0p6cnlpa0owbkdtWDU4NFJTX0pXZlphTWxJOTBMXzY0MlFBc0M1VjM0dUVYXzVpSkpuOGdubzRDWU54Z09tRm51cS03d3JodThjZS1Ma3d1cDlKVnRtQ2lOaXdLZ1RpVkgwdWx3VldpemlIMTV6RlhZd2Q0d2RUdlQzQ1hhUm1V?oc=5
+31. Branding Strategy Insider: https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/
+32. The Dieline: https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/
 33. Bizcommunity: https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5
 34. BP&O: https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/
 35. Fast Company Co.Design: https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
@@ -367,18 +367,18 @@
 39. How&How: https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h6YlpZZWRGdmJVQ3NJWDNFSEthbmcxMHNmOGpqcUFUd21iVkdrQnE1Y2Z1bklyZGFPZU1YQ0l4eHpoWGlSaDhJdUpSeVFnd2pYTFRGcHJR?oc=5
 40. Packaging of the World: https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html
 41. Packaging of the World: https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html
-42. The National Law Review: https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0FzbENxQUE4SklFUEpMUkVManRId3Y3SzRZZ1U5a3hxZnVmc25OWkpGMUszcWQ5WlNQZXVnMTR4VVBzdFJwb0hqZzJIZmwyNklEbmxXdnB6RFF3OW1LX280VnEzNXpUaW5QY0xsMkRVYnFUVVhuRHE0Ni0tTEZoVkg4dTEyMGZZSTA1NGtWelgtUGtETHBwSmQxUmR4RTJHLVE1X2xjS0FPeVZSTmZCSVVfMA?oc=5
-43. Boating New Zealand: https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVk1YcmVYTFJIcl9Sb1ZLbFdKSXgxWk5hQWQtemJRRDBFRUxLNjRGREhlZUVjbmxVUEpqYnA4YS1ZYVcxcnNiUzFmb3BKcGZZQ29ma19GUnFzTVVISGNqcjRkRDVDV1RmZGFEOUtzSzNsUTh1elFPUUpDdjBEWjZheW5EU05KMW5tVlYxUzhpdndOYmxNbkw0aTNibVV0SUFpZEswajhJYUQ3cGpNNUlyMWFZc3U4UkdscFJwZ3VVV1hnOXpsNkY5TDR3Nk5iUFYyME1wTUFRWkJOMFBjMGpXaW9ZQU0zbW91QkJB?oc=5
-44. PR Newswire: https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmJTUlFEd1dxVEVJc24waERZaE1sc1BTdXEzSVZYSldGYm9IbDBsemtSRWE4cW5rVnhVX05VNXloUHkyNTBKTHBqam8zbXc2Mm9qTkVkcEEwUnYxUW8wWXdxZ01QQkdZbGd4NlVFT1FZbG13V2x1SmxleDM5WVc1VnI1ZnNWTXhUSEhuaVhwUm5mMWJ5Ykl0SFViZUNkNDdpVFpaTEIzVU5TZ1IyaWl3d2k4T2FTcWJQSUhzZXVSejR3eXYwRE11aTRYTQ?oc=5
-45. Facebook: https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVg1MkQtSHdaNVZzYU5hMWJxOG1nZ2Z6X3RDY0c0dURueDBtaTc1ZldJejNFRkJHNkVxaWVyRE9sVy1QcjU3ay1hbFBEeUxlSGk4cno3QjhsWXFJOUlCOW56b3h4b0U2Z094UmtrNk9feWhaX3V6NzRkRXVaU19pcUtRY3RmWUxmS1hGMjgwY2sxNXdiUFBLRnMxWFhjNEVzbkZrQ2NxaF9oNlJhMklseHhCdV95clVHQ0lKb0FCRjg5UW10cjBCRFNQcEZJcnhWYWZicDNMTml3SGlDeEE?oc=5
-46. BellaNaija: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UTG9mSmNZNjdoYktJUEY5M3UwMVJaNkRDNUc1M1ljRkN5LUNWTUU1RFQ2SUR1aHYxRFVSMHFqOEZyQzBvLTIxUS16bnNJc2s2U2M1RHU2dUQ?oc=5
-47. Energetica India Magazine: https://news.google.com/rss/articles/CBMipwFBVV95cUxQcG1QNXVxU1huSWUxNUFZeHE1b2xmNzh3VXdnSmJYMXZWYkV4U1JoUlpUYUdDVERXWEhWOWdMWVE0UElBa09GbWFTQUwyaHRicmZGSzE4ZE5GQU0xTDY5UkxsV1RLVlBva3pfYlVseHBOaExxY0xNWHRJUHU3Z0JzVEpJR1dhT0M3NEF3WTdGXzBMMTFuSVFlVExsOGlveGJUQ09YVXhBNA?oc=5
-48. ThePrint: https://news.google.com/rss/articles/CBMiywFBVV95cUxPeUp3STAxcS1zVGlwWnBSY1c4azRNeFNDeWNkWUFfUGZiV1BNd0UwN2lkc1dsaExaTXIyLVB0UHBMbEJiZGJqMGhSNFBEVmJzQnFkSm00NHg2UFk4TXJMZ2RCSmJ2SWxmMGd3cGtnX0lTeGkwUGVVb0xpcXh5NDZtRTc3UFdMZldZQUFTWEc0M1Nycnh4dGRIRGdzejVMT0dhR3E4S3BXRGgyMUxkS0hqN1lfSElnLUs0Nng0WlIzN1I0ZzhvMXNneVdzZ9IB0AFBVV95cUxQZm1qMXhUYWdPZ1J0OFQzM3o4WVBGRlFIeVc4R1ZMckhuelFuS3YtcEdZRjlTMW1aWTJ4V3kwU2ZQX180djF5T1hGS1lUeXNhd2IxYTdoM0UzRGdycTBmc051cjFmUWdoZXJLWEhZYk5vRGVrWVJCdkpaTjN2QjNYSTgyekpIV1l0X1QtZzdQY21mUjh6d1N0MDJzaW12Yk5vSzREVFJVeXhsUHhJZ2dGSXR2MDI2b25ManJRSzZhdGxKV1BvaWV0SndrZkJLZHVI?oc=5
-49. BP&O: https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/
-50. Brandingmag: https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/
-51. The Dieline: https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/
-52. Figma Release Notes: https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans
-53. Communicate: https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/
+42. Communicate: https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/
+43. The National Law Review: https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0FzbENxQUE4SklFUEpMUkVManRId3Y3SzRZZ1U5a3hxZnVmc25OWkpGMUszcWQ5WlNQZXVnMTR4VVBzdFJwb0hqZzJIZmwyNklEbmxXdnB6RFF3OW1LX280VnEzNXpUaW5QY0xsMkRVYnFUVVhuRHE0Ni0tTEZoVkg4dTEyMGZZSTA1NGtWelgtUGtETHBwSmQxUmR4RTJHLVE1X2xjS0FPeVZSTmZCSVVfMA?oc=5
+44. Boating New Zealand: https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVk1YcmVYTFJIcl9Sb1ZLbFdKSXgxWk5hQWQtemJRRDBFRUxLNjRGREhlZUVjbmxVUEpqYnA4YS1ZYVcxcnNiUzFmb3BKcGZZQ29ma19GUnFzTVVISGNqcjRkRDVDV1RmZGFEOUtzSzNsUTh1elFPUUpDdjBEWjZheW5EU05KMW5tVlYxUzhpdndOYmxNbkw0aTNibVV0SUFpZEswajhJYUQ3cGpNNUlyMWFZc3U4UkdscFJwZ3VVV1hnOXpsNkY5TDR3Nk5iUFYyME1wTUFRWkJOMFBjMGpXaW9ZQU0zbW91QkJB?oc=5
+45. PR Newswire: https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmJTUlFEd1dxVEVJc24waERZaE1sc1BTdXEzSVZYSldGYm9IbDBsemtSRWE4cW5rVnhVX05VNXloUHkyNTBKTHBqam8zbXc2Mm9qTkVkcEEwUnYxUW8wWXdxZ01QQkdZbGd4NlVFT1FZbG13V2x1SmxleDM5WVc1VnI1ZnNWTXhUSEhuaVhwUm5mMWJ5Ykl0SFViZUNkNDdpVFpaTEIzVU5TZ1IyaWl3d2k4T2FTcWJQSUhzZXVSejR3eXYwRE11aTRYTQ?oc=5
+46. Facebook: https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVg1MkQtSHdaNVZzYU5hMWJxOG1nZ2Z6X3RDY0c0dURueDBtaTc1ZldJejNFRkJHNkVxaWVyRE9sVy1QcjU3ay1hbFBEeUxlSGk4cno3QjhsWXFJOUlCOW56b3h4b0U2Z094UmtrNk9feWhaX3V6NzRkRXVaU19pcUtRY3RmWUxmS1hGMjgwY2sxNXdiUFBLRnMxWFhjNEVzbkZrQ2NxaF9oNlJhMklseHhCdV95clVHQ0lKb0FCRjg5UW10cjBCRFNQcEZJcnhWYWZicDNMTml3SGlDeEE?oc=5
+47. BellaNaija: https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UTG9mSmNZNjdoYktJUEY5M3UwMVJaNkRDNUc1M1ljRkN5LUNWTUU1RFQ2SUR1aHYxRFVSMHFqOEZyQzBvLTIxUS16bnNJc2s2U2M1RHU2dUQ?oc=5
+48. Energetica India Magazine: https://news.google.com/rss/articles/CBMipwFBVV95cUxQcG1QNXVxU1huSWUxNUFZeHE1b2xmNzh3VXdnSmJYMXZWYkV4U1JoUlpUYUdDVERXWEhWOWdMWVE0UElBa09GbWFTQUwyaHRicmZGSzE4ZE5GQU0xTDY5UkxsV1RLVlBva3pfYlVseHBOaExxY0xNWHRJUHU3Z0JzVEpJR1dhT0M3NEF3WTdGXzBMMTFuSVFlVExsOGlveGJUQ09YVXhBNA?oc=5
+49. ThePrint: https://news.google.com/rss/articles/CBMiywFBVV95cUxPeUp3STAxcS1zVGlwWnBSY1c4azRNeFNDeWNkWUFfUGZiV1BNd0UwN2lkc1dsaExaTXIyLVB0UHBMbEJiZGJqMGhSNFBEVmJzQnFkSm00NHg2UFk4TXJMZ2RCSmJ2SWxmMGd3cGtnX0lTeGkwUGVVb0xpcXh5NDZtRTc3UFdMZldZQUFTWEc0M1Nycnh4dGRIRGdzejVMT0dhR3E4S3BXRGgyMUxkS0hqN1lfSElnLUs0Nng0WlIzN1I0ZzhvMXNneVdzZ9IB0AFBVV95cUxQZm1qMXhUYWdPZ1J0OFQzM3o4WVBGRlFIeVc4R1ZMckhuelFuS3YtcEdZRjlTMW1aWTJ4V3kwU2ZQX180djF5T1hGS1lUeXNhd2IxYTdoM0UzRGdycTBmc051cjFmUWdoZXJLWEhZYk5vRGVrWVJCdkpaTjN2QjNYSTgyekpIV1l0X1QtZzdQY21mUjh6d1N0MDJzaW12Yk5vSzREVFJVeXhsUHhJZ2dGSXR2MDI2b25ManJRSzZhdGxKV1BvaWV0SndrZkJLZHVI?oc=5
+50. BP&O: https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/
+51. Brandingmag: https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/
+52. The Dieline: https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/
+53. Figma Release Notes: https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans
 54. The Whisky Wire: https://news.google.com/rss/articles/CBMiigFBVV95cUxOa0tWTGdmQ3VUdUNFd295blJwNnJBWGR2eFAxNFRqLXZhemhsY1k5THRwRVRJQ3RhRzBXMl9kTmhDQUdmamlfRE1Wdk9tbnc0eHp1dzIyME1TeDZrcmNCSEk0Nk5YcVhFVjZnZ0F2N0F5VzJHdHlvallqajdMZ1NhUU9VUjNPVmZ4a2c?oc=5
 55. ET BrandEquity: https://news.google.com/rss/articles/CBMihAJBVV95cUxNOTdyaVFUMHhQSTlBbGVSQjZpek1YbTgtN2RoZVFmdHBEalNDMjVEejhsRV96NmY2WHA4cDAwWi0tbkZsODhzeHdfYnEyNzNqallFcWlPTjlUcnZ2LVdiQWN2S0VPOVd0Qlg4ZU4zNFNORTU5YTZZUGw4WjdjU09ZUGo3dy1NbWJHRnE1RmR2MENMbUxmLS1Ja0JsNzhSU0ZuNjJha2xzWGxfdHBiOHY2cjFCMWN5WWN0Uy0zU3ZzNjVNWEx3M2FrUTdHa3ZYNHoxbTlGZmJBblpBNXYwcnJuS3laQVlKWlM3a3ZXb2pUdmE2VDVLdC1zWDJ3OGVwb1hHM2ZtYtIBigJBVV95cUxQaHdnTzRqN1pXQUo2VEFwTmlwZjdpaGRhNUw0REo2TkVMX2xkMUgtank0NHNVU2ZEY0FMdVZXZ281T3VvZGRublJEZGVmM1drMF9yZWJPYllEc2x6Y3RjZzEwVklJVjE0Wm4zdUl5WFdPM05BR1YxNXFIVnk1X0M4Q0hBU0dyM3VnWDJjLUJpZlNyZjlhNlMtSkRjaWxVY2xHekFJT3dydTZzMGg1OFhkWEJwUlFUUzRucXJJRFVDem1qWG1RVTVGSEJlMF9lRC03aTJSc1NvNW1JUlhkcmlsY21uaUhBdmI1TXFPTzNheXhnQW5McldCUXlGZ0NxZl83Vi1CQ1lDejA1QQ?oc=5
 56. The Brand Identity: https://news.google.com/rss/articles/CBMipAFBVV95cUxPblVhQURvX0dLQkxYVGY3c1pYNXZPY2RUaVNkNDFYNkhIcUdTYXprZldQOURNLS1ockZsZ2NUWDFOVi1WTUNGcWwxdThjb3c5Xzl5NWdXZ2dDRlNsVHRhNzkySW5RNUc3R0d5WmpsWXlxWk1wbkZDMGg3N3VKenhfRnpxVG9IeGJwU1d0cW5ELWFhQks5ZkNialdGU3NIV2Z4VjdOTA?oc=5

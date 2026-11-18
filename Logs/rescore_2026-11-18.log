@@ -22,3 +22,16 @@
 09:00:44 [sheets] Runs: 1 rows -> ok
 09:00:49 [email] sent via Apps Script
 09:00:51 [telegram] sent
+09:02:54 [enrich] 0 Google News links resolved to original articles, 0 publisher summaries added | first decode error: {'success': True, 'decoded_url': 'https://www.futurebrand.com/thinking/a-new-positioning-for-futurebrand/'}
+09:04:24 [arabic] Gemini failed, falling back to free translation: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key
+09:04:54 [arabic] 0/40 stories machine-translated (free) | first error: TooManyRequests: Server Error: You made too many requests to the server.According to google, you are allowed to make 5 requests per secondand up to 200k request
+09:04:54 [rescore] 1339 articles re-scored, 238 marked as non-article pages
+09:04:57 [sheets] Sources: 102 rows -> ok
+09:05:02 [sheets] News: 200 rows -> ok
+09:05:06 [sheets] News: 200 rows -> ok
+09:05:10 [sheets] News: 200 rows -> ok
+09:05:15 [sheets] News: 200 rows -> ok
+09:05:20 [sheets] News: 200 rows -> ok
+09:05:25 [sheets] News: 200 rows -> ok
+09:05:30 [sheets] News: 139 rows -> ok
+09:05:33 [sheets] Runs: 1 rows -> ok
