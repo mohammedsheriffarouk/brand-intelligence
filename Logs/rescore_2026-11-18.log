@@ -62,3 +62,17 @@
 09:19:39 [sheets] News: 200 rows -> ok
 09:19:42 [sheets] News: 139 rows -> ok
 09:19:44 [sheets] Runs: 1 rows -> ok
+09:21:51 [enrich] 0 Google News links resolved to original articles, 0 publisher summaries added
+09:27:30 [arabic] Gemini failed, falling back to free translation: all models failed: gemini-3.8-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-3.7-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-3.6-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-3.5-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-2.5-flash=404:This model models/gemini-2.5-flash is no longer available to new users. Please update your | gemini-flash-latest=503:This m
+09:27:30 [arabic] diagnostics: ["available flash models: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash']"]
+09:28:27 [arabic] 0/40 stories machine-translated (free) | first error: available flash models: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash']
+09:28:27 [rescore] 1339 articles re-scored, 238 marked as non-article pages
+09:28:30 [sheets] Sources: 102 rows -> ok
+09:28:36 [sheets] News: 200 rows -> ok
+09:28:40 [sheets] News: 200 rows -> ok
+09:28:47 [sheets] News: 200 rows -> ok
+09:28:52 [sheets] News: 200 rows -> ok
+09:28:57 [sheets] News: 200 rows -> ok
+09:29:01 [sheets] News: 200 rows -> ok
+09:29:07 [sheets] News: 139 rows -> ok
+09:29:09 [sheets] Runs: 1 rows -> ok
