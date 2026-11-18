@@ -131,20 +131,22 @@ def chat_id(log=print):
     if CHAT_FILE.exists():
         return json.loads(CHAT_FILE.read_text())["chat_id"]
     try:
-        r = net.session().get(f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN']}/getUpdates", timeout=30).json()
+        r = net.session().get(f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN'].strip()}/getUpdates", timeout=30).json()
+        if not r.get("ok"):
+            log(f"[telegram] getUpdates refused: {r.get('error_code')} {r.get('description')} (check the token secret)")
         chats = [u[k]["chat"]["id"] for u in r.get("result", []) for k in ("message", "my_chat_member") if k in u]
         if chats:
             CHAT_FILE.write_text(json.dumps({"chat_id": str(chats[-1])}))
             log(f"[telegram] chat id auto-detected and saved")
             return str(chats[-1])
     except Exception as e:
-        log(f"[telegram] chat id detection failed: {e}")
+        log(f"[telegram] chat id detection failed: {type(e).__name__}: {e}"[:300])
     log("[telegram] no chat id yet: send any message to your bot, then it will be detected next run")
     return None
 
 
 def _tg(method, data=None, files=None):
-    tok = os.environ["TELEGRAM_BOT_TOKEN"]
+    tok = os.environ["TELEGRAM_BOT_TOKEN"].strip()
     r = net.session().post(f"https://api.telegram.org/bot{tok}/{method}", data=data, files=files, timeout=60)
     if not r.json().get("ok"):
         raise RuntimeError(r.text[:200])
