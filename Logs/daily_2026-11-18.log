@@ -230,3 +230,25 @@
 08:36:17 [sheets] News: 135 rows -> ok
 08:36:19 [sheets] Runs: 1 rows -> ok
 08:36:19 [done] ok {"sources_checked": 102, "sources_failed": 0, "items_seen": 1345, "items_new": 1302, "duplicates_prevented": 43} ['email:sent', 'telegram:skipped-no-chat', 'alerts:0']
+08:40:22 [discover] 'rebrand OR rebranding "new logo"': 8 items
+08:40:23 [discover] '"brand identity" unveils': 22 items
+08:40:23 [discover] '"brand value" Brand Finance OR Kantar OR Interbrand': 12 items
+08:40:23 [discover] 'branding agency acquires OR acquisition': 24 items
+08:40:23 [discover] 'rebrand Saudi OR KSA "new identity"': 3 items
+08:40:24 [discover] 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"': 4 items
+08:40:24 [discover] 'rebrand Oman OR Muscat': 0 items
+08:40:24 [discover] 'rebrand Egypt OR Cairo "new identity" OR "new logo"': 0 items
+08:40:24 [discover] 'هوية بصرية جديدة': 18 items
+08:40:25 [discover] 'شعار جديد علامة تجارية السعودية': 20 items
+08:40:25 [discover] 'هوية جديدة مصر شركة': 20 items
+08:40:25 [discover] 'Adobe OR Figma OR Canva new feature designers': 9 items
+08:40:25 [process] 3 new records, 139 duplicates prevented/linked, 0 non-article pages skipped
+08:40:25 [score] 0 high, 0 follow, 3 rejected
+08:40:28 [report] Brand_Intelligence_Daily_2026-11-18.html | pdf=yes | png=yes
+08:40:29 [email] already sent for this report — no duplicate
+08:40:29 [telegram] no chat id yet: send any message to your bot, then it will be detected next run
+08:40:32 [telegram] no chat id yet: send any message to your bot, then it will be detected next run
+08:40:35 [sheets] Sources: 102 rows -> ok
+08:40:38 [sheets] News: 3 rows -> ok
+08:40:40 [sheets] Runs: 1 rows -> ok
+08:40:40 [done] ok {"sources_checked": 0, "sources_failed": 0, "items_seen": 140, "items_new": 1, "duplicates_prevented": 139} ['email:duplicate-prevented', 'telegram:skipped-no-chat', 'alerts:0']

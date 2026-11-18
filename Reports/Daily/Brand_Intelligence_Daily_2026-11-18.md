@@ -1,10 +1,10 @@
 # Brand Intelligence Daily Brief
-*Wednesday 18 November 2026 · generated 18 Nov 2026 10:37 (Cairo)*
+*Wednesday 18 November 2026 · generated 18 Nov 2026 10:40 (Cairo)*
 
 **79** Stories · **0** High priority · **15** Regional · **11** Tools & AI
 
 ## Executive summary
-- 79 relevant stories (0 high priority) out of 1302 collected.
+- 79 relevant stories (0 high priority) out of 1303 collected.
 - Lead story: Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand — FutureBrand.
 - Top regional story: KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business (GCC, Middle East).
 - Top tool/AI update: ADC – The First Living, AI-Driven Brand Identity.
@@ -145,7 +145,7 @@
 - **Why it matters:** [AI-generated interpretation · rule template] AI capabilities are reshaping creative production and client expectations.
 - **Strategic implication:** [AI-generated interpretation] AI capabilities are reshaping creative production and client expectations.
 
-### [Wa&#039;ed Ventures backs Saudi cybersecurity startup COGNNA](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
+### [Wa'ed Ventures backs Saudi cybersecurity startup COGNNA](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
 *N11 — AI Innovation · Wamda · published 16 Nov 2026 · Research Only 66/100*
 
 - **Summary:** Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…
@@ -251,7 +251,7 @@
 - **Why it matters:** [AI-generated interpretation · rule template] A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.
 - **Strategic implication:** [AI-generated interpretation] A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.
 
-### [Wa&#039;ed Ventures backs Saudi cybersecurity startup COGNNA](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
+### [Wa'ed Ventures backs Saudi cybersecurity startup COGNNA](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
 *N11 — AI Innovation · Wamda · published 16 Nov 2026 · Research Only 66/100*
 
 - **Summary:** Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…
