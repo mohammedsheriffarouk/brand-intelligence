@@ -134,7 +134,9 @@ def chat_id(log=print):
         r = net.session().get(f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN'].strip()}/getUpdates", timeout=30).json()
         if not r.get("ok"):
             log(f"[telegram] getUpdates refused: {r.get('error_code')} {r.get('description')} (check the token secret)")
-        chats = [u[k]["chat"]["id"] for u in r.get("result", []) for k in ("message", "my_chat_member") if k in u]
+        res = r.get("result", [])
+        log(f"[telegram] getUpdates ok={r.get('ok')} updates={len(res)} kinds={sorted({k for u in res for k in u if k != 'update_id'})}")
+        chats = [u[k]["chat"]["id"] for u in res for k in ("message", "edited_message", "my_chat_member", "channel_post") if k in u]
         if chats:
             CHAT_FILE.write_text(json.dumps({"chat_id": str(chats[-1])}))
             log(f"[telegram] chat id auto-detected and saved")
