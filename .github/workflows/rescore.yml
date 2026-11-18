@@ -1,0 +1,8 @@
+name: Re-score all articles + resync Sheet (manual)
+on: {workflow_dispatch: {}}
+permissions: {contents: write, pages: write, id-token: write}
+jobs:
+  rescore:
+    uses: ./.github/workflows/_run.yml
+    with: {command: rescore}
+    secrets: inherit
