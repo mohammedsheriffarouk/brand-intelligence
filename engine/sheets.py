@@ -5,7 +5,8 @@ import json, os
 
 from . import db, net
 
-NEWS_COLS = ["news_id", "collected_at", "published_at", "date_status", "priority", "overall_score", "headline",
+NEWS_COLS = ["news_id", "collected_at", "published_at", "date_status", "priority", "overall_score", "headline_ar", "headline",
+             "summary_ar", "why_ar", "angle_ar",
              "source_name", "url", "image_url", "main_category", "news_type", "secondary_tags", "industry", "geography",
              "related_companies", "related_agencies", "short_summary", "detailed_summary", "main_development",
              "why_it_matters", "key_facts", "financial_data", "evidence_links", "strategic_insights", "content_angle",

@@ -22,11 +22,35 @@ TEXT:
 {text}"""
 
 
+def resolve_google_news(url):
+    """Google News RSS links are redirects; decode to the publisher's original article URL."""
+    if "news.google.com" not in url:
+        return url
+    try:
+        from googlenewsdecoder import gnewsdecoder
+        res = gnewsdecoder(url, interval=0.3)
+        if res.get("status") and res.get("decoded_url"):
+            return res["decoded_url"]
+    except Exception:
+        pass
+    return None
+
+
 def article_html(url):
-    if "news.google.com" in url:
+    if not url or "news.google.com" in url:
         return None
-    r, _ = net.get(url, check_robots=True)
+    r, _ = net.get(url, check_robots=True, attempts=1)
     return r.text if r else None
+
+
+def og_description(html):
+    for pat in (r'<meta[^>]+(?:property|name)=["\'](?:og:description|description|twitter:description)["\'][^>]+content=["\']([^"\']{40,})',
+                r'<meta[^>]+content=["\']([^"\']{40,})["\'][^>]+(?:property|name)=["\'](?:og:description|description)'):
+        m = re.search(pat, html or "", re.I)
+        if m:
+            import html as h
+            return h.unescape(m.group(1)).strip()
+    return None
 
 
 def og_image(html):
@@ -52,12 +76,8 @@ def call_llm(prompt):
     p = cfg["provider"]
     s = net.session()
     if p == "gemini" and os.getenv("GEMINI_API_KEY"):
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{cfg['model']}:generateContent"
-        r = s.post(url, params={"key": os.environ["GEMINI_API_KEY"]}, timeout=60, json={
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2}})
-        r.raise_for_status()
-        return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+        from .arabic import gemini_generate
+        return gemini_generate(prompt)
     if p == "anthropic" and os.getenv("ANTHROPIC_API_KEY"):
         r = s.post("https://api.anthropic.com/v1/messages", timeout=90, headers={
             "x-api-key": os.environ["ANTHROPIC_API_KEY"], "anthropic-version": "2023-06-01"},
@@ -87,20 +107,36 @@ def apply_llm(rec, data):
     rec["analysis_method"] = f"llm:{settings()['ai']['provider']}"
 
 
-def enrich(records, log=print, image_limit=30):
+def enrich(records, log=print, image_limit=40):
+    """For the top stories: resolve original URL, add image + publisher summary (og tags). Optional deep LLM analysis."""
     cfg = settings()["ai"]
-    ranked = sorted([r for r in records if not r.get("duplicate_of")], key=lambda r: -int(r["overall_score"]))
-    llm_budget = cfg["max_articles_per_day"] if cfg["provider"] != "none" else 0
+    ranked = sorted([r for r in records if not r.get("duplicate_of") and r.get("priority") != "Reject"],
+                    key=lambda r: -int(r["overall_score"]))
+    llm_budget = cfg["max_articles_per_day"] if cfg.get("deep_analysis") and cfg["provider"] != "none" else 0
+    resolved = enriched = 0
     for i, rec in enumerate(ranked[:max(image_limit, llm_budget)]):
         need_img = not rec.get("image_url") and i < image_limit
+        need_sum = len(rec.get("teaser") or "") < 60 and i < image_limit
         need_llm = llm_budget > 0 and int(rec["overall_score"]) >= cfg["only_if_score_at_least"]
-        if not (need_img or need_llm):
+        if not (need_img or need_sum or need_llm):
             continue
+        if "news.google.com" in rec["url"]:
+            orig = resolve_google_news(rec["url"])
+            if orig:
+                rec["evidence_links"] = list(dict.fromkeys((rec.get("evidence_links") or []) + [rec["url"]]))
+                rec["url"] = orig
+                resolved += 1
         html = article_html(rec["url"])
         if not html:
             continue
         if need_img:
-            rec["image_url"] = og_image(html)
+            rec["image_url"] = og_image(html) or rec.get("image_url")
+        if need_sum:
+            d = og_description(html)
+            if d:
+                rec["teaser"] = d[:600]
+                rec["_enriched"] = True
+                enriched += 1
         if need_llm and cfg.get("fetch_article_text", True):
             text = extract_text(html)
             if len(text) < 300:
@@ -112,4 +148,5 @@ def enrich(records, log=print, image_limit=30):
                     llm_budget -= 1
             except Exception as e:
                 log(f"[ai] {rec['news_id']} failed, kept rule analysis: {e}"[:200])
+    log(f"[enrich] {resolved} Google News links resolved to original articles, {enriched} publisher summaries added")
     return records

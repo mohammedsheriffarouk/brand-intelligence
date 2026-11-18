@@ -18,7 +18,8 @@ NEWS_FIELDS = ["news_id", "headline", "source_id", "source_name", "url", "canoni
                "financial_data", "evidence_links", "strategic_insights", "content_angle", "research_notes",
                "rebrand_analysis", "tool_analysis", "info_status", "credibility_score", "relevance_score",
                "impact_score", "content_score", "overall_score", "score_explanation", "priority",
-               "duplicate_key", "title_key", "duplicate_of", "editorial_status", "analysis_method", "via"]
+               "duplicate_key", "title_key", "duplicate_of", "editorial_status", "analysis_method", "via",
+               "headline_ar", "summary_ar", "why_ar", "angle_ar", "translation", "teaser"]
 
 SCHEMA = f"""
 CREATE TABLE IF NOT EXISTS sources ({", ".join(f + (" TEXT PRIMARY KEY" if f == "source_id" else " TEXT") for f in SOURCE_FIELDS)});
@@ -39,6 +40,10 @@ def connect(path=DB_PATH):
     con = sqlite3.connect(path)
     con.row_factory = sqlite3.Row
     con.executescript(SCHEMA)
+    have = {r[1] for r in con.execute("PRAGMA table_info(news)")}
+    for f in NEWS_FIELDS:
+        if f not in have:   # schema evolution: add new columns, keep history
+            con.execute(f"ALTER TABLE news ADD COLUMN {f} TEXT")
     return con
 
 

@@ -6,7 +6,7 @@ from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import db
+from . import arabic, db
 from .analyze import MENA
 from .config import settings
 
@@ -31,7 +31,8 @@ def load(con, since, until):
             r[f] = db.loads(r.get(f), [])
         r["overall_score"] = int(r["overall_score"] or 0)
         p = r.get("published_at")
-        r["pub_display"] = datetime.fromisoformat(p).astimezone(tz()).strftime("%d %b %Y") if p else "date not provided"
+        d = datetime.fromisoformat(p).astimezone(tz()) if p else None
+        r["pub_display"] = f"{d.day} {AR_MONTHS[d.month - 1]} {d.year}" if d else "تاريخ غير متاح"
     return rows
 
 
@@ -45,19 +46,19 @@ def build(con, kind="daily", day=None):
     if kind == "daily":
         start = local.replace(hour=0, minute=0, second=0, microsecond=0)
         since, until = start - timedelta(hours=6), now + timedelta(minutes=1)   # catches the early-morning run
-        label, fname = local.strftime("%A %d %B %Y"), f"Brand_Intelligence_Daily_{local:%Y-%m-%d}"
-        title, kicker, folder, per = "Brand Intelligence Daily Brief", "Daily", "Daily", 6
+        label, fname = ar_date(local), f"Brand_Intelligence_Daily_{local:%Y-%m-%d}"
+        title, kicker, folder, per = "النشرة اليومية للبراندنج", "Brand Intelligence · يومي", "Daily", 6
     elif kind == "weekly":
         since, until = now - timedelta(days=7), now
         y, w, _ = local.isocalendar()
-        label, fname = f"Week {w}, {y}", f"Brand_Intelligence_Weekly_{y}-{w:02d}"
-        title, kicker, folder, per = "Brand Intelligence Weekly", "Weekly intelligence", "Weekly", 6
+        label, fname = f"الأسبوع {w} · {y}", f"Brand_Intelligence_Weekly_{y}-{w:02d}"
+        title, kicker, folder, per = "التقرير الأسبوعي للبراندنج", "Brand Intelligence · أسبوعي", "Weekly", 6
     else:
         first = local.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
         prev = (first - timedelta(days=1)).replace(day=1)
         since, until = prev.astimezone(timezone.utc), first.astimezone(timezone.utc)
-        label, fname = prev.strftime("%B %Y"), f"Brand_Intelligence_Monthly_{prev:%Y-%m}"
-        title, kicker, folder, per = "Brand Intelligence Monthly", "Monthly industry report", "Monthly", 8
+        label, fname = f"{AR_MONTHS[prev.month - 1]} {prev.year}", f"Brand_Intelligence_Monthly_{prev:%Y-%m}"
+        title, kicker, folder, per = "التقرير الشهري لصناعة البراندنج", "Brand Intelligence · شهري", "Monthly", 8
     allrows = load(con, since, until)
     rows = keep(allrows)
     high = [r for r in rows if r["priority"] == "High Priority"]
@@ -67,7 +68,7 @@ def build(con, kind="daily", day=None):
     for s in SECTIONS:
         sections.append({"title": s, "stories": [r for r in rows[5:] if r["main_category"] == s][:per], "images": kind != "daily"})
     sections.append({"title": "MENA & GCC developments", "stories": [r for r in mena if r not in rows[:5]][:per], "images": False,
-                     "note": "Egypt · Saudi Arabia · UAE · Oman · wider GCC & MENA"})
+                     "note": "مصر · السعودية · الإمارات · عُمان · الخليج والمنطقة"})
     if kind == "monthly":
         sections.insert(1, {"title": "Brand valuation changes", "stories": [r for r in rows if r["news_type"].startswith("N09")][:8], "images": False})
         sections.insert(2, {"title": "Major company rebrands", "stories": [r for r in rows if r["news_type"][:3] in ("N02", "N03")][:10], "images": True})
@@ -76,22 +77,30 @@ def build(con, kind="daily", day=None):
         types = collections.Counter(r["news_type"] for r in rows).most_common(8)
         tags = collections.Counter(t for r in rows for t in r["secondary_tags"] + r["industry"]).most_common(8)
         agencies = collections.Counter(a for r in rows for a in r["related_agencies"]).most_common(10)
-        tables += [{"title": "Emerging trends (most frequent topics)", "head": ["Topic", "Stories"], "rows": types + tags},
-                   {"title": "Agencies & competitors in the news", "head": ["Agency / studio", "Mentions"], "rows": agencies}]
-    executive = [f"{len(rows)} relevant stories ({len(high)} high priority) out of {len(allrows)} collected."]
+        types = [(arabic.TYPE_AR.get(t[:3], t), n) for t, n in types]
+        tables += [{"title": "الاتجاهات الصاعدة (أكتر المواضيع تكراراً)", "head": ["الموضوع", "عدد الأخبار"], "rows": types + tags},
+                   {"title": "وكالات ومنافسين في الأخبار", "head": ["الوكالة / الاستوديو", "مرات الذكر"], "rows": agencies}]
+    t = lambda r: r.get("headline_ar") or r["headline"]
+    executive = [f"{len(rows)} خبر مهم ({len(high)} أولوية عالية) من أصل {len(allrows)} خبر اتجمعوا."]
     if rows:
-        executive.append(f"Lead story: {rows[0]['headline']} — {rows[0]['source_name']}.")
+        executive.append(f"الخبر الأبرز: {t(rows[0])} ({rows[0]['source_name']}).")
     if mena:
-        executive.append(f"Top regional story: {mena[0]['headline']} ({', '.join(mena[0]['geography'][:2])}).")
+        executive.append(f"أهم خبر إقليمي: {t(mena[0])} ({'، '.join(arabic.GEO_AR.get(g, g) for g in mena[0]['geography'][:2])}).")
     if tools:
-        executive.append(f"Top tool/AI update: {tools[0]['headline']}.")
+        executive.append(f"أهم تحديث أدوات / AI: {t(tools[0])}.")
     verify = [r for r in rows if r["editorial_status"].startswith("Needs verification")]
     if verify:
-        executive.append(f"{len(verify)} stories carry unverified financial claims — not approved for publication.")
-    stats = [("Stories", len(rows)), ("High priority", len(high)), ("Regional", len(mena)), ("Tools & AI", len(tools))]
-    opps = [{"angle": r["content_angle"], "headline": r["headline"], "url": r["url"]} for r in rows[:8] if r.get("content_angle")]
+        executive.append(f"{len(verify)} خبر فيهم أرقام مالية مش متأكَّد منها، فماتنشرهمش قبل المراجعة.")
+    stats = [("خبر", len(rows)), ("أولوية عالية", len(high)), ("إقليمي", len(mena)), ("أدوات و AI", len(tools))]
+    opps = [{"angle": r.get("angle_ar") or r["content_angle"], "headline": t(r), "url": r["url"]} for r in rows[:8]]
+    trans = {r.get("translation") for r in rows if r.get("translation")}
+    tnote = "Gemini" if "gemini" in trans else ("Google Translate (آلية، ممكن تحتاج مراجعة)" if trans else "مافيش")
     ctx = dict(title=title, kicker=kicker, period=label, generated=now.astimezone(tz()).strftime("%d %b %Y %H:%M"),
-               stats=stats, executive=executive, sections=sections, tables=tables, opportunities=opps, refs=rows[:60])
+               stats=stats, executive=executive, sections=sections, tables=tables, opportunities=opps, refs=rows[:60],
+               ar={"type": arabic.TYPE_AR, "section": arabic.SECTION_AR, "priority": arabic.PRIORITY_AR, "geo": arabic.GEO_AR,
+                   "date": {"older article (not breaking)": "خبر قديم (مش عاجل)", "missing publication date": "تاريخ النشر مش متاح",
+                            "invalid (future date)": "تاريخ غير صحيح"}},
+               translation_note=tnote)
     out = REPORTS / folder
     out.mkdir(parents=True, exist_ok=True)
     html_path = out / f"{fname}.html"
@@ -106,21 +115,22 @@ def build(con, kind="daily", day=None):
 
 
 def markdown(c):
-    L = [f"# {c['title']}", f"*{c['period']} · generated {c['generated']} (Cairo)*", "",
-         " · ".join(f"**{v}** {k}" for k, v in c["stats"]), "", "## Executive summary"] + [f"- {e}" for e in c["executive"]]
+    L = [f"# {c['title']}", f"*{c['period']} · {c['generated']} (القاهرة)*", "",
+         " · ".join(f"**{v}** {k}" for k, v in c["stats"]), "", "## الملخص التنفيذي"] + [f"- {e}" for e in c["executive"]]
     for s in c["sections"]:
-        L += ["", f"## {s['title']} ({len(s['stories'])})"]
+        L += ["", f"## {arabic.SECTION_AR.get(s['title'], s['title'])} ({len(s['stories'])})"]
         for n in s["stories"]:
-            L += ["", f"### [{n['headline']}]({n['url']})",
-                  f"*{n['news_type']} · {n['source_name']} · published {n['pub_display']} · {n['priority']} {n['overall_score']}/100*",
-                  "", f"- **Summary:** {n['short_summary']}", f"- **Why it matters:** {n['why_it_matters']}"]
+            L += ["", f"### [{n.get('headline_ar') or n['headline']}]({n['url']})", f"*{n['headline']}*",
+                  f"*{arabic.TYPE_AR.get(n['news_type'][:3], n['news_type'])} · {n['source_name']} · {n['pub_display']} · "
+                  f"{arabic.PRIORITY_AR.get(n['priority'], n['priority'])} {n['overall_score']}/100*",
+                  "", f"- **الملخص:** {n.get('summary_ar') or n['short_summary']}", f"- **ليه مهم:** {n.get('why_ar') or ''}"]
             for f in n["financial_data"][:4]:
-                L.append(f"- **Data:** {f['value']} — {f['metric']} ({f['status']})")
-            L.append(f"- **Strategic implication:** {n['strategic_insights']}")
+                L.append(f"- **رقم:** {f['value']}: {f['metric']} ({f['status']})")
+            L.append(f"- **زاوية محتوى:** {n.get('angle_ar') or ''}")
     for t in c["tables"]:
         L += ["", f"## {t['title']}", "", "| " + " | ".join(t["head"]) + " |", "|" + "---|" * len(t["head"])]
         L += ["| " + " | ".join(str(x) for x in r) + " |" for r in t["rows"]]
-    L += ["", "## Source references"] + [f"{i}. {n['source_name']} — {n['url']}" for i, n in enumerate(c["refs"], 1)]
+    L += ["", "## المصادر"] + [f"{i}. {n['source_name']}: {n['url']}" for i, n in enumerate(c["refs"], 1)]
     return "\n".join(L) + "\n"
 
 
@@ -156,15 +166,21 @@ def to_pdf(html_path, out):
     return _render(html_path, out, "pdf")
 
 
-LABEL = {"Branding & Rebranding": "Branding", "Business Impact & Brand Value": "Business", "Tools & AI Updates": "Tools & AI",
-         "Agency & Studio News": "Agencies", "Research & Industry Insights": "Research"}
+LABEL = {"Branding & Rebranding": "براندنج", "Business Impact & Brand Value": "أعمال", "Tools & AI Updates": "أدوات و AI",
+         "Agency & Studio News": "وكالات", "Research & Industry Insights": "أبحاث"}
+AR_MONTHS = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"]
+AR_DAYS = ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت", "الأحد"]
+
+
+def ar_date(d):
+    return f"{AR_DAYS[d.weekday()]} {d.day} {AR_MONTHS[d.month - 1]} {d.year}"
 
 
 def brief_card(rows, stats, local, out, link=None):
-    top = [dict(r, label=LABEL.get(r["main_category"], "News")) for r in rows[:5]]
+    top = [dict(r, label=LABEL.get(r["main_category"], "خبر"), pr=arabic.PRIORITY_AR.get(r["priority"], r["priority"])) for r in rows[:5]]
     tmp = out.with_suffix(".card.html")
     tmp.write_text(env.get_template("brief_card.html.j2").render(top=top, stats=stats, link=link,
-                                                                  date_long=local.strftime("%A %d %B %Y")), encoding="utf-8")
+                                                                  date_long=ar_date(local)), encoding="utf-8")
     res = _render(tmp, out, "png")
     tmp.unlink(missing_ok=True)
     return res

@@ -24,7 +24,7 @@ if __name__ == "__main__":
     elif cmd in ("weekly", "monthly"):
         pipeline.run_periodic(cmd, notify_on)
     elif cmd == "rescore":
-        pipeline.rescore()
+        pipeline.rescore(resend="--resend" in sys.argv)
     elif cmd == "status":
         print(json.dumps(pipeline.dashboard(db.connect()), indent=1))
     else:

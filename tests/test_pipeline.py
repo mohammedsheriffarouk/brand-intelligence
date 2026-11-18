@@ -33,6 +33,7 @@ def env(tmp_path, monkeypatch):
     shutil.copytree(ROOT, work, ignore=shutil.ignore_patterns("Database", "Reports", "Logs", "tests", ".git", "__pycache__"))
     for d in ("Database", "Reports", "Logs"):
         (work / d).mkdir()
+    (work / "Configuration" / "telegram_chat.json").unlink(missing_ok=True)
     # minimal 4-source registry
     (work / "Configuration" / "sources_seed.yaml").write_text("""sources:
 - {id: T01, name: Test Branding Mag, url: "https://brandmag.example.com/", category: A_branding_news, geo: Global, topics: x, type: Publication, official: secondary, reliability: 5, frequency: daily}
@@ -98,7 +99,7 @@ def test_end_to_end(env, monkeypatch):
         def login(self, u, p): pass
         def send_message(self, m):
             sent["email"] += 1
-            assert m["Subject"].startswith("Brand Intelligence Daily Brief — ")
+            assert m["Subject"].startswith("Brand Intelligence · النشرة اليومية · ")
             assert any(p.get_filename() and p.get_filename().endswith(".pdf") for p in m.iter_attachments())
 
     monkeypatch.setattr(notify.smtplib, "SMTP_SSL", FakeSMTP)
@@ -143,7 +144,7 @@ def test_end_to_end(env, monkeypatch):
     for f in ["news.csv", "news.json", "sources.csv", "sources.json"]:
         assert (env / "Database" / f).exists()
     daily = list((env / "Reports" / "Daily").glob("Brand_Intelligence_Daily_*.html"))
-    assert daily and "Acme Bank" in daily[0].read_text()
+    assert daily and "Acme Bank" in daily[0].read_text() and "ليه مهم" in daily[0].read_text()
     assert daily[0].with_suffix(".md").exists()
     assert (env / "Reports" / "index.html").exists()
     # --- notifications sent once

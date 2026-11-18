@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from . import analyze, collect, db, enrich, notify, process, report, sheets, sources
+from . import analyze, arabic, collect, db, enrich, notify, process, report, sheets, sources
 from .config import settings
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -68,6 +68,10 @@ def run_daily(notify_on=True, force=False):
             analyze.analyze(r, _source_for(r, by_id, by_domain))
         enrich.enrich(recs, log)
         for r in recs:
+            if r.pop("_enriched", False):   # publisher summary found -> re-classify/score with the richer text
+                analyze.analyze(r, _source_for(r, by_id, by_domain))
+        arabic.arabize(recs, log)
+        for r in recs:
             r.pop("_type", None)
             db.upsert(con, "news", r, "news_id")
         con.commit()
@@ -100,7 +104,7 @@ def run_daily(notify_on=True, force=False):
     return status
 
 
-def rescore(log=None):
+def rescore(log=None, resend=False):
     """Re-apply current classification/scoring rules to every stored article (after rule changes) and resync the Sheet."""
     log = log or Logger("rescore")
     con = db.connect()
@@ -117,19 +121,27 @@ def rescore(log=None):
             old_geo = db.loads(row.get("geography"), [])
             rec = {k: row.get(k) for k in ("news_id", "headline", "url", "published_at", "image_url", "source_id",
                                            "source_name", "date_status", "duplicate_of", "via")}
-            rec["teaser"] = (row.get("detailed_summary") or "").replace("[Publisher excerpt] ", "").replace("Not Disclosed", "")
+            rec["teaser"] = row.get("teaser") or (row.get("detailed_summary") or "").replace("[Publisher excerpt] ", "").replace("Not Disclosed", "")
             rec["geo_hint"] = next((g for g in old_geo if g in analyze.MENA), None)
             analyze.analyze(rec, _source_for(rec, by_id, by_domain))
             rec.pop("_type", None)
-            row.update({k: v for k, v in rec.items() if k not in ("teaser", "geo_hint")})
+            row.update({k: v for k, v in rec.items() if k != "geo_hint"})
             if row.get("duplicate_of"):
                 row["editorial_status"] = "duplicate (linked to original)"
+    arabic.arabize(rows, log)
+    for row in rows:
         db.upsert(con, "news", row, "news_id")
     con.commit()
     log(f"[rescore] {len(rows)} articles re-scored, {junk} marked as non-article pages")
     db.export(con)
     sheets.sync(con, rows, log)
-    report.build(con, "daily")
+    rep = report.build(con, "daily")
+    if resend:   # re-send today's brief after a rebuild (clears today's "already sent" marks)
+        sent = json.loads(notify.SENT.read_text()) if notify.SENT.exists() else {}
+        sent = {k: v for k, v in sent.items() if rep["fname"] not in k}
+        notify.SENT.write_text(json.dumps(sent, indent=1))
+        notify.send_email(rep, log)
+        notify.send_telegram(rep, log)
     dashboard(con)
 
 
@@ -172,8 +184,8 @@ def dashboard(con):
     v = (Path(__file__).parent / "templates" / "viewer.html").read_text(encoding="utf-8")
     (ROOT / "Reports" / "viewer.html").write_text(v.replace('<script>\nconst API', f'<script>window.BI_API={json.dumps(api)};</script>\n<script>\nconst API', 1), encoding="utf-8")
     (ROOT / "Reports" / "data").mkdir(exist_ok=True)
-    keep = ["news_id", "collected_at", "published_at", "priority", "overall_score", "headline", "source_name", "url", "image_url",
-            "main_category", "news_type", "geography", "short_summary", "duplicate_of"]
+    keep = ["news_id", "collected_at", "published_at", "priority", "overall_score", "headline", "headline_ar", "summary_ar",
+            "source_name", "url", "image_url", "main_category", "news_type", "geography", "short_summary", "duplicate_of"]
     recent = db.rows(con, "SELECT * FROM news WHERE collected_at >= ?", ((datetime.now(timezone.utc) - timedelta(days=31)).isoformat(),))
     (ROOT / "Reports" / "data" / "news.json").write_text(json.dumps([{k: r.get(k) for k in keep} for r in recent], ensure_ascii=False), encoding="utf-8")
     reps = sorted((ROOT / "Reports").glob("*/Brand_Intelligence_*.html"), reverse=True)[:40]

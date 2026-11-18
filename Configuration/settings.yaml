@@ -35,9 +35,13 @@ search_discovery:
 #  none      -> rule-based analysis only (free, deterministic)  [DEFAULT]
 #  gemini    -> Google AI Studio free tier (needs GEMINI_API_KEY secret; free tier has rate limits and Google may use free-tier data to improve products)
 #  anthropic -> Claude API (PAID, separate from a Claude subscription; needs ANTHROPIC_API_KEY)
+language: ar                     # reports, email and Telegram in Arabic (names & terms stay English)
+
 ai:
-  provider: none
-  model: gemini-2.5-flash
+  provider: gemini               # used only if the GEMINI_API_KEY secret exists; otherwise rules + free translation
+  model: gemini-flash-latest
+  model_fallbacks: [gemini-2.5-flash, gemini-2.5-flash-lite, gemini-2.0-flash]
+  deep_analysis: false           # true = also send full article text for per-article analysis (more quota)
   max_articles_per_day: 20       # hard cap so nothing silently accumulates cost/quota
   only_if_score_at_least: 60
   fetch_article_text: true       # reads article page (robots.txt respected) for top items only; summaries only, never republished
