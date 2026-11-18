@@ -19,5 +19,16 @@ Run with `python -m pytest -v tests` against **synthetic fixture feeds** (exampl
 
 `Documentation/test_output.txt` has the raw pytest output.
 
-## Phase 5b — Live test on GitHub Actions — **PENDING**
-Blocked until the repository and secrets exist (see OPERATING_GUIDE §Setup). The first `validate` run will produce the real RSS status for all 102 sources in `Database/sources.csv`. Results will be appended here.
+## Phase 5b — Live test on GitHub Actions (2026-11-18) — **PASSED**
+| Check | Result |
+|---|---|
+| Source validation (all 102) | 29 working RSS feeds (tested), 73 via Google News `site:` search. Bot-blocked (HTTP 403): Design Week, Creative Review, The Drum, Marketing Week, Adobe, Canva, OpenAI, Arab News, Khaleej Times, Ahram Online, others |
+| Collection | 102 sources checked, 0 failed; 1,345 items seen on first run |
+| Dedup | 43 duplicates on run 1; run 2 → 139 prevented, 1 new |
+| Non-article filter | 238 agency office/contact/login pages removed after real-data review |
+| Reports | Daily HTML + MD + PDF + PNG generated in Actions (Playwright Chromium) |
+| Email | Sent via Apps Script (MailApp); re-runs → "no duplicate" |
+| Telegram | Chat id auto-detected; brief image + top stories + PDF delivered |
+| Google Sheet | Sources (102), News (1,339), Runs synced |
+| Viewer | Live on GitHub Pages, reads the Sheet via Apps Script; filters render, no console errors |
+| Scoring after tuning | First-day fresh stories: 4 Worth Following, ~55 Research Only, rest rejected as off-topic business news. 0 High Priority (expected for rule-based scoring without article text) |
