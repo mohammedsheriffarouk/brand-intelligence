@@ -8,3 +8,17 @@
 08:48:46 [sheets] News: 200 rows -> ok
 08:48:50 [sheets] News: 139 rows -> ok
 08:48:52 [sheets] Runs: 1 rows -> ok
+08:59:26 [enrich] 0 Google News links resolved to original articles, 0 publisher summaries added
+09:00:05 [arabic] 0/60 stories machine-translated (free)
+09:00:05 [rescore] 1339 articles re-scored, 238 marked as non-article pages
+09:00:08 [sheets] Sources: 102 rows -> ok
+09:00:13 [sheets] News: 200 rows -> ok
+09:00:19 [sheets] News: 200 rows -> ok
+09:00:24 [sheets] News: 200 rows -> ok
+09:00:29 [sheets] News: 200 rows -> ok
+09:00:33 [sheets] News: 200 rows -> ok
+09:00:38 [sheets] News: 200 rows -> ok
+09:00:41 [sheets] News: 139 rows -> ok
+09:00:44 [sheets] Runs: 1 rows -> ok
+09:00:49 [email] sent via Apps Script
+09:00:51 [telegram] sent

@@ -1,624 +1,680 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brand Intelligence Daily Brief</title>
+<title>النشرة اليومية للبراندنج</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#14110F;--muted:#6B645C;--line:#E6E0D8;--paper:#FBF8F4;--card:#fff;--accent:#C2410C;--hi:#B91C1C;--fo:#B45309;--re:#475569;--ok:#15803D}
+:root{--ink:#14110F;--muted:#6B645C;--line:#E6E0D8;--paper:#FBF8F4;--card:#fff;--accent:#C2410C;--hi:#B91C1C;--fo:#B45309;--re:#475569}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 "IBM Plex Sans Arabic",Inter,system-ui,sans-serif}
 .wrap{max-width:860px;margin:0 auto;padding:28px 18px 60px}
 header{border-bottom:3px solid var(--ink);padding-bottom:16px;margin-bottom:22px}
-.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
-h1{font-family:Fraunces,Georgia,serif;font-size:34px;line-height:1.1;margin:6px 0 4px}
+.kicker{font-size:13px;color:var(--accent);font-weight:700}
+h1{font-size:32px;line-height:1.3;margin:6px 0 4px;font-weight:700}
 .meta{color:var(--muted);font-size:13px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:18px 0 6px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
-.stat b{display:block;font-size:22px;font-family:Fraunces,Georgia,serif}
+.stat b{display:block;font-size:24px}
 .stat span{font-size:12px;color:var(--muted)}
-.exec{background:var(--card);border-left:4px solid var(--accent);padding:14px 16px;border-radius:0 10px 10px 0;margin:18px 0}
+.exec{background:var(--card);border-right:4px solid var(--accent);padding:14px 16px;border-radius:10px 0 0 10px;margin:18px 0}
 .exec li{margin:4px 0}
-h2{font-family:Fraunces,Georgia,serif;font-size:22px;margin:34px 0 12px;padding-top:10px;border-top:1px solid var(--line)}
-h2 small{font-family:Inter,sans-serif;font-size:12px;color:var(--muted);font-weight:500;margin-left:6px}
+h2{font-size:22px;margin:34px 0 12px;padding-top:10px;border-top:1px solid var(--line)}
+h2 small{font-size:12px;color:var(--muted);font-weight:500;margin-right:6px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0 0 14px;page-break-inside:avoid;break-inside:avoid}
-.card .img{width:100%;height:200px;object-fit:cover;display:block;background:#EFE9E1}
+.card .img{width:100%;height:210px;object-fit:cover;display:block;background:#EFE9E1}
 .card .body{padding:14px 16px 16px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
-.tag{font-size:11px;padding:2px 8px;border-radius:99px;background:#F3EEE7;color:var(--muted)}
-.p-High{background:#FEE2E2;color:var(--hi);font-weight:600}.p-Worth{background:#FEF3C7;color:var(--fo);font-weight:600}
-.p-Research{background:#E2E8F0;color:var(--re)}
-.card h3{font-size:18px;line-height:1.3;margin:4px 0 6px;font-family:Fraunces,Georgia,serif;font-weight:600}
+.tag{font-size:11.5px;padding:1px 9px;border-radius:99px;background:#F3EEE7;color:var(--muted)}
+.p-High{background:#FEE2E2;color:var(--hi);font-weight:700}.p-Worth{background:#FEF3C7;color:var(--fo);font-weight:700}.p-Research{background:#E2E8F0;color:var(--re)}
+.card h3{font-size:19px;line-height:1.5;margin:4px 0 2px;font-weight:700}
 .card h3 a{color:inherit;text-decoration:none}
+.en{font:13px/1.45 Inter,sans-serif;color:var(--muted);direction:ltr;text-align:left;margin-bottom:8px}
 .src{font-size:12.5px;color:var(--muted);margin-bottom:8px}
-.row{margin:7px 0;font-size:14px}.row b{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:block}
-.data{font-size:13px;background:#FFF7ED;border-radius:8px;padding:8px 10px;margin:8px 0}
-.link{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;color:var(--accent);word-break:break-all}
-.score{float:right;font-family:Fraunces,Georgia,serif;font-size:20px;color:var(--ink)}
+.row{margin:8px 0;font-size:15px}.row b{font-size:12px;color:var(--accent);display:block}
+.data{font-size:13.5px;background:#FFF7ED;border-radius:8px;padding:8px 10px;margin:8px 0}
+.link{display:inline-block;margin-top:8px;font-size:13.5px;font-weight:700;color:var(--accent)}
+.url{display:block;font:11.5px Inter,sans-serif;color:var(--muted);direction:ltr;text-align:left;word-break:break-all;margin-top:2px}
+.score{float:left;font:700 20px Inter,sans-serif}
 .compact li{margin:6px 0}
-table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card)}td,th{border:1px solid var(--line);padding:6px 8px;text-align:left}
-.refs{font-size:12px;color:var(--muted);word-break:break-all}
-footer{margin-top:40px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
-[dir=auto]{unicode-bidi:plaintext}
-@media print{body{background:#fff}.wrap{max-width:none;padding:0 10mm}.card .img{height:160px}}
-@media (max-width:520px){h1{font-size:27px}.card .img{height:170px}}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card)}td,th{border:1px solid var(--line);padding:6px 8px;text-align:right}
+.refs{font-size:12px;color:var(--muted)}.refs a{direction:ltr;unicode-bidi:embed;word-break:break-all}
+footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+@media print{body{background:#fff}.wrap{max-width:none;padding:0 10mm}.card .img{height:170px}}
+@media (max-width:520px){h1{font-size:26px}.card .img{height:180px}}
 </style>
 </head>
 <body><div class="wrap">
 <header>
-  <div class="kicker">Daily</div>
-  <h1>Brand Intelligence Daily Brief</h1>
-  <div class="meta">Wednesday 18 November 2026 · Generated 18 Nov 2026 10:48 (Cairo) · Mohamed Sherif · Brand Intelligence</div>
-  <div class="stats"><div class="stat"><b>79</b><span>Stories</span></div><div class="stat"><b>0</b><span>High priority</span></div><div class="stat"><b>15</b><span>Regional</span></div><div class="stat"><b>11</b><span>Tools & AI</span></div></div>
+  <div class="kicker">Brand Intelligence · يومي</div>
+  <h1>النشرة اليومية للبراندنج</h1>
+  <div class="meta">الأربعاء 18 نوفمبر 2026 · اتعمل 18 Nov 2026 11:00 (بتوقيت القاهرة)</div>
+  <div class="stats"><div class="stat"><b>79</b><span>خبر</span></div><div class="stat"><b>0</b><span>أولوية عالية</span></div><div class="stat"><b>15</b><span>إقليمي</span></div><div class="stat"><b>11</b><span>أدوات و AI</span></div></div>
 </header>
 
-<div class="exec"><b>Executive summary</b><ul><li dir="auto">79 relevant stories (0 high priority) out of 1304 collected.</li><li dir="auto">Lead story: Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand — FutureBrand.</li><li dir="auto">Top regional story: KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business (GCC, Middle East).</li><li dir="auto">Top tool/AI update: ADC – The First Living, AI-Driven Brand Identity.</li></ul></div>
+<div class="exec"><b>الملخص التنفيذي</b><ul><li>79 خبر مهم (0 أولوية عالية) من أصل 1304 خبر اتجمعوا.</li><li>الخبر الأبرز: Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand (FutureBrand).</li><li>أهم خبر إقليمي: KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business (الخليج، الشرق الأوسط).</li><li>أهم تحديث أدوات / AI: ADC – The First Living, AI-Driven Brand Identity.</li></ul></div>
 
 
 
 
-<h2>Top stories <small>5</small></h2>
+<h2>أهم الأخبار <small>5</small></h2>
 
 
 <article class="card">
   
   <div class="body">
     <span class="score">80</span>
-    <div class="tags"><span class="tag p-Worth">Worth Following</span><span class="tag">N02 — Rebranding</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand</a></h3>
-    <div class="src">FutureBrand · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Worth">يستحق المتابعة</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">Read original ↗</a>
+    <div class="src">FutureBrand · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DM</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">77</span>
-    <div class="tags"><span class="tag p-Worth">Worth Following</span><span class="tag">N01 — New Brand Launch</span><span class="tag">GCC</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business</a></h3>
-    <div class="src">Zawya · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A new brand entering the market — useful to study naming, positioning and launch identity choices.</div>
+    <div class="tags"><span class="tag p-Worth">يستحق المتابعة</span><span class="tag">إطلاق علامة جديدة</span><span class="tag">الخليج</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A new brand entering the market — useful to study naming, positioning and launch identity choices.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">Read original ↗</a>
+    <div class="src">Zawya · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>علامة جديدة بتدخل السوق: فرصة تدرس اختيارات الاسم والـ positioning والهوية من أول يوم.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>تحليل علامة جديدة: الاسم والـ positioning والهوية.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qM</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">75</span>
-    <div class="tags"><span class="tag p-Worth">Worth Following</span><span class="tag">N02 — Rebranding</span><span class="tag">UAE</span><span class="tag">GCC</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles</a></h3>
-    <div class="src">Transform magazine · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Worth">يستحق المتابعة</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">الإمارات</span><span class="tag">الخليج</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">Read original ↗</a>
+    <div class="src">Transform magazine · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZ</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">72</span>
-    <div class="tags"><span class="tag p-Worth">Worth Following</span><span class="tag">N02 — Rebranding</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles</a></h3>
-    <div class="src">Transform magazine · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Worth">يستحق المتابعة</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">Read original ↗</a>
+    <div class="src">Transform magazine · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VN</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">69</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">Europe</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles</a></h3>
-    <div class="src">Transform magazine · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">أوروبا</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">Read original ↗</a>
+    <div class="src">Transform magazine · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1O</span>
   </div>
 </article>
 
-<h2>Branding & Rebranding <small>6</small></h2>
+<h2>البراندنج وإعادة الهوية <small>6</small></h2>
 
 
 <article class="card">
   
   <div class="body">
     <span class="score">69</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">Orb Case Study: Rebrand to $335M Adyen Sale</a></h3>
-    <div class="src">How&How · Published 10 Nov 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="data"><b>Important data</b> (publisher claims)<br>• $335M — Unlabelled figure <i>(Publisher claim — official source)</i></div>
-    <div class="row"><b>Strategic implication</b>Commercial figures are reported by the publisher; no causal link between branding and results is claimed.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">Read original ↗</a>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">Orb Case Study: Rebrand to $335M Adyen Sale</a></h3>
+    
+    <div class="src">How&How · نُشر 10 نوفمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    <div class="data"><b>أرقام مذكورة</b> (ادعاءات الناشر، مش متأكَّد منها)<br>• <span dir="ltr">$335M</span>: Unlabelled figure</div>
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">66</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N18 — Packaging Innovation</span><span class="tag">North America</span></div>
-    <h3 dir="auto"><a href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">M/OTG brings a bold, timeless visual identity to heritage kosher brand J&J Dairy</a></h3>
-    <div class="src">BP&O · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>American kosher brand J&J Dairy dates all the way back to the 1940s, when two brothers-in-law began making kosher cream cheese. Based in Elizabethport, New Jersey, the company has since expanded its range considerably,…</div>
-    <div class="row"><b>Why it matters</b>Packaging is where brand meets shelf — high visual content value.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">Packaging</span><span class="tag">أمريكا الشمالية</span></div>
+    <h3><a href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">M/OTG brings a bold, timeless visual identity to heritage kosher brand J&J Dairy</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Packaging is where brand meets shelf — high visual content value.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">Read original ↗</a>
+    <div class="src">BP&O · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">American kosher brand J&J Dairy dates all the way back to the 1940s, when two brothers-in-law began making kosher cream cheese. Based in Elizabethport, New Jersey, the company has since expanded its range considerably,…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>الـ Packaging هو نقطة لقاء العلامة بالرف، وقيمته البصرية عالية للمحتوى.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">66</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby</a></h3>
-    <div class="src">BP&O · Published 03 Nov 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>Tabby is a Middle East-born fintech app, founded by Hosam Arab and Daniil Barkalov in 2019 and now billed as “the money app that lets you spend, send, save and boss money around”. Not quite sure what “bossing” money…</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">Read original ↗</a>
+    <div class="src">BP&O · نُشر 3 نوفمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Tabby is a Middle East-born fintech app, founded by Hosam Arab and Daniil Barkalov in 2019 and now billed as “the money app that lets you spend, send, save and boss money around”. Not quite sure what “bossing” money…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">66</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N01 — New Brand Launch</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5">Boundless Brand Design creates a new brand world and packaging for PG tips</a></h3>
-    <div class="src">Pentawards · Published 12 Nov 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A new brand entering the market — useful to study naming, positioning and launch identity choices.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إطلاق علامة جديدة</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5">Boundless Brand Design creates a new brand world and packaging for PG tips</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A new brand entering the market — useful to study naming, positioning and launch identity choices.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5">Read original ↗</a>
+    <div class="src">Pentawards · نُشر 12 نوفمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>علامة جديدة بتدخل السوق: فرصة تدرس اختيارات الاسم والـ positioning والهوية من أول يوم.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>تحليل علامة جديدة: الاسم والـ positioning والهوية.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1Zxb</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">65</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">Asia Pacific</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5">Air Heel Plantar Fasciitis - Air India unveils new logo plane colour scheme after rebranding India Today</a></h3>
-    <div class="src">ascoltitv.it · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">آسيا</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5">Air Heel Plantar Fasciitis - Air India unveils new logo plane colour scheme after rebranding India Today</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5">Read original ↗</a>
+    <div class="src">ascoltitv.it · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltc</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">65</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">GCC</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company</a></h3>
-    <div class="src">The Peninsula Qatar · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">الخليج</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">Read original ↗</a>
+    <div class="src">The Peninsula Qatar · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUT</span>
   </div>
 </article>
 
-<h2>Business Impact & Brand Value <small>6</small></h2>
+<h2>الأثر التجاري وقيمة العلامة <small>6</small></h2>
 
 
 <article class="card">
   
   <div class="body">
     <span class="score">65</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N08 — Financial Results</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Nike spent years reinventing Air. Meet the new Tuned Air (exclusive)</a></h3>
-    <div class="src">Fast Company Co.Design · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>For half a century, Nike has been synonymous with Air. The cushioning—developed at NASA, then incorporated inside a 1978 running shoe and the Air Max 1—came to represent Nike’s commitment to cutting-edge innovation.…</div>
-    <div class="row"><b>Why it matters</b>Financial results give hard numbers for commercial context; causality to branding must not be assumed.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">نتائج مالية</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Nike spent years reinventing Air. Meet the new Tuned Air (exclusive)</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Financial results give hard numbers for commercial context; causality to branding must not be assumed.</div>
-    <div class="row"><b>Content angle</b>Business story: the numbers, with an honest note on what branding can and cannot claim.</div>
-    <a class="link" href="https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Read original ↗</a>
+    <div class="src">Fast Company Co.Design · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">For half a century, Nike has been synonymous with Air. The cushioning—developed at NASA, then incorporated inside a 1978 running shoe and the Air Max 1—came to represent Nike’s commitment to cutting-edge innovation.…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>أرقام مالية فعلية للسياق التجاري، من غير ما نفترض إن البراندنج هو السبب.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>قصة أعمال بالأرقام، مع توضيح صريح للي البراندنج يقدر ومايقدرش يدّعيه.</div>
+    <a class="link" href="https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">60</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N07 — Business Growth</span><span class="tag">Egypt</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">Sabika secures new investment to expand gold and silver trading platform</a></h3>
-    <div class="src">Wamda · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…</div>
-    <div class="row"><b>Why it matters</b>Business growth context helps link brand decisions to commercial outcomes (correlation, not proof).</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">نمو أعمال</span><span class="tag">مصر</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">Sabika secures new investment to expand gold and silver trading platform</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Business growth context helps link brand decisions to commercial outcomes (correlation, not proof).</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">Read original ↗</a>
+    <div class="src">Wamda · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">57</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N08 — Financial Results</span><span class="tag">North America</span></div>
-    <h3 dir="auto"><a href="https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/">Pentagram looks to Grand Central Oyster Bar’s iconic lettering for its gorgeously gaudy Storefront Gala 2026 identity</a></h3>
-    <div class="src">BP&O · Published 22 Oct 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>Storefront for Art and Architecture is a Manhattan, New York-based non-profit organisation that aims to explore the relationship between architecture, art and the wider world through exhibitions, public programmes,…</div>
-    <div class="row"><b>Why it matters</b>Financial results give hard numbers for commercial context; causality to branding must not be assumed.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">نتائج مالية</span><span class="tag">أمريكا الشمالية</span></div>
+    <h3><a href="https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/">Pentagram looks to Grand Central Oyster Bar’s iconic lettering for its gorgeously gaudy Storefront Gala 2026 identity</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Financial results give hard numbers for commercial context; causality to branding must not be assumed.</div>
-    <div class="row"><b>Content angle</b>Business story: the numbers, with an honest note on what branding can and cannot claim.</div>
-    <a class="link" href="https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/">Read original ↗</a>
+    <div class="src">BP&O · نُشر 22 أكتوبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Storefront for Art and Architecture is a Manhattan, New York-based non-profit organisation that aims to explore the relationship between architecture, art and the wider world through exhibitions, public programmes,…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>أرقام مالية فعلية للسياق التجاري، من غير ما نفترض إن البراندنج هو السبب.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>قصة أعمال بالأرقام، مع توضيح صريح للي البراندنج يقدر ومايقدرش يدّعيه.</div>
+    <a class="link" href="https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">56</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N09 — Brand Valuation</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://business.google.com/us/think/measurement/brand-equity-building-long-term-performance/?utm_source=twg-rss-reader&utm_medium=rss&utm_campaign=rss-feed">The long game: How brand equity fuels future performance</a></h3>
-    <div class="src">Think with Google · Published 24 Sep 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>Google’s Official Digital Marketing Publication. Explore how brand equity and brand building can fuel long-term performance and growth.</div>
-    <div class="row"><b>Why it matters</b>Brand valuation movements are strong evidence-led content and credibility builders for consulting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">قيمة العلامة (Brand Value)</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://business.google.com/us/think/measurement/brand-equity-building-long-term-performance/?utm_source=twg-rss-reader&utm_medium=rss&utm_campaign=rss-feed">The long game: How brand equity fuels future performance</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Brand valuation movements are strong evidence-led content and credibility builders for consulting.</div>
-    <div class="row"><b>Content angle</b>Data post: what the valuation movement means — clearly separating brand value from company value.</div>
-    <a class="link" href="https://business.google.com/us/think/measurement/brand-equity-building-long-term-performance/?utm_source=twg-rss-reader&utm_medium=rss&utm_campaign=rss-feed">Read original ↗</a>
+    <div class="src">Think with Google · نُشر 24 سبتمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Google’s Official Digital Marketing Publication. Explore how brand equity and brand building can fuel long-term performance and growth.</span></div>
+    
+    <div class="row"><b>ليه مهم</b>تحركات قيمة العلامات محتوى قائم على أرقام، وبيقوّي مصداقيتك كاستشاري.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست أرقام: معنى تغيّر القيمة، مع التفرقة بين Brand Value وقيمة الشركة.</div>
+    <a class="link" href="https://business.google.com/us/think/measurement/brand-equity-building-long-term-performance/?utm_source=twg-rss-reader&utm_medium=rss&utm_campaign=rss-feed">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://business.google.com/us/think/measurement/brand-equity-building-long-term-performance/?utm_source=twg-r</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">56</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N07 — Business Growth</span><span class="tag">Saudi Arabia</span><span class="tag">UAE</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQUzZxUUNRQVlSeWpQVzN6LVlPcDVRNVFnZ0RocXNPRUFDamFMUWhpSnBFNkNEaHNXZHNCSUtpR2xJUnBOYjU4VjB6OEI1XzJkYlg5UkJBMlNXNDN3R0UxUXdZd1dNM1VOel9tRnpQSlpIUXFFcU1rWG01MHNRT1k0VWowWXVPOWhRYUpPQ2lIVmpfQmE4RnpGTGtzUWp4dmdnSEJDWV9oVHMzRFV0bXZsUDItejBhOHVvb1F0NEdSUktZeThwbzhJOVB3?oc=5">Dar Global launches $267m project in Jeddah amid Saudi expansion push</a></h3>
-    <div class="src">The National · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>Business growth context helps link brand decisions to commercial outcomes (correlation, not proof).</div>
-    <div class="data"><b>Important data</b> (publisher claims)<br>• $267m — Unlabelled figure <i>(Publisher claim — not independently verified)</i></div>
-    <div class="row"><b>Strategic implication</b>Commercial figures are reported by the publisher; no causal link between branding and results is claimed.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQUzZxUUNRQVlSeWpQVzN6LVlPcDVRNVFnZ0RocXNPRUFDamFMUWhpSnBFNkNEaHNXZHNCSUtpR2xJUnBOYjU4VjB6OEI1XzJkYlg5UkJBMlNXNDN3R0UxUXdZd1dNM1VOel9tRnpQSlpIUXFFcU1rWG01MHNRT1k0VWowWXVPOWhRYUpPQ2lIVmpfQmE4RnpGTGtzUWp4dmdnSEJDWV9oVHMzRFV0bXZsUDItejBhOHVvb1F0NEdSUktZeThwbzhJOVB3?oc=5">Read original ↗</a>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">نمو أعمال</span><span class="tag">السعودية</span><span class="tag">الإمارات</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQUzZxUUNRQVlSeWpQVzN6LVlPcDVRNVFnZ0RocXNPRUFDamFMUWhpSnBFNkNEaHNXZHNCSUtpR2xJUnBOYjU4VjB6OEI1XzJkYlg5UkJBMlNXNDN3R0UxUXdZd1dNM1VOel9tRnpQSlpIUXFFcU1rWG01MHNRT1k0VWowWXVPOWhRYUpPQ2lIVmpfQmE4RnpGTGtzUWp4dmdnSEJDWV9oVHMzRFV0bXZsUDItejBhOHVvb1F0NEdSUktZeThwbzhJOVB3?oc=5">Dar Global launches $267m project in Jeddah amid Saudi expansion push</a></h3>
+    
+    <div class="src">The National · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).</div>
+    <div class="data"><b>أرقام مذكورة</b> (ادعاءات الناشر، مش متأكَّد منها)<br>• <span dir="ltr">$267m</span>: Unlabelled figure</div>
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiygFBVV95cUxQUzZxUUNRQVlSeWpQVzN6LVlPcDVRNVFnZ0RocXNPRUFDamFMUWhpSnBFNkNEaHNXZHNCSUtpR2xJUnBOYjU4VjB6OEI1XzJkYlg5UkJBMlNXNDN3R0UxUXdZd1dNM1VOel9tRnpQSlpIUXFFcU1rWG01MHNRT1k0VWowWXVPOWhRYUpPQ2lIVmpfQmE4RnpGTGtzUWp4dmdnSEJDWV9oVHMzRFV0bXZsUDItejBhOHVvb1F0NEdSUktZeThwbzhJOVB3?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiygFBVV95cUxQUzZxUUNRQVlSeWpQVzN6LVlPcDVRNVFnZ0RocXNPRUFDamFMUWhpSnBFN</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">56</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N09 — Brand Valuation</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPUTI1bXVHcWZvakVLck5fekhobi1fMjU0SnhXZ29POVFkVVhETHpIUTZVT3ZhelBvaWM1ZWhTb1hQSlFOcVBRSEVpM1g4eDhteG9yNE1tM1ZPZFo3bEh2U3lZX2JZRDRkUlVkT3hpai1JOFlYOVgtYlFyYmFKSXRTVXlKenl2TVNhM0E5ZDdGLW9pM1RHVGlxRnBjbkNVQ3B2NVZ5RWpfTllDM2JY?oc=5">Record audiences and investor appetite power NFL brand value rebound</a></h3>
-    <div class="src">Brand Finance · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>Brand valuation movements are strong evidence-led content and credibility builders for consulting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">قيمة العلامة (Brand Value)</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPUTI1bXVHcWZvakVLck5fekhobi1fMjU0SnhXZ29POVFkVVhETHpIUTZVT3ZhelBvaWM1ZWhTb1hQSlFOcVBRSEVpM1g4eDhteG9yNE1tM1ZPZFo3bEh2U3lZX2JZRDRkUlVkT3hpai1JOFlYOVgtYlFyYmFKSXRTVXlKenl2TVNhM0E5ZDdGLW9pM1RHVGlxRnBjbkNVQ3B2NVZ5RWpfTllDM2JY?oc=5">Record audiences and investor appetite power NFL brand value rebound</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Brand valuation movements are strong evidence-led content and credibility builders for consulting.</div>
-    <div class="row"><b>Content angle</b>Data post: what the valuation movement means — clearly separating brand value from company value.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPUTI1bXVHcWZvakVLck5fekhobi1fMjU0SnhXZ29POVFkVVhETHpIUTZVT3ZhelBvaWM1ZWhTb1hQSlFOcVBRSEVpM1g4eDhteG9yNE1tM1ZPZFo3bEh2U3lZX2JZRDRkUlVkT3hpai1JOFlYOVgtYlFyYmFKSXRTVXlKenl2TVNhM0E5ZDdGLW9pM1RHVGlxRnBjbkNVQ3B2NVZ5RWpfTllDM2JY?oc=5">Read original ↗</a>
+    <div class="src">Brand Finance · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>تحركات قيمة العلامات محتوى قائم على أرقام، وبيقوّي مصداقيتك كاستشاري.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست أرقام: معنى تغيّر القيمة، مع التفرقة بين Brand Value وقيمة الشركة.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPUTI1bXVHcWZvakVLck5fekhobi1fMjU0SnhXZ29POVFkVVhETHpIUTZVT3ZhelBvaWM1ZWhTb1hQSlFOcVBRSEVpM1g4eDhteG9yNE1tM1ZPZFo3bEh2U3lZX2JZRDRkUlVkT3hpai1JOFlYOVgtYlFyYmFKSXRTVXlKenl2TVNhM0E5ZDdGLW9pM1RHVGlxRnBjbkNVQ3B2NVZ5RWpfTllDM2JY?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMirAFBVV95cUxPUTI1bXVHcWZvakVLck5fekhobi1fMjU0SnhXZ29POVFkVVhETHpIUTZVT</span>
   </div>
 </article>
 
-<h2>Tools & AI Updates <small>6</small></h2>
+<h2>الأدوات والذكاء الاصطناعي <small>6</small></h2>
 
 
 <article class="card">
   
   <div class="body">
     <span class="score">67</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N11 — AI Innovation</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">ADC – The First Living, AI-Driven Brand Identity</a></h3>
-    <div class="src">Red Dot Design Award · Published 15 Nov 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>AI capabilities are reshaping creative production and client expectations.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">ذكاء اصطناعي</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">ADC – The First Living, AI-Driven Brand Identity</a></h3>
     
-    <div class="row"><b>Strategic implication</b>AI capabilities are reshaping creative production and client expectations.</div>
-    <div class="row"><b>Content angle</b>Opinion: what this AI development means for branding studios and clients.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">Read original ↗</a>
+    <div class="src">Red Dot Design Award · نُشر 15 نوفمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">66</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N11 — AI Innovation</span><span class="tag">Saudi Arabia</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">Wa'ed Ventures backs Saudi cybersecurity startup COGNNA</a></h3>
-    <div class="src">Wamda · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…</div>
-    <div class="row"><b>Why it matters</b>AI capabilities are reshaping creative production and client expectations.</div>
-    <div class="data"><b>Important data</b> (publisher claims)<br>• $500 m — Unlabelled figure <i>(Publisher claim — not independently verified)</i></div>
-    <div class="row"><b>Strategic implication</b>Commercial figures are reported by the publisher; no causal link between branding and results is claimed.</div>
-    <div class="row"><b>Content angle</b>Opinion: what this AI development means for branding studios and clients.</div>
-    <a class="link" href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">Read original ↗</a>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">ذكاء اصطناعي</span><span class="tag">السعودية</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">Wa'ed Ventures backs Saudi cybersecurity startup COGNNA</a></h3>
+    
+    <div class="src">Wamda · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.</div>
+    <div class="data"><b>أرقام مذكورة</b> (ادعاءات الناشر، مش متأكَّد منها)<br>• <span dir="ltr">$500 m</span>: Unlabelled figure</div>
+    <div class="row"><b>زاوية محتوى</b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</div>
+    <a class="link" href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">63</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N11 — AI Innovation</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">The young rebel alliance trying to get people to love technology again</a></h3>
-    <div class="src">Fast Company Co.Design · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>In a spare and cavernous former eyewear emporium near the luxury stores of San Francisco’s Union Square, a motley group of tech devices is spread out across display counters and pedestals. One is a desktop computer…</div>
-    <div class="row"><b>Why it matters</b>AI capabilities are reshaping creative production and client expectations.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">ذكاء اصطناعي</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">The young rebel alliance trying to get people to love technology again</a></h3>
     
-    <div class="row"><b>Strategic implication</b>AI capabilities are reshaping creative production and client expectations.</div>
-    <div class="row"><b>Content angle</b>Opinion: what this AI development means for branding studios and clients.</div>
-    <a class="link" href="https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Read original ↗</a>
+    <div class="src">Fast Company Co.Design · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">In a spare and cavernous former eyewear emporium near the luxury stores of San Francisco’s Union Square, a motley group of tech devices is spread out across display counters and pedestals. One is a desktop computer…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</div>
+    <a class="link" href="https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?pa</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">63</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N11 — AI Innovation</span><span class="tag">North America</span></div>
-    <h3 dir="auto"><a href="https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">AI companies are missing a key reason people hate data centers: They’re ugly</a></h3>
-    <div class="src">Fast Company Co.Design · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>The U.S. is experiencing a huge boom in AI investment, and data centers are at the epicenter. But amid power outages, criticisms around water usage, and moral quandaries, the infrastructure is facing intense backlash…</div>
-    <div class="row"><b>Why it matters</b>AI capabilities are reshaping creative production and client expectations.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">ذكاء اصطناعي</span><span class="tag">أمريكا الشمالية</span></div>
+    <h3><a href="https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">AI companies are missing a key reason people hate data centers: They’re ugly</a></h3>
     
-    <div class="row"><b>Strategic implication</b>AI capabilities are reshaping creative production and client expectations.</div>
-    <div class="row"><b>Content angle</b>Opinion: what this AI development means for branding studios and clients.</div>
-    <a class="link" href="https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Read original ↗</a>
+    <div class="src">Fast Company Co.Design · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">The U.S. is experiencing a huge boom in AI investment, and data centers are at the epicenter. But amid power outages, criticisms around water usage, and moral quandaries, the infrastructure is facing intense backlash…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</div>
+    <a class="link" href="https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-da</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">63</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N10 — Design Tool Update</span><span class="tag">Europe</span></div>
-    <h3 dir="auto"><a href="https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/">Turner Duckworth London’s Maker’s Mark Update Celebrates the Brand’s Wax-Dipped Handmade Tradition</a></h3>
-    <div class="src">The Dieline · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>The Maker's Mark visual identity gets a global refresh by Turner Duckworth London, that leans into the brand's tradition of hand-dipping bottles into red wax. The post Turner Duckworth London’s Maker’s Mark Update…</div>
-    <div class="row"><b>Why it matters</b>Tool changes affect designers' workflows and studio productivity.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">تحديث أداة تصميم</span><span class="tag">أوروبا</span></div>
+    <h3><a href="https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/">Turner Duckworth London’s Maker’s Mark Update Celebrates the Brand’s Wax-Dipped Handmade Tradition</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Tool changes affect designers' workflows and studio productivity.</div>
-    <div class="row"><b>Content angle</b>'What's new for designers' quick explainer with practical use cases.</div>
-    <a class="link" href="https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/">Read original ↗</a>
+    <div class="src">The Dieline · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">The Maker's Mark visual identity gets a global refresh by Turner Duckworth London, that leans into the brand's tradition of hand-dipping bottles into red wax. The post Turner Duckworth London’s Maker’s Mark Update…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>تغيير الأدوات بيأثر على شغل المصممين وإنتاجية الاستوديو.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>شرح سريع "الجديد للمصممين" مع استخدامات عملية.</div>
+    <a class="link" href="https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-t</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">62</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N11 — AI Innovation</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5">Intuitus Unveils Native Edge-AI Vision Frameworks Under Its Distinctive Brand Identity "INTUITUS"– MAKING SENSE OF WHAT IS SENSED</a></h3>
-    <div class="src">The Eastern Herald · Published 18 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>AI capabilities are reshaping creative production and client expectations.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">ذكاء اصطناعي</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5">Intuitus Unveils Native Edge-AI Vision Frameworks Under Its Distinctive Brand Identity "INTUITUS"– MAKING SENSE OF WHAT IS SENSED</a></h3>
     
-    <div class="row"><b>Strategic implication</b>AI capabilities are reshaping creative production and client expectations.</div>
-    <div class="row"><b>Content angle</b>Opinion: what this AI development means for branding studios and clients.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5">Read original ↗</a>
+    <div class="src">The Eastern Herald · نُشر 18 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb</span>
   </div>
 </article>
 
-<h2>Agency & Studio News <small>6</small></h2>
+<h2>أخبار الوكالات والاستوديوهات <small>6</small></h2>
 
 
 <article class="card">
   
   <div class="body">
     <span class="score">63</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N15 — Agency News</span><span class="tag">North America</span></div>
-    <h3 dir="auto"><a href="https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website">SWSH brand identity and website</a></h3>
-    <div class="src">Fonts In Use · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Contributed by Jonathan Lin Source: new.studio New Studio Partners . License: All Rights Reserved . SWSH (Somewhere Somehow) is an app where fans and creators collect shared albums from concerts, festivals and live…</div>
-    <div class="row"><b>Why it matters</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">أخبار الوكالات</span><span class="tag">أمريكا الشمالية</span></div>
+    <h3><a href="https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website">SWSH brand identity and website</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website">Read original ↗</a>
+    <div class="src">Fonts In Use · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Contributed by Jonathan Lin Source: new.studio New Studio Partners . License: All Rights Reserved . SWSH (Somewhere Somehow) is an app where fans and creators collect shared albums from concerts, festivals and live…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>تحركات الوكالات بتوضّح فين المواهب والعملاء والقدرات رايحة.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">59</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N16 — Award & Recognition</span><span class="tag">North America</span></div>
-    <h3 dir="auto"><a href="https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Dolly Parton told Elvis no. That decision is a master class in personal branding</a></h3>
-    <div class="src">Fast Company Co.Design · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Even in death, Dolly Parton showed up on her own terms. Last month at the Americana Honors, she accepted a Lifetime Achievement Award through a video she recorded before she died in August at 80 , a final reminder of…</div>
-    <div class="row"><b>Why it matters</b>Awards show what the industry currently rewards — a benchmark for quality.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">جوائز</span><span class="tag">أمريكا الشمالية</span></div>
+    <h3><a href="https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Dolly Parton told Elvis no. That decision is a master class in personal branding</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Awards show what the industry currently rewards — a benchmark for quality.</div>
-    <div class="row"><b>Content angle</b>Spotlight on winning work and the lesson behind it.</div>
-    <a class="link" href="https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">Read original ↗</a>
+    <div class="src">Fast Company Co.Design · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Even in death, Dolly Parton showed up on her own terms. Last month at the Americana Honors, she accepted a Lifetime Achievement Award through a video she recorded before she died in August at 80 , a final reminder of…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>الجوائز بتوري الصناعة بتكافئ إيه دلوقتي، ومعيار للجودة.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>تسليط الضوء على الشغل الفائز والدرس منه.</div>
+    <a class="link" href="https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_mediu</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">55</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N15 — Agency News</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://bpando.org/2026/10/27/andstudio-werf-rotterdam-bar-identity-design/">andstudio’s identity for new Rotterdam bar Werf is a brilliant lesson in graphic simplicity and abstraction</a></h3>
-    <div class="src">BP&O · Published 27 Oct 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>Werf is a new Rotterdam-based bar and bistro housed directly inside the Stadswerf Koningspoort, a fully operational historic shipyard. The name simply translates as ‘wharf’ or ‘shipyard’, and pretty much everything…</div>
-    <div class="row"><b>Why it matters</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">أخبار الوكالات</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://bpando.org/2026/10/27/andstudio-werf-rotterdam-bar-identity-design/">andstudio’s identity for new Rotterdam bar Werf is a brilliant lesson in graphic simplicity and abstraction</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://bpando.org/2026/10/27/andstudio-werf-rotterdam-bar-identity-design/">Read original ↗</a>
+    <div class="src">BP&O · نُشر 27 أكتوبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Werf is a new Rotterdam-based bar and bistro housed directly inside the Stadswerf Koningspoort, a fully operational historic shipyard. The name simply translates as ‘wharf’ or ‘shipyard’, and pretty much everything…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>تحركات الوكالات بتوضّح فين المواهب والعملاء والقدرات رايحة.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://bpando.org/2026/10/27/andstudio-werf-rotterdam-bar-identity-design/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://bpando.org/2026/10/27/andstudio-werf-rotterdam-bar-identity-design/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">55</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N15 — Agency News</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNYUV6V2VOVlhqeTRxZlhqdHhuMVFpXzNwNFNkZFVuVWxHckFyRHFWSHVVQ3BQdHJwOWlabjRDTzFEbG51WjlXWm1QNmdjNHRIdm4yV3d6UGVKeDZiRnNydGtQU2ZzYjZSMThBTzRsU0FLU0hjMFh5Nmh6empNTDhrLUUyY1owOHB6ZmNCT2FVcjZFLVNQZWc?oc=5">Luma Socks, a Mascot-Led Sock Brand Identity, by We Craft Studio</a></h3>
-    <div class="src">World Brand Design Society · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">أخبار الوكالات</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNYUV6V2VOVlhqeTRxZlhqdHhuMVFpXzNwNFNkZFVuVWxHckFyRHFWSHVVQ3BQdHJwOWlabjRDTzFEbG51WjlXWm1QNmdjNHRIdm4yV3d6UGVKeDZiRnNydGtQU2ZzYjZSMThBTzRsU0FLU0hjMFh5Nmh6empNTDhrLUUyY1owOHB6ZmNCT2FVcjZFLVNQZWc?oc=5">Luma Socks, a Mascot-Led Sock Brand Identity, by We Craft Studio</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNYUV6V2VOVlhqeTRxZlhqdHhuMVFpXzNwNFNkZFVuVWxHckFyRHFWSHVVQ3BQdHJwOWlabjRDTzFEbG51WjlXWm1QNmdjNHRIdm4yV3d6UGVKeDZiRnNydGtQU2ZzYjZSMThBTzRsU0FLU0hjMFh5Nmh6empNTDhrLUUyY1owOHB6ZmNCT2FVcjZFLVNQZWc?oc=5">Read original ↗</a>
+    <div class="src">World Brand Design Society · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>تحركات الوكالات بتوضّح فين المواهب والعملاء والقدرات رايحة.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNYUV6V2VOVlhqeTRxZlhqdHhuMVFpXzNwNFNkZFVuVWxHckFyRHFWSHVVQ3BQdHJwOWlabjRDTzFEbG51WjlXWm1QNmdjNHRIdm4yV3d6UGVKeDZiRnNydGtQU2ZzYjZSMThBTzRsU0FLU0hjMFh5Nmh6empNTDhrLUUyY1owOHB6ZmNCT2FVcjZFLVNQZWc?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMilgFBVV95cUxNYUV6V2VOVlhqeTRxZlhqdHhuMVFpXzNwNFNkZFVuVWxHckFyRHFWSHVVQ</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">55</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N15 — Agency News</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE02TmtxbEduNHhKVTV4elJhYklOOHVWdVJTZTZseTdPYVNEODRoNWU1YjlmcXlzNTJSU3JrVnZPdDMwcVR0UlhVZzhza3pRRW9femhuV0JVT1dyT3FFbTlQUA?oc=5">What Is Brand Identity? A Complete Guide</a></h3>
-    <div class="src">How&How · Published 12 Nov 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">أخبار الوكالات</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE02TmtxbEduNHhKVTV4elJhYklOOHVWdVJTZTZseTdPYVNEODRoNWU1YjlmcXlzNTJSU3JrVnZPdDMwcVR0UlhVZzhza3pRRW9femhuV0JVT1dyT3FFbTlQUA?oc=5">What Is Brand Identity? A Complete Guide</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE02TmtxbEduNHhKVTV4elJhYklOOHVWdVJTZTZseTdPYVNEODRoNWU1YjlmcXlzNTJSU3JrVnZPdDMwcVR0UlhVZzhza3pRRW9femhuV0JVT1dyT3FFbTlQUA?oc=5">Read original ↗</a>
+    <div class="src">How&How · نُشر 12 نوفمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>تحركات الوكالات بتوضّح فين المواهب والعملاء والقدرات رايحة.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE02TmtxbEduNHhKVTV4elJhYklOOHVWdVJTZTZseTdPYVNEODRoNWU1YjlmcXlzNTJSU3JrVnZPdDMwcVR0UlhVZzhza3pRRW9femhuV0JVT1dyT3FFbTlQUA?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiYEFVX3lxTE02TmtxbEduNHhKVTV4elJhYklOOHVWdVJTZTZseTdPYVNEODRoNWU1Yjlmc</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">55</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N15 — Agency News</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jZ0pSM0VVMWlZeEZ5cXQyeXdrM2ZOWXZfWW9lMzQ0V055ekQ3OUZwbHFsTWdYMWFaSGpLblJLTUpnOWdRUWRzMQ?oc=5">Everbloom Brand Identity: Sustainable Materials</a></h3>
-    <div class="src">How&How · Published 27 Oct 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">أخبار الوكالات</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jZ0pSM0VVMWlZeEZ5cXQyeXdrM2ZOWXZfWW9lMzQ0V055ekQ3OUZwbHFsTWdYMWFaSGpLblJLTUpnOWdRUWRzMQ?oc=5">Everbloom Brand Identity: Sustainable Materials</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Agency moves reveal where talent, clients and capabilities are shifting.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jZ0pSM0VVMWlZeEZ5cXQyeXdrM2ZOWXZfWW9lMzQ0V055ekQ3OUZwbHFsTWdYMWFaSGpLblJLTUpnOWdRUWRzMQ?oc=5">Read original ↗</a>
+    <div class="src">How&How · نُشر 27 أكتوبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>تحركات الوكالات بتوضّح فين المواهب والعملاء والقدرات رايحة.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jZ0pSM0VVMWlZeEZ5cXQyeXdrM2ZOWXZfWW9lMzQ0V055ekQ3OUZwbHFsTWdYMWFaSGpLblJLTUpnOWdRUWRzMQ?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiSEFVX3lxTE1jZ0pSM0VVMWlZeEZ5cXQyeXdrM2ZOWXZfWW9lMzQ0V055ekQ3OUZwbHFsT</span>
   </div>
 </article>
 
-<h2>Research & Industry Insights <small>2</small></h2>
+<h2>الأبحاث ورؤى الصناعة <small>2</small></h2>
 
 
 <article class="card">
   
   <div class="body">
     <span class="score">61</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N19 — Consumer Behaviour</span><span class="tag">North America</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">Social media stopped being social. Most brands did not notice</a></h3>
-    <div class="src">Communicate · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…</div>
-    <div class="row"><b>Why it matters</b>Consumer behaviour shifts should inform brand strategy and messaging.</div>
-    <div class="data"><b>Important data</b> (publisher claims)<br>• 17% — Unlabelled figure <i>(Publisher claim — not independently verified)</i></div>
-    <div class="row"><b>Strategic implication</b>Commercial figures are reported by the publisher; no causal link between branding and results is claimed.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">Read original ↗</a>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">سلوك المستهلك</span><span class="tag">أمريكا الشمالية</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">Social media stopped being social. Most brands did not notice</a></h3>
+    
+    <div class="src">Communicate · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>تغيّر سلوك المستهلك لازم ينعكس على استراتيجية العلامة ورسائلها.</div>
+    <div class="data"><b>أرقام مذكورة</b> (ادعاءات الناشر، مش متأكَّد منها)<br>• <span dir="ltr">17%</span>: Unlabelled figure</div>
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">55</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N13 — Research Report</span><span class="tag">Global</span></div>
-    <h3 dir="auto"><a href="https://thedieline.com/why-a-fast-growing-supplement-brand-ditched-the-badges-flags-and-gold-lids/">Why a Fast-Growing Supplement Brand Ditched the Badges, Flags, and Gold Lids</a></h3>
-    <div class="src">The Dieline · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Buddy-Buddy renamed Reus Research as Cata·Kor and traded its cluttered, claim heavy jars for calm forest green packaging built to stand out as a tiny thumbnail on a phone screen. The post Why a Fast-Growing Supplement…</div>
-    <div class="row"><b>Why it matters</b>Research provides citable data for content, pitches and education.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">تقرير بحثي</span><span class="tag">عالمي</span></div>
+    <h3><a href="https://thedieline.com/why-a-fast-growing-supplement-brand-ditched-the-badges-flags-and-gold-lids/">Why a Fast-Growing Supplement Brand Ditched the Badges, Flags, and Gold Lids</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Research provides citable data for content, pitches and education.</div>
-    <div class="row"><b>Content angle</b>Key stats carousel with the source cited on every slide.</div>
-    <a class="link" href="https://thedieline.com/why-a-fast-growing-supplement-brand-ditched-the-badges-flags-and-gold-lids/">Read original ↗</a>
+    <div class="src">The Dieline · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Buddy-Buddy renamed Reus Research as Cata·Kor and traded its cluttered, claim heavy jars for calm forest green packaging built to stand out as a tiny thumbnail on a phone screen. The post Why a Fast-Growing Supplement…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>بيانات بحثية تقدر تستشهد بيها في المحتوى والـ pitches والتعليم.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Carousel أرقام مع ذكر المصدر في كل slide.</div>
+    <a class="link" href="https://thedieline.com/why-a-fast-growing-supplement-brand-ditched-the-badges-flags-and-gold-lids/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://thedieline.com/why-a-fast-growing-supplement-brand-ditched-the-badges-flags-and-gold-lids/</span>
   </div>
 </article>
 
-<h2>MENA & GCC developments <small>6</small></h2>
-<p class="meta">Egypt · Saudi Arabia · UAE · Oman · wider GCC & MENA</p>
+<h2>الشرق الأوسط والخليج ومصر <small>6</small></h2>
+<p class="meta">مصر · السعودية · الإمارات · عُمان · الخليج والمنطقة</p>
 
 <article class="card">
   
   <div class="body">
     <span class="score">66</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby</a></h3>
-    <div class="src">BP&O · Published 03 Nov 2026 · <i>older article (not breaking)</i></div>
-    <div class="row" dir="auto"><b>Summary</b>Tabby is a Middle East-born fintech app, founded by Hosam Arab and Daniil Barkalov in 2019 and now billed as “the money app that lets you spend, send, save and boss money around”. Not quite sure what “bossing” money…</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">Ragged Edge creates a playful new identity for Middle Eastern fintech app Tabby</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">Read original ↗</a>
+    <div class="src">BP&O · نُشر 3 نوفمبر 2026 · <i>خبر قديم (مش عاجل)</i></div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Tabby is a Middle East-born fintech app, founded by Hosam Arab and Daniil Barkalov in 2019 and now billed as “the money app that lets you spend, send, save and boss money around”. Not quite sure what “bossing” money…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">66</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N11 — AI Innovation</span><span class="tag">Saudi Arabia</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">Wa'ed Ventures backs Saudi cybersecurity startup COGNNA</a></h3>
-    <div class="src">Wamda · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…</div>
-    <div class="row"><b>Why it matters</b>AI capabilities are reshaping creative production and client expectations.</div>
-    <div class="data"><b>Important data</b> (publisher claims)<br>• $500 m — Unlabelled figure <i>(Publisher claim — not independently verified)</i></div>
-    <div class="row"><b>Strategic implication</b>Commercial figures are reported by the publisher; no causal link between branding and results is claimed.</div>
-    <div class="row"><b>Content angle</b>Opinion: what this AI development means for branding studios and clients.</div>
-    <a class="link" href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">Read original ↗</a>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">ذكاء اصطناعي</span><span class="tag">السعودية</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">Wa'ed Ventures backs Saudi cybersecurity startup COGNNA</a></h3>
+    
+    <div class="src">Wamda · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Saudi cybersecurity startup COGNNA has secured an undisclosed investment from Wa'ed Ventures, the $500 million venture capital fund backed by Saudi Aramco. The investment will support the company's expansion and…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.</div>
+    <div class="data"><b>أرقام مذكورة</b> (ادعاءات الناشر، مش متأكَّد منها)<br>• <span dir="ltr">$500 m</span>: Unlabelled figure</div>
+    <div class="row"><b>زاوية محتوى</b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</div>
+    <a class="link" href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">65</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">GCC</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company</a></h3>
-    <div class="src">The Peninsula Qatar · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">الخليج</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">Energy Minister witnesses Gulf Helicopters' rebranding as Global Helicopter Company</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">Read original ↗</a>
+    <div class="src">The Peninsula Qatar · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUT</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">61</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N19 — Consumer Behaviour</span><span class="tag">North America</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">Social media stopped being social. Most brands did not notice</a></h3>
-    <div class="src">Communicate · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…</div>
-    <div class="row"><b>Why it matters</b>Consumer behaviour shifts should inform brand strategy and messaging.</div>
-    <div class="data"><b>Important data</b> (publisher claims)<br>• 17% — Unlabelled figure <i>(Publisher claim — not independently verified)</i></div>
-    <div class="row"><b>Strategic implication</b>Commercial figures are reported by the publisher; no causal link between branding and results is claimed.</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">Read original ↗</a>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">سلوك المستهلك</span><span class="tag">أمريكا الشمالية</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">Social media stopped being social. Most brands did not notice</a></h3>
+    
+    <div class="src">Communicate · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>تغيّر سلوك المستهلك لازم ينعكس على استراتيجية العلامة ورسائلها.</div>
+    <div class="data"><b>أرقام مذكورة</b> (ادعاءات الناشر، مش متأكَّد منها)<br>• <span dir="ltr">17%</span>: Unlabelled figure</div>
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">60</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N07 — Business Growth</span><span class="tag">Egypt</span><span class="tag">Middle East</span></div>
-    <h3 dir="auto"><a href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">Sabika secures new investment to expand gold and silver trading platform</a></h3>
-    <div class="src">Wamda · Published 16 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…</div>
-    <div class="row"><b>Why it matters</b>Business growth context helps link brand decisions to commercial outcomes (correlation, not proof).</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">نمو أعمال</span><span class="tag">مصر</span><span class="tag">الشرق الأوسط</span></div>
+    <h3><a href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">Sabika secures new investment to expand gold and silver trading platform</a></h3>
     
-    <div class="row"><b>Strategic implication</b>Business growth context helps link brand decisions to commercial outcomes (correlation, not proof).</div>
-    <div class="row"><b>Content angle</b>Short explainer post linking to the original source.</div>
-    <a class="link" href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">Read original ↗</a>
+    <div class="src">Wamda · نُشر 16 نوفمبر 2026</div>
+    <div class="row"><b>الملخص (من الناشر)</b><span class="en" style="display:block">Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…</span></div>
+    
+    <div class="row"><b>ليه مهم</b>سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).</div>
+    
+    <div class="row"><b>زاوية محتوى</b>بوست قصير يشرح الخبر مع لينك المصدر.</div>
+    <a class="link" href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform</span>
   </div>
 </article><article class="card">
   
   <div class="body">
     <span class="score">60</span>
-    <div class="tags"><span class="tag p-Research">Research Only</span><span class="tag">N02 — Rebranding</span><span class="tag">UAE</span><span class="tag">GCC</span></div>
-    <h3 dir="auto"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5">Woolworths gives WCafe a new look in bold Woolies Café rebrand</a></h3>
-    <div class="src">Bizcommunity · Published 17 Nov 2026</div>
-    <div class="row" dir="auto"><b>Summary</b>No summary provided by the feed — open the original article.</div>
-    <div class="row"><b>Why it matters</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
+    <div class="tags"><span class="tag p-Research">للبحث فقط</span><span class="tag">إعادة هوية (Rebranding)</span><span class="tag">الإمارات</span><span class="tag">الخليج</span></div>
+    <h3><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5">Woolworths gives WCafe a new look in bold Woolies Café rebrand</a></h3>
     
-    <div class="row"><b>Strategic implication</b>A rebrand signals a strategic shift; the rationale and execution are a ready case study for clients.</div>
-    <div class="row"><b>Content angle</b>Before/after breakdown: what changed, why, and whether it works strategically.</div>
-    <a class="link" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5">Read original ↗</a>
+    <div class="src">Bizcommunity · نُشر 17 نوفمبر 2026</div>
+    <div class="row"><b>الملخص</b>المصدر مانشرش ملخص. افتح الخبر الأصلي للتفاصيل.</div>
+    <div class="row"><b>ليه مهم</b>إعادة الهوية معناها تحوّل استراتيجي، وأسبابها وتنفيذها case study جاهزة تكلّم بيها عملاءك.</div>
+    
+    <div class="row"><b>زاوية محتوى</b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</div>
+    <a class="link" href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5">اقرأ الخبر الأصلي ↗</a>
+    <span class="url">https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0O</span>
   </div>
 </article>
 
 
 
 
-<h2>Content opportunities</h2><ul class="compact"><li dir="auto"><b>Before/after breakdown: what changed, why, and whether it works strategically.</b> — <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand</a></li><li dir="auto"><b>Short explainer post linking to the original source.</b> — <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business</a></li><li dir="auto"><b>Before/after breakdown: what changed, why, and whether it works strategically.</b> — <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles</a></li><li dir="auto"><b>Before/after breakdown: what changed, why, and whether it works strategically.</b> — <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles</a></li><li dir="auto"><b>Before/after breakdown: what changed, why, and whether it works strategically.</b> — <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles</a></li><li dir="auto"><b>Before/after breakdown: what changed, why, and whether it works strategically.</b> — <a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">Orb Case Study: Rebrand to $335M Adyen Sale</a></li><li dir="auto"><b>Opinion: what this AI development means for branding studios and clients.</b> — <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">ADC – The First Living, AI-Driven Brand Identity</a></li><li dir="auto"><b>Short explainer post linking to the original source.</b> — <a href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">M/OTG brings a bold, timeless visual identity to heritage kosher brand J&J Dairy</a></li></ul>
+<h2>فرص محتوى</h2><ul class="compact"><li><b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</b>: <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand</a></li><li><b>تحليل علامة جديدة: الاسم والـ positioning والهوية.</b>: <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">KFH-Bahrain unveils “KFH Private” as the new brand identity for its private banking and wealth management business</a></li><li><b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</b>: <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles</a></li><li><b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</b>: <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles</a></li><li><b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</b>: <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles</a></li><li><b>Before / After: إيه اللي اتغيّر وليه، وهل التغيير ناجح استراتيجياً.</b>: <a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">Orb Case Study: Rebrand to $335M Adyen Sale</a></li><li><b>رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.</b>: <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">ADC – The First Living, AI-Driven Brand Identity</a></li><li><b>بوست قصير يشرح الخبر مع لينك المصدر.</b>: <a href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">M/OTG brings a bold, timeless visual identity to heritage kosher brand J&J Dairy</a></li></ul>
 
-<h2>Source references</h2>
-<ol class="refs"><li dir="auto">FutureBrand — <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5</a></li><li dir="auto">Zawya — <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5</a></li><li dir="auto">Transform magazine — <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5</a></li><li dir="auto">Transform magazine — <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5</a></li><li dir="auto">Transform magazine — <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5</a></li><li dir="auto">How&How — <a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5</a></li><li dir="auto">Red Dot Design Award — <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5</a></li><li dir="auto">BP&O — <a href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/</a></li><li dir="auto">BP&O — <a href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/</a></li><li dir="auto">Wamda — <a href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna</a></li><li dir="auto">Pentawards — <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5">https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5</a></li><li dir="auto">Fast Company Co.Design — <a href="https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss</a></li><li dir="auto">ascoltitv.it — <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5">https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5</a></li><li dir="auto">The Peninsula Qatar — <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5</a></li><li dir="auto">Creative Boom — <a href="https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/">https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/</a></li><li dir="auto">BP&O — <a href="https://bpando.org/2026/11/12/smk-statens-museum-for-kunst-etypes-brand-identity-design/">https://bpando.org/2026/11/12/smk-statens-museum-for-kunst-etypes-brand-identity-design/</a></li><li dir="auto">How&How — <a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xS0dmVFlMUXFkT3NQZXJab0l6LWs4cXlic0FuUjZZQnJ3V3o3ekZvNHlSZ2VfR0RqdGxzbnZDV2hTbE9SbDk0?oc=5">https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xS0dmVFlMUXFkT3NQZXJab0l6LWs4cXlic0FuUjZZQnJ3V3o3ekZvNHlSZ2VfR0RqdGxzbnZDV2hTbE9SbDk0?oc=5</a></li><li dir="auto">Fast Company Co.Design — <a href="https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss</a></li><li dir="auto">Fast Company Co.Design — <a href="https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss</a></li><li dir="auto">The Dieline — <a href="https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/">https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/</a></li><li dir="auto">Fonts In Use — <a href="https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website">https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website</a></li><li dir="auto">BP&O — <a href="https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-design/">https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-design/</a></li><li dir="auto">Fast Company Co.Design — <a href="https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus-logo?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus-logo?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss</a></li><li dir="auto">The Eastern Herald — <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5">https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5</a></li><li dir="auto">Dezeen (Design) — <a href="https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/">https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/</a></li><li dir="auto">Communicate — <a href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/</a></li><li dir="auto">IMPACT Magazine — <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNRDI0MVNQQXNTNkZGcTl6cFNUcldpLUpJWHJVbHd3Vkw4R3FDckZXSGJGTzlDd0N4MW9ncnpQMGVpcEJ1ZThiaUtWWmhCdzBTVkg4QlAyZlVPOFVhUmRkand6MmFUTjB6RlFqNUNKUnd4RTdoVXNqczhkN0JmdmtMMHQ5SVp4dXhvMnB4X1gzVDh6N3R2RjRWbzlBTlVoMHRzNmp0Y3BqaFVEbXdyQUZRVlJyZk1HUQ?oc=5">https://news.google.com/rss/articles/CBMitgFBVV95cUxNRDI0MVNQQXNTNkZGcTl6cFNUcldpLUpJWHJVbHd3Vkw4R3FDckZXSGJGTzlDd0N4MW9ncnpQMGVpcEJ1ZThiaUtWWmhCdzBTVkg4QlAyZlVPOFVhUmRkand6MmFUTjB6RlFqNUNKUnd4RTdoVXNqczhkN0JmdmtMMHQ5SVp4dXhvMnB4X1gzVDh6N3R2RjRWbzlBTlVoMHRzNmp0Y3BqaFVEbXdyQUZRVlJyZk1HUQ?oc=5</a></li><li dir="auto">MediaNews4U — <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGdGNlJyTjg2OEU2b3RVTDZ5dm9HUGUzNWpOeHVpejNSa0JQRHZwOEVzbFZQMDJGSFhaa3czbTVTNU9QVXdVeVNYem9McFNHdDNLczZIQVNOVWhLNkZJNW9RNzNfZ2RCX19PbmgxcGhTUHBxZHFPRTFWaGhLejF2ZFpLMEJtRndESDVJQ2ZOYUtzaC0wNmFYbXcySUI5MFlhNG5zd0RhXzU?oc=5">https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGdGNlJyTjg2OEU2b3RVTDZ5dm9HUGUzNWpOeHVpejNSa0JQRHZwOEVzbFZQMDJGSFhaa3czbTVTNU9QVXdVeVNYem9McFNHdDNLczZIQVNOVWhLNkZJNW9RNzNfZ2RCX19PbmgxcGhTUHBxZHFPRTFWaGhLejF2ZFpLMEJtRndESDVJQ2ZOYUtzaC0wNmFYbXcySUI5MFlhNG5zd0RhXzU?oc=5</a></li><li dir="auto">Transform magazine — <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl81SFZHd2FHYnRfYTd4bjNhSThoS2NtdUotd2o2NGtxMXdQZ0lvbTJJQzlSNnVFM0p6cnlpa0owbkdtWDU4NFJTX0pXZlphTWxJOTBMXzY0MlFBc0M1VjM0dUVYXzVpSkpuOGdubzRDWU54Z09tRm51cS03d3JodThjZS1Ma3d1cDlKVnRtQ2lOaXdLZ1RpVkgwdWx3VldpemlIMTV6RlhZd2Q0d2RUdlQzQ1hhUm1V?oc=5">https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl81SFZHd2FHYnRfYTd4bjNhSThoS2NtdUotd2o2NGtxMXdQZ0lvbTJJQzlSNnVFM0p6cnlpa0owbkdtWDU4NFJTX0pXZlphTWxJOTBMXzY0MlFBc0M1VjM0dUVYXzVpSkpuOGdubzRDWU54Z09tRm51cS03d3JodThjZS1Ma3d1cDlKVnRtQ2lOaXdLZ1RpVkgwdWx3VldpemlIMTV6RlhZd2Q0d2RUdlQzQ1hhUm1V?oc=5</a></li><li dir="auto">Branding Strategy Insider — <a href="https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/">https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/</a></li><li dir="auto">The Dieline — <a href="https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/">https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/</a></li><li dir="auto">Wamda — <a href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform</a></li><li dir="auto">Bizcommunity — <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5">https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5</a></li><li dir="auto">BP&O — <a href="https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/">https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/</a></li><li dir="auto">Fast Company Co.Design — <a href="https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss</a></li><li dir="auto">Times of Oman — <a href="https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity">https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity</a></li><li dir="auto">It's Nice That — <a href="https://www.itsnicethat.com/articles/mother-design-major-league-baseball-brand-refresh-graphic-design-project-161126">https://www.itsnicethat.com/articles/mother-design-major-league-baseball-brand-refresh-graphic-design-project-161126</a></li><li dir="auto">Dezeen (Design) — <a href="https://www.dezeen.com/2026/11/17/dezeen-20x20-birthday/">https://www.dezeen.com/2026/11/17/dezeen-20x20-birthday/</a></li><li dir="auto">How&How — <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h6YlpZZWRGdmJVQ3NJWDNFSEthbmcxMHNmOGpqcUFUd21iVkdrQnE1Y2Z1bklyZGFPZU1YQ0l4eHpoWGlSaDhJdUpSeVFnd2pYTFRGcHJR?oc=5">https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h6YlpZZWRGdmJVQ3NJWDNFSEthbmcxMHNmOGpqcUFUd21iVkdrQnE1Y2Z1bklyZGFPZU1YQ0l4eHpoWGlSaDhJdUpSeVFnd2pYTFRGcHJR?oc=5</a></li><li dir="auto">Packaging of the World — <a href="https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html">https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html</a></li><li dir="auto">Packaging of the World — <a href="https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html">https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html</a></li><li dir="auto">The National Law Review — <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0FzbENxQUE4SklFUEpMUkVManRId3Y3SzRZZ1U5a3hxZnVmc25OWkpGMUszcWQ5WlNQZXVnMTR4VVBzdFJwb0hqZzJIZmwyNklEbmxXdnB6RFF3OW1LX280VnEzNXpUaW5QY0xsMkRVYnFUVVhuRHE0Ni0tTEZoVkg4dTEyMGZZSTA1NGtWelgtUGtETHBwSmQxUmR4RTJHLVE1X2xjS0FPeVZSTmZCSVVfMA?oc=5">https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0FzbENxQUE4SklFUEpMUkVManRId3Y3SzRZZ1U5a3hxZnVmc25OWkpGMUszcWQ5WlNQZXVnMTR4VVBzdFJwb0hqZzJIZmwyNklEbmxXdnB6RFF3OW1LX280VnEzNXpUaW5QY0xsMkRVYnFUVVhuRHE0Ni0tTEZoVkg4dTEyMGZZSTA1NGtWelgtUGtETHBwSmQxUmR4RTJHLVE1X2xjS0FPeVZSTmZCSVVfMA?oc=5</a></li><li dir="auto">Boating New Zealand — <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVk1YcmVYTFJIcl9Sb1ZLbFdKSXgxWk5hQWQtemJRRDBFRUxLNjRGREhlZUVjbmxVUEpqYnA4YS1ZYVcxcnNiUzFmb3BKcGZZQ29ma19GUnFzTVVISGNqcjRkRDVDV1RmZGFEOUtzSzNsUTh1elFPUUpDdjBEWjZheW5EU05KMW5tVlYxUzhpdndOYmxNbkw0aTNibVV0SUFpZEswajhJYUQ3cGpNNUlyMWFZc3U4UkdscFJwZ3VVV1hnOXpsNkY5TDR3Nk5iUFYyME1wTUFRWkJOMFBjMGpXaW9ZQU0zbW91QkJB?oc=5">https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVk1YcmVYTFJIcl9Sb1ZLbFdKSXgxWk5hQWQtemJRRDBFRUxLNjRGREhlZUVjbmxVUEpqYnA4YS1ZYVcxcnNiUzFmb3BKcGZZQ29ma19GUnFzTVVISGNqcjRkRDVDV1RmZGFEOUtzSzNsUTh1elFPUUpDdjBEWjZheW5EU05KMW5tVlYxUzhpdndOYmxNbkw0aTNibVV0SUFpZEswajhJYUQ3cGpNNUlyMWFZc3U4UkdscFJwZ3VVV1hnOXpsNkY5TDR3Nk5iUFYyME1wTUFRWkJOMFBjMGpXaW9ZQU0zbW91QkJB?oc=5</a></li><li dir="auto">PR Newswire — <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmJTUlFEd1dxVEVJc24waERZaE1sc1BTdXEzSVZYSldGYm9IbDBsemtSRWE4cW5rVnhVX05VNXloUHkyNTBKTHBqam8zbXc2Mm9qTkVkcEEwUnYxUW8wWXdxZ01QQkdZbGd4NlVFT1FZbG13V2x1SmxleDM5WVc1VnI1ZnNWTXhUSEhuaVhwUm5mMWJ5Ykl0SFViZUNkNDdpVFpaTEIzVU5TZ1IyaWl3d2k4T2FTcWJQSUhzZXVSejR3eXYwRE11aTRYTQ?oc=5">https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmJTUlFEd1dxVEVJc24waERZaE1sc1BTdXEzSVZYSldGYm9IbDBsemtSRWE4cW5rVnhVX05VNXloUHkyNTBKTHBqam8zbXc2Mm9qTkVkcEEwUnYxUW8wWXdxZ01QQkdZbGd4NlVFT1FZbG13V2x1SmxleDM5WVc1VnI1ZnNWTXhUSEhuaVhwUm5mMWJ5Ykl0SFViZUNkNDdpVFpaTEIzVU5TZ1IyaWl3d2k4T2FTcWJQSUhzZXVSejR3eXYwRE11aTRYTQ?oc=5</a></li><li dir="auto">Facebook — <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVg1MkQtSHdaNVZzYU5hMWJxOG1nZ2Z6X3RDY0c0dURueDBtaTc1ZldJejNFRkJHNkVxaWVyRE9sVy1QcjU3ay1hbFBEeUxlSGk4cno3QjhsWXFJOUlCOW56b3h4b0U2Z094UmtrNk9feWhaX3V6NzRkRXVaU19pcUtRY3RmWUxmS1hGMjgwY2sxNXdiUFBLRnMxWFhjNEVzbkZrQ2NxaF9oNlJhMklseHhCdV95clVHQ0lKb0FCRjg5UW10cjBCRFNQcEZJcnhWYWZicDNMTml3SGlDeEE?oc=5">https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVg1MkQtSHdaNVZzYU5hMWJxOG1nZ2Z6X3RDY0c0dURueDBtaTc1ZldJejNFRkJHNkVxaWVyRE9sVy1QcjU3ay1hbFBEeUxlSGk4cno3QjhsWXFJOUlCOW56b3h4b0U2Z094UmtrNk9feWhaX3V6NzRkRXVaU19pcUtRY3RmWUxmS1hGMjgwY2sxNXdiUFBLRnMxWFhjNEVzbkZrQ2NxaF9oNlJhMklseHhCdV95clVHQ0lKb0FCRjg5UW10cjBCRFNQcEZJcnhWYWZicDNMTml3SGlDeEE?oc=5</a></li><li dir="auto">BellaNaija — <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UTG9mSmNZNjdoYktJUEY5M3UwMVJaNkRDNUc1M1ljRkN5LUNWTUU1RFQ2SUR1aHYxRFVSMHFqOEZyQzBvLTIxUS16bnNJc2s2U2M1RHU2dUQ?oc=5">https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UTG9mSmNZNjdoYktJUEY5M3UwMVJaNkRDNUc1M1ljRkN5LUNWTUU1RFQ2SUR1aHYxRFVSMHFqOEZyQzBvLTIxUS16bnNJc2s2U2M1RHU2dUQ?oc=5</a></li><li dir="auto">Energetica India Magazine — <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQcG1QNXVxU1huSWUxNUFZeHE1b2xmNzh3VXdnSmJYMXZWYkV4U1JoUlpUYUdDVERXWEhWOWdMWVE0UElBa09GbWFTQUwyaHRicmZGSzE4ZE5GQU0xTDY5UkxsV1RLVlBva3pfYlVseHBOaExxY0xNWHRJUHU3Z0JzVEpJR1dhT0M3NEF3WTdGXzBMMTFuSVFlVExsOGlveGJUQ09YVXhBNA?oc=5">https://news.google.com/rss/articles/CBMipwFBVV95cUxQcG1QNXVxU1huSWUxNUFZeHE1b2xmNzh3VXdnSmJYMXZWYkV4U1JoUlpUYUdDVERXWEhWOWdMWVE0UElBa09GbWFTQUwyaHRicmZGSzE4ZE5GQU0xTDY5UkxsV1RLVlBva3pfYlVseHBOaExxY0xNWHRJUHU3Z0JzVEpJR1dhT0M3NEF3WTdGXzBMMTFuSVFlVExsOGlveGJUQ09YVXhBNA?oc=5</a></li><li dir="auto">ThePrint — <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxPeUp3STAxcS1zVGlwWnBSY1c4azRNeFNDeWNkWUFfUGZiV1BNd0UwN2lkc1dsaExaTXIyLVB0UHBMbEJiZGJqMGhSNFBEVmJzQnFkSm00NHg2UFk4TXJMZ2RCSmJ2SWxmMGd3cGtnX0lTeGkwUGVVb0xpcXh5NDZtRTc3UFdMZldZQUFTWEc0M1Nycnh4dGRIRGdzejVMT0dhR3E4S3BXRGgyMUxkS0hqN1lfSElnLUs0Nng0WlIzN1I0ZzhvMXNneVdzZ9IB0AFBVV95cUxQZm1qMXhUYWdPZ1J0OFQzM3o4WVBGRlFIeVc4R1ZMckhuelFuS3YtcEdZRjlTMW1aWTJ4V3kwU2ZQX180djF5T1hGS1lUeXNhd2IxYTdoM0UzRGdycTBmc051cjFmUWdoZXJLWEhZYk5vRGVrWVJCdkpaTjN2QjNYSTgyekpIV1l0X1QtZzdQY21mUjh6d1N0MDJzaW12Yk5vSzREVFJVeXhsUHhJZ2dGSXR2MDI2b25ManJRSzZhdGxKV1BvaWV0SndrZkJLZHVI?oc=5">https://news.google.com/rss/articles/CBMiywFBVV95cUxPeUp3STAxcS1zVGlwWnBSY1c4azRNeFNDeWNkWUFfUGZiV1BNd0UwN2lkc1dsaExaTXIyLVB0UHBMbEJiZGJqMGhSNFBEVmJzQnFkSm00NHg2UFk4TXJMZ2RCSmJ2SWxmMGd3cGtnX0lTeGkwUGVVb0xpcXh5NDZtRTc3UFdMZldZQUFTWEc0M1Nycnh4dGRIRGdzejVMT0dhR3E4S3BXRGgyMUxkS0hqN1lfSElnLUs0Nng0WlIzN1I0ZzhvMXNneVdzZ9IB0AFBVV95cUxQZm1qMXhUYWdPZ1J0OFQzM3o4WVBGRlFIeVc4R1ZMckhuelFuS3YtcEdZRjlTMW1aWTJ4V3kwU2ZQX180djF5T1hGS1lUeXNhd2IxYTdoM0UzRGdycTBmc051cjFmUWdoZXJLWEhZYk5vRGVrWVJCdkpaTjN2QjNYSTgyekpIV1l0X1QtZzdQY21mUjh6d1N0MDJzaW12Yk5vSzREVFJVeXhsUHhJZ2dGSXR2MDI2b25ManJRSzZhdGxKV1BvaWV0SndrZkJLZHVI?oc=5</a></li><li dir="auto">BP&O — <a href="https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/">https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/</a></li><li dir="auto">Brandingmag — <a href="https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/">https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/</a></li><li dir="auto">The Dieline — <a href="https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/">https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/</a></li><li dir="auto">Figma Release Notes — <a href="https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans">https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans</a></li><li dir="auto">Communicate — <a href="https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/">https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/</a></li><li dir="auto">The Whisky Wire — <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOa0tWTGdmQ3VUdUNFd295blJwNnJBWGR2eFAxNFRqLXZhemhsY1k5THRwRVRJQ3RhRzBXMl9kTmhDQUdmamlfRE1Wdk9tbnc0eHp1dzIyME1TeDZrcmNCSEk0Nk5YcVhFVjZnZ0F2N0F5VzJHdHlvallqajdMZ1NhUU9VUjNPVmZ4a2c?oc=5">https://news.google.com/rss/articles/CBMiigFBVV95cUxOa0tWTGdmQ3VUdUNFd295blJwNnJBWGR2eFAxNFRqLXZhemhsY1k5THRwRVRJQ3RhRzBXMl9kTmhDQUdmamlfRE1Wdk9tbnc0eHp1dzIyME1TeDZrcmNCSEk0Nk5YcVhFVjZnZ0F2N0F5VzJHdHlvallqajdMZ1NhUU9VUjNPVmZ4a2c?oc=5</a></li><li dir="auto">ET BrandEquity — <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxNOTdyaVFUMHhQSTlBbGVSQjZpek1YbTgtN2RoZVFmdHBEalNDMjVEejhsRV96NmY2WHA4cDAwWi0tbkZsODhzeHdfYnEyNzNqallFcWlPTjlUcnZ2LVdiQWN2S0VPOVd0Qlg4ZU4zNFNORTU5YTZZUGw4WjdjU09ZUGo3dy1NbWJHRnE1RmR2MENMbUxmLS1Ja0JsNzhSU0ZuNjJha2xzWGxfdHBiOHY2cjFCMWN5WWN0Uy0zU3ZzNjVNWEx3M2FrUTdHa3ZYNHoxbTlGZmJBblpBNXYwcnJuS3laQVlKWlM3a3ZXb2pUdmE2VDVLdC1zWDJ3OGVwb1hHM2ZtYtIBigJBVV95cUxQaHdnTzRqN1pXQUo2VEFwTmlwZjdpaGRhNUw0REo2TkVMX2xkMUgtank0NHNVU2ZEY0FMdVZXZ281T3VvZGRublJEZGVmM1drMF9yZWJPYllEc2x6Y3RjZzEwVklJVjE0Wm4zdUl5WFdPM05BR1YxNXFIVnk1X0M4Q0hBU0dyM3VnWDJjLUJpZlNyZjlhNlMtSkRjaWxVY2xHekFJT3dydTZzMGg1OFhkWEJwUlFUUzRucXJJRFVDem1qWG1RVTVGSEJlMF9lRC03aTJSc1NvNW1JUlhkcmlsY21uaUhBdmI1TXFPTzNheXhnQW5McldCUXlGZ0NxZl83Vi1CQ1lDejA1QQ?oc=5">https://news.google.com/rss/articles/CBMihAJBVV95cUxNOTdyaVFUMHhQSTlBbGVSQjZpek1YbTgtN2RoZVFmdHBEalNDMjVEejhsRV96NmY2WHA4cDAwWi0tbkZsODhzeHdfYnEyNzNqallFcWlPTjlUcnZ2LVdiQWN2S0VPOVd0Qlg4ZU4zNFNORTU5YTZZUGw4WjdjU09ZUGo3dy1NbWJHRnE1RmR2MENMbUxmLS1Ja0JsNzhSU0ZuNjJha2xzWGxfdHBiOHY2cjFCMWN5WWN0Uy0zU3ZzNjVNWEx3M2FrUTdHa3ZYNHoxbTlGZmJBblpBNXYwcnJuS3laQVlKWlM3a3ZXb2pUdmE2VDVLdC1zWDJ3OGVwb1hHM2ZtYtIBigJBVV95cUxQaHdnTzRqN1pXQUo2VEFwTmlwZjdpaGRhNUw0REo2TkVMX2xkMUgtank0NHNVU2ZEY0FMdVZXZ281T3VvZGRublJEZGVmM1drMF9yZWJPYllEc2x6Y3RjZzEwVklJVjE0Wm4zdUl5WFdPM05BR1YxNXFIVnk1X0M4Q0hBU0dyM3VnWDJjLUJpZlNyZjlhNlMtSkRjaWxVY2xHekFJT3dydTZzMGg1OFhkWEJwUlFUUzRucXJJRFVDem1qWG1RVTVGSEJlMF9lRC03aTJSc1NvNW1JUlhkcmlsY21uaUhBdmI1TXFPTzNheXhnQW5McldCUXlGZ0NxZl83Vi1CQ1lDejA1QQ?oc=5</a></li><li dir="auto">The Brand Identity — <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPblVhQURvX0dLQkxYVGY3c1pYNXZPY2RUaVNkNDFYNkhIcUdTYXprZldQOURNLS1ockZsZ2NUWDFOVi1WTUNGcWwxdThjb3c5Xzl5NWdXZ2dDRlNsVHRhNzkySW5RNUc3R0d5WmpsWXlxWk1wbkZDMGg3N3VKenhfRnpxVG9IeGJwU1d0cW5ELWFhQks5ZkNialdGU3NIV2Z4VjdOTA?oc=5">https://news.google.com/rss/articles/CBMipAFBVV95cUxPblVhQURvX0dLQkxYVGY3c1pYNXZPY2RUaVNkNDFYNkhIcUdTYXprZldQOURNLS1ockZsZ2NUWDFOVi1WTUNGcWwxdThjb3c5Xzl5NWdXZ2dDRlNsVHRhNzkySW5RNUc3R0d5WmpsWXlxWk1wbkZDMGg3N3VKenhfRnpxVG9IeGJwU1d0cW5ELWFhQks5ZkNialdGU3NIV2Z4VjdOTA?oc=5</a></li><li dir="auto">The Brand Identity — <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmlnSlJHSUxVMlA0cFFNWUNDanpTQkd4bXdFOVhIRUxHWTlxaTZmNnRmeEMzQXpLOWpoTFlUVDQzZGhNUUZtNUdoNWtiX1dIRjZkbE1sV0FldzF0b3ZJZlYxNm96ekgzckE2QzRjeFdDZko1Ykd6VGZFUUhySXppeUZQbnhZS19hNUdPZWM3LU1ZNE1xOUZKaDZGQmFWQnBsckFvTXdUS3Y?oc=5">https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmlnSlJHSUxVMlA0cFFNWUNDanpTQkd4bXdFOVhIRUxHWTlxaTZmNnRmeEMzQXpLOWpoTFlUVDQzZGhNUUZtNUdoNWtiX1dIRjZkbE1sV0FldzF0b3ZJZlYxNm96ekgzckE2QzRjeFdDZko1Ykd6VGZFUUhySXppeUZQbnhZS19hNUdPZWM3LU1ZNE1xOUZKaDZGQmFWQnBsckFvTXdUS3Y?oc=5</a></li><li dir="auto">The Brand Identity — <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPYkNBVnpHRXlmYUtPMTdTTEQ3eDVvLWZsRVpQV0ZxMzBiRHd3UFBjNENiaVE5MkhpV0pEZU5ocjQ3WHlBa01BbzNTbHJ2SWdWencyd1VycnBxdkEwa1p0YmgxNHYxelk1c1hlWG5JMUdJZ3dmVHRJTXVBa2F0UmxKOEZjSHZjcUlwWmpPd3FLcjBPVS1lUjhEOVAxVm5ndS1fZk1sbnhmUV9YS2JW?oc=5">https://news.google.com/rss/articles/CBMirAFBVV95cUxPYkNBVnpHRXlmYUtPMTdTTEQ3eDVvLWZsRVpQV0ZxMzBiRHd3UFBjNENiaVE5MkhpV0pEZU5ocjQ3WHlBa01BbzNTbHJ2SWdWencyd1VycnBxdkEwa1p0YmgxNHYxelk1c1hlWG5JMUdJZ3dmVHRJTXVBa2F0UmxKOEZjSHZjcUlwWmpPd3FLcjBPVS1lUjhEOVAxVm5ndS1fZk1sbnhmUV9YS2JW?oc=5</a></li><li dir="auto">Fast Company Co.Design — <a href="https://www.fastcompany.com/91643106/who-wants-20-pounds-of-trump-coins?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91643106/who-wants-20-pounds-of-trump-coins?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss</a></li><li dir="auto">Brandingmag — <a href="https://www.brandingmag.com/michael-gentle/why-ai-shouldnt-cost-or-plan-your-rebrand-alone/">https://www.brandingmag.com/michael-gentle/why-ai-shouldnt-cost-or-plan-your-rebrand-alone/</a></li></ol>
+<h2>المصادر</h2>
+<ol class="refs"><li>FutureBrand: <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2ZxN0w0Sm5DMm9zTEtJS1MxWjhmRk5Va01FSTJkT3YxSmxUaGgtSmdzMmZHZHY4M2E2N0g5MHEzRkRRaVhrWk1KTW0wNFk2QjFwZEZNSjU4UQ?oc=5">https://news.google.com/rss/articles/CBMie0FVX3lxTE9NSjJtLURJRnhKOXl2TUlIa0RVckhib1ZhZzMwd0Q0a3FHY2Z</a></li><li>Zawya: <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVFWZUNLMW9qMnEtWWFRNUMxZjVYanZ6Q2dQMGZveFhMc0JmUGM3Qmp6NWhodjNuaWxEeXppNmtSd0xaUWhHajI5Vl9MRmNLdnVDTWd5NDMtbmRoWHJkb0pBRGpvb2daWkJZS19yNWZsYnRaTUJ3bVdHZ3dLSVp4YmlNOFVfR1VyRnY1WXBIbGJCSF9BczRNWXNqdkJ0S1NqMnFDazFnWGIyYzA2bjQxbVFLTTMzR1dCX0FBMEdidE9GT3FaSkhqem90bkFCamEyUjF4bWd0WkY4eERVUXVpSzVqNQ?oc=5">https://news.google.com/rss/articles/CBMihAJBVV95cUxOSkNvcEM0czZEdGRuZ2VzalR0aFg4aDNXOUJuQ3psZjdXLVF</a></li><li>Transform magazine: <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1REbm5pSWtZZVVzNThfMUVBb0o5bngyeWl0WUg4MWRyY2pvd3ZqMXMtRWt2eURTZ00xUVFqUlBlSXZ4UThmTXVNWUlNNzMtQWJCTFU5d2E1QkRrcEpHMXZxZ1k2YmFJZ1E0Z3JXTXVaMFBZVW85cmZqWGdWRGZHa0l3aTc2V2tvSml2US1WenZPNnlFdw?oc=5">https://news.google.com/rss/articles/CBMitgFBVV95cUxPeDZsOGY1ZGpIRlM1LWVBU1hZQldPQldNdFpxdXdhekVvV1R</a></li><li>Transform magazine: <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1HUFFtTm9VNTR4YUNrVjdJTFJTa0NwU3BjdFB3X2VILUlFWnNMMVJsRmZvODYwVE9lV1FwQ0ZleGVHN3EzZmg5Szh1b0VudU1NamNFdlE4V0JvU3B5bDloUUZiUVdEREpmdGJzQ2EwNVpHTVJpd0E1UXJJVExBektHN3VkZmJYaVJxNm1hdmpB?oc=5">https://news.google.com/rss/articles/CBMisgFBVV95cUxPY3NDNGdTTW0yOHFFd21ZVTFsM05kNFBhdEFTTTczZ1htWk1</a></li><li>Transform magazine: <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0hVSjctOVB1OFRXU0hseFJEWlI4bXVxU1FPWUZHUUVfNEJNdGhDUXpTUEg1aTVjUDYyWm1oVDZQRkp5aERRaDNFN3dkMklrdGVDcld2TmdSNVVDTmk4QTY5YWxWWmxSeEF3WlR1M2t1LVBPZ1BLRmx6dExCVFZfdVpJeU41enlfM3hNd0lLT2hLMUxDb00?oc=5">https://news.google.com/rss/articles/CBMitwFBVV95cUxPU0cycnRhWkxUNWFtTXdydEFLSklSS3VBc2FRRWpkekI1M0h</a></li><li>How&How: <a href="https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5">https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER</a></li><li>Red Dot Design Award: <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5">https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXN</a></li><li>BP&O: <a href="https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/">https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/</a></li><li>BP&O: <a href="https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/">https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/</a></li><li>Wamda: <a href="https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna">https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna</a></li><li>Pentawards: <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5">https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEc</a></li><li>Fast Company Co.Design: <a href="https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_sourc</a></li><li>ascoltitv.it: <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGtVZkpxT3ltcnlQM3FKaVVwNFlMQU52YWJSVDNHRmNhYXhOWkJ0RU8zTw?oc=5">https://news.google.com/rss/articles/CBMiVEFVX3lxTE45cjdwSVowUWFDSE5iN25UU3Utd0JTM3g5bEhDMFlHNHVORGt</a></li><li>The Peninsula Qatar: <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdExGdGM1enpUTE1qSEx6ZHdxaVNQZWx2WkhKbHBtcWJNdTBwQklnOE5ieVkyeWRWOWZ1Z1g5Ym5MSmpxQjRBc0hlaFIwd3RFUTFaV3dUNnNKbkhVUFNDRGJ4OVMzdFdwMkpVbVZHNjBmdGtFdjJnNUFKbzJRSU5TUHlZcWU2QlhxTUpZNDQ4SC1DQmJVVFpqNnRPYVByWDdCcEhjLUFwTHJtWQ?oc=5">https://news.google.com/rss/articles/CBMiywFBVV95cUxOMTR0WlZ6UzVzbzFONGh0M0ZBN3AtOHgyWmF1NldNMnpDdEx</a></li><li>Creative Boom: <a href="https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/">https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-re</a></li><li>BP&O: <a href="https://bpando.org/2026/11/12/smk-statens-museum-for-kunst-etypes-brand-identity-design/">https://bpando.org/2026/11/12/smk-statens-museum-for-kunst-etypes-brand-identity-design/</a></li><li>How&How: <a href="https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xS0dmVFlMUXFkT3NQZXJab0l6LWs4cXlic0FuUjZZQnJ3V3o3ekZvNHlSZ2VfR0RqdGxzbnZDV2hTbE9SbDk0?oc=5">https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xS0dmVFlMUXFkT3NQZXJab0l6LWs4cXlic0FuUjZZQnJ3V3o</a></li><li>Fast Company Co.Design: <a href="https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technolog</a></li><li>Fast Company Co.Design: <a href="https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-they</a></li><li>The Dieline: <a href="https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/">https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-</a></li><li>Fonts In Use: <a href="https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website">https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website</a></li><li>BP&O: <a href="https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-design/">https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-desi</a></li><li>Fast Company Co.Design: <a href="https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus-logo?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus</a></li><li>The Eastern Herald: <a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU5UlZMSkxyb3NVd2d4N0tvVExEOVhlX0E1dXVpVHFRQmdRLUVBaVlLNGNpWmRyX1JodTVYczk5eDhzT2JjeGVwdGxHQmtJMENiakRRMWxsREVuSGZSR3RXb2RKRVhCVFlLYnBfZ1A3Y09wcV92SjZhcFpNMnFiZGd2RW5rS3lkQjloU1pQeUJJSy1CQ2prXzhNeFlUUHhwVXhMSW92N1h1UjNmZENkYUVQZnFhLXptZUduZWhxZnZsUFpwRHg2Rm5sY2JLX0tXYWViQkY3RzZhVQ?oc=5">https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHkzUG1LR19kb0ZWRW5pSnN5ZTIxTG1ucS1GTjc3WHpjTUU</a></li><li>Dezeen (Design): <a href="https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/">https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/</a></li><li>Communicate: <a href="https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/">https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/</a></li><li>IMPACT Magazine: <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNRDI0MVNQQXNTNkZGcTl6cFNUcldpLUpJWHJVbHd3Vkw4R3FDckZXSGJGTzlDd0N4MW9ncnpQMGVpcEJ1ZThiaUtWWmhCdzBTVkg4QlAyZlVPOFVhUmRkand6MmFUTjB6RlFqNUNKUnd4RTdoVXNqczhkN0JmdmtMMHQ5SVp4dXhvMnB4X1gzVDh6N3R2RjRWbzlBTlVoMHRzNmp0Y3BqaFVEbXdyQUZRVlJyZk1HUQ?oc=5">https://news.google.com/rss/articles/CBMitgFBVV95cUxNRDI0MVNQQXNTNkZGcTl6cFNUcldpLUpJWHJVbHd3Vkw4R3F</a></li><li>MediaNews4U: <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGdGNlJyTjg2OEU2b3RVTDZ5dm9HUGUzNWpOeHVpejNSa0JQRHZwOEVzbFZQMDJGSFhaa3czbTVTNU9QVXdVeVNYem9McFNHdDNLczZIQVNOVWhLNkZJNW9RNzNfZ2RCX19PbmgxcGhTUHBxZHFPRTFWaGhLejF2ZFpLMEJtRndESDVJQ2ZOYUtzaC0wNmFYbXcySUI5MFlhNG5zd0RhXzU?oc=5">https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGdGNlJyTjg2OEU2b3RVTDZ5dm9HUGUzNWpOeHVpejNSa0J</a></li><li>Transform magazine: <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl81SFZHd2FHYnRfYTd4bjNhSThoS2NtdUotd2o2NGtxMXdQZ0lvbTJJQzlSNnVFM0p6cnlpa0owbkdtWDU4NFJTX0pXZlphTWxJOTBMXzY0MlFBc0M1VjM0dUVYXzVpSkpuOGdubzRDWU54Z09tRm51cS03d3JodThjZS1Ma3d1cDlKVnRtQ2lOaXdLZ1RpVkgwdWx3VldpemlIMTV6RlhZd2Q0d2RUdlQzQ1hhUm1V?oc=5">https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl81SFZHd2FHYnRfYTd4bjNhSThoS2NtdUotd2o2NGtxMXd</a></li><li>Branding Strategy Insider: <a href="https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/">https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/</a></li><li>The Dieline: <a href="https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/">https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/</a></li><li>Wamda: <a href="https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform">https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform</a></li><li>Bizcommunity: <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1saHVDSXo0ODdZcUprby11ajhPSU52aVYyS1Q3QnVyZFE0TjdBU0dwNEpud3hKNGRJdHBtYmdvRTJhM0pxYmlfV3VCQ3RFOVRzdHNZRW1EQU03RndrSTRhUW1KOWdmV1o1bFZjVHpCNjc4bEkzTXprQWRPWkUwSXRJdV9TcVdyblk?oc=5">https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbzVmNHFOcVVnLXJ5ZUgzNndxYUZpcXFXNDU2M3luVTQ0US1</a></li><li>BP&O: <a href="https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/">https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/</a></li><li>Fast Company Co.Design: <a href="https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss</a></li><li>Times of Oman: <a href="https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity">https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cy</a></li><li>It's Nice That: <a href="https://www.itsnicethat.com/articles/mother-design-major-league-baseball-brand-refresh-graphic-design-project-161126">https://www.itsnicethat.com/articles/mother-design-major-league-baseball-brand-refresh-graphic-desig</a></li><li>Dezeen (Design): <a href="https://www.dezeen.com/2026/11/17/dezeen-20x20-birthday/">https://www.dezeen.com/2026/11/17/dezeen-20x20-birthday/</a></li><li>How&How: <a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h6YlpZZWRGdmJVQ3NJWDNFSEthbmcxMHNmOGpqcUFUd21iVkdrQnE1Y2Z1bklyZGFPZU1YQ0l4eHpoWGlSaDhJdUpSeVFnd2pYTFRGcHJR?oc=5">https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h</a></li><li>Packaging of the World: <a href="https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html">https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html</a></li><li>Packaging of the World: <a href="https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html">https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html</a></li><li>The National Law Review: <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0FzbENxQUE4SklFUEpMUkVManRId3Y3SzRZZ1U5a3hxZnVmc25OWkpGMUszcWQ5WlNQZXVnMTR4VVBzdFJwb0hqZzJIZmwyNklEbmxXdnB6RFF3OW1LX280VnEzNXpUaW5QY0xsMkRVYnFUVVhuRHE0Ni0tTEZoVkg4dTEyMGZZSTA1NGtWelgtUGtETHBwSmQxUmR4RTJHLVE1X2xjS0FPeVZSTmZCSVVfMA?oc=5">https://news.google.com/rss/articles/CBMiswFBVV95cUxPU0FzbENxQUE4SklFUEpMUkVManRId3Y3SzRZZ1U5a3hxZnV</a></li><li>Boating New Zealand: <a href="https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVk1YcmVYTFJIcl9Sb1ZLbFdKSXgxWk5hQWQtemJRRDBFRUxLNjRGREhlZUVjbmxVUEpqYnA4YS1ZYVcxcnNiUzFmb3BKcGZZQ29ma19GUnFzTVVISGNqcjRkRDVDV1RmZGFEOUtzSzNsUTh1elFPUUpDdjBEWjZheW5EU05KMW5tVlYxUzhpdndOYmxNbkw0aTNibVV0SUFpZEswajhJYUQ3cGpNNUlyMWFZc3U4UkdscFJwZ3VVV1hnOXpsNkY5TDR3Nk5iUFYyME1wTUFRWkJOMFBjMGpXaW9ZQU0zbW91QkJB?oc=5">https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVk1YcmVYTFJIcl9Sb1ZLbFdKSXgxWk5hQWQtemJRRDBFRUx</a></li><li>PR Newswire: <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmJTUlFEd1dxVEVJc24waERZaE1sc1BTdXEzSVZYSldGYm9IbDBsemtSRWE4cW5rVnhVX05VNXloUHkyNTBKTHBqam8zbXc2Mm9qTkVkcEEwUnYxUW8wWXdxZ01QQkdZbGd4NlVFT1FZbG13V2x1SmxleDM5WVc1VnI1ZnNWTXhUSEhuaVhwUm5mMWJ5Ykl0SFViZUNkNDdpVFpaTEIzVU5TZ1IyaWl3d2k4T2FTcWJQSUhzZXVSejR3eXYwRE11aTRYTQ?oc=5">https://news.google.com/rss/articles/CBMiywFBVV95cUxOdmJTUlFEd1dxVEVJc24waERZaE1sc1BTdXEzSVZYSldGYm9</a></li><li>Facebook: <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVg1MkQtSHdaNVZzYU5hMWJxOG1nZ2Z6X3RDY0c0dURueDBtaTc1ZldJejNFRkJHNkVxaWVyRE9sVy1QcjU3ay1hbFBEeUxlSGk4cno3QjhsWXFJOUlCOW56b3h4b0U2Z094UmtrNk9feWhaX3V6NzRkRXVaU19pcUtRY3RmWUxmS1hGMjgwY2sxNXdiUFBLRnMxWFhjNEVzbkZrQ2NxaF9oNlJhMklseHhCdV95clVHQ0lKb0FCRjg5UW10cjBCRFNQcEZJcnhWYWZicDNMTml3SGlDeEE?oc=5">https://news.google.com/rss/articles/CBMi3gFBVV95cUxNLVg1MkQtSHdaNVZzYU5hMWJxOG1nZ2Z6X3RDY0c0dURueDB</a></li><li>BellaNaija: <a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UTG9mSmNZNjdoYktJUEY5M3UwMVJaNkRDNUc1M1ljRkN5LUNWTUU1RFQ2SUR1aHYxRFVSMHFqOEZyQzBvLTIxUS16bnNJc2s2U2M1RHU2dUQ?oc=5">https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UTG9mSmNZNjdoYktJUEY5M3UwMVJaNkRDNUc1M1ljRkN5LUN</a></li><li>Energetica India Magazine: <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQcG1QNXVxU1huSWUxNUFZeHE1b2xmNzh3VXdnSmJYMXZWYkV4U1JoUlpUYUdDVERXWEhWOWdMWVE0UElBa09GbWFTQUwyaHRicmZGSzE4ZE5GQU0xTDY5UkxsV1RLVlBva3pfYlVseHBOaExxY0xNWHRJUHU3Z0JzVEpJR1dhT0M3NEF3WTdGXzBMMTFuSVFlVExsOGlveGJUQ09YVXhBNA?oc=5">https://news.google.com/rss/articles/CBMipwFBVV95cUxQcG1QNXVxU1huSWUxNUFZeHE1b2xmNzh3VXdnSmJYMXZWYkV</a></li><li>ThePrint: <a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxPeUp3STAxcS1zVGlwWnBSY1c4azRNeFNDeWNkWUFfUGZiV1BNd0UwN2lkc1dsaExaTXIyLVB0UHBMbEJiZGJqMGhSNFBEVmJzQnFkSm00NHg2UFk4TXJMZ2RCSmJ2SWxmMGd3cGtnX0lTeGkwUGVVb0xpcXh5NDZtRTc3UFdMZldZQUFTWEc0M1Nycnh4dGRIRGdzejVMT0dhR3E4S3BXRGgyMUxkS0hqN1lfSElnLUs0Nng0WlIzN1I0ZzhvMXNneVdzZ9IB0AFBVV95cUxQZm1qMXhUYWdPZ1J0OFQzM3o4WVBGRlFIeVc4R1ZMckhuelFuS3YtcEdZRjlTMW1aWTJ4V3kwU2ZQX180djF5T1hGS1lUeXNhd2IxYTdoM0UzRGdycTBmc051cjFmUWdoZXJLWEhZYk5vRGVrWVJCdkpaTjN2QjNYSTgyekpIV1l0X1QtZzdQY21mUjh6d1N0MDJzaW12Yk5vSzREVFJVeXhsUHhJZ2dGSXR2MDI2b25ManJRSzZhdGxKV1BvaWV0SndrZkJLZHVI?oc=5">https://news.google.com/rss/articles/CBMiywFBVV95cUxPeUp3STAxcS1zVGlwWnBSY1c4azRNeFNDeWNkWUFfUGZiV1B</a></li><li>BP&O: <a href="https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/">https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/</a></li><li>Brandingmag: <a href="https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/">https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-</a></li><li>The Dieline: <a href="https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/">https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/</a></li><li>Figma Release Notes: <a href="https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans">https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-</a></li><li>Communicate: <a href="https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/">https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/</a></li><li>The Whisky Wire: <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOa0tWTGdmQ3VUdUNFd295blJwNnJBWGR2eFAxNFRqLXZhemhsY1k5THRwRVRJQ3RhRzBXMl9kTmhDQUdmamlfRE1Wdk9tbnc0eHp1dzIyME1TeDZrcmNCSEk0Nk5YcVhFVjZnZ0F2N0F5VzJHdHlvallqajdMZ1NhUU9VUjNPVmZ4a2c?oc=5">https://news.google.com/rss/articles/CBMiigFBVV95cUxOa0tWTGdmQ3VUdUNFd295blJwNnJBWGR2eFAxNFRqLXZhemh</a></li><li>ET BrandEquity: <a href="https://news.google.com/rss/articles/CBMihAJBVV95cUxNOTdyaVFUMHhQSTlBbGVSQjZpek1YbTgtN2RoZVFmdHBEalNDMjVEejhsRV96NmY2WHA4cDAwWi0tbkZsODhzeHdfYnEyNzNqallFcWlPTjlUcnZ2LVdiQWN2S0VPOVd0Qlg4ZU4zNFNORTU5YTZZUGw4WjdjU09ZUGo3dy1NbWJHRnE1RmR2MENMbUxmLS1Ja0JsNzhSU0ZuNjJha2xzWGxfdHBiOHY2cjFCMWN5WWN0Uy0zU3ZzNjVNWEx3M2FrUTdHa3ZYNHoxbTlGZmJBblpBNXYwcnJuS3laQVlKWlM3a3ZXb2pUdmE2VDVLdC1zWDJ3OGVwb1hHM2ZtYtIBigJBVV95cUxQaHdnTzRqN1pXQUo2VEFwTmlwZjdpaGRhNUw0REo2TkVMX2xkMUgtank0NHNVU2ZEY0FMdVZXZ281T3VvZGRublJEZGVmM1drMF9yZWJPYllEc2x6Y3RjZzEwVklJVjE0Wm4zdUl5WFdPM05BR1YxNXFIVnk1X0M4Q0hBU0dyM3VnWDJjLUJpZlNyZjlhNlMtSkRjaWxVY2xHekFJT3dydTZzMGg1OFhkWEJwUlFUUzRucXJJRFVDem1qWG1RVTVGSEJlMF9lRC03aTJSc1NvNW1JUlhkcmlsY21uaUhBdmI1TXFPTzNheXhnQW5McldCUXlGZ0NxZl83Vi1CQ1lDejA1QQ?oc=5">https://news.google.com/rss/articles/CBMihAJBVV95cUxNOTdyaVFUMHhQSTlBbGVSQjZpek1YbTgtN2RoZVFmdHBEalN</a></li><li>The Brand Identity: <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPblVhQURvX0dLQkxYVGY3c1pYNXZPY2RUaVNkNDFYNkhIcUdTYXprZldQOURNLS1ockZsZ2NUWDFOVi1WTUNGcWwxdThjb3c5Xzl5NWdXZ2dDRlNsVHRhNzkySW5RNUc3R0d5WmpsWXlxWk1wbkZDMGg3N3VKenhfRnpxVG9IeGJwU1d0cW5ELWFhQks5ZkNialdGU3NIV2Z4VjdOTA?oc=5">https://news.google.com/rss/articles/CBMipAFBVV95cUxPblVhQURvX0dLQkxYVGY3c1pYNXZPY2RUaVNkNDFYNkhIcUd</a></li><li>The Brand Identity: <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmlnSlJHSUxVMlA0cFFNWUNDanpTQkd4bXdFOVhIRUxHWTlxaTZmNnRmeEMzQXpLOWpoTFlUVDQzZGhNUUZtNUdoNWtiX1dIRjZkbE1sV0FldzF0b3ZJZlYxNm96ekgzckE2QzRjeFdDZko1Ykd6VGZFUUhySXppeUZQbnhZS19hNUdPZWM3LU1ZNE1xOUZKaDZGQmFWQnBsckFvTXdUS3Y?oc=5">https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmlnSlJHSUxVMlA0cFFNWUNDanpTQkd4bXdFOVhIRUxHWTl</a></li><li>The Brand Identity: <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPYkNBVnpHRXlmYUtPMTdTTEQ3eDVvLWZsRVpQV0ZxMzBiRHd3UFBjNENiaVE5MkhpV0pEZU5ocjQ3WHlBa01BbzNTbHJ2SWdWencyd1VycnBxdkEwa1p0YmgxNHYxelk1c1hlWG5JMUdJZ3dmVHRJTXVBa2F0UmxKOEZjSHZjcUlwWmpPd3FLcjBPVS1lUjhEOVAxVm5ndS1fZk1sbnhmUV9YS2JW?oc=5">https://news.google.com/rss/articles/CBMirAFBVV95cUxPYkNBVnpHRXlmYUtPMTdTTEQ3eDVvLWZsRVpQV0ZxMzBiRHd</a></li><li>Fast Company Co.Design: <a href="https://www.fastcompany.com/91643106/who-wants-20-pounds-of-trump-coins?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss">https://www.fastcompany.com/91643106/who-wants-20-pounds-of-trump-coins?partner=rss&utm_source=rss&u</a></li><li>Brandingmag: <a href="https://www.brandingmag.com/michael-gentle/why-ai-shouldnt-cost-or-plan-your-rebrand-alone/">https://www.brandingmag.com/michael-gentle/why-ai-shouldnt-cost-or-plan-your-rebrand-alone/</a></li></ol>
 
-<footer>Summaries are short excerpts or paraphrases with links to the originals; read the source before publishing. Labels: figures = publisher claims unless marked verified; "why it matters" & implications = AI-generated interpretation. Scores: relevance 20 · impact 20 · innovation 15 · credibility 15 · evidence 15 · content 10 · regional 5.</footer>
+<footer>الملخصات مختصرة أو مترجمة ومعاها لينك للمصدر الأصلي، فارجع للمصدر قبل ما تنشر. الأرقام ادعاءات من الناشر إلا لو مكتوب غير كده. "ليه مهم" و"زاوية المحتوى" تفسير آلي. الترجمة: مافيش. الدرجة من 100: الصلة 20 · الأثر 20 · الابتكار 15 · مصداقية المصدر 15 · الأدلة 15 · قيمة المحتوى 10 · الإقليمية 5.</footer>
 </div></body></html>
