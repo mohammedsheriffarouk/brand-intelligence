@@ -2,6 +2,7 @@ name: Monthly industry report + source re-validation
 on:
   schedule: [{cron: "53 5 1 * *"}]   # 1st of month 05:53 UTC
   workflow_dispatch: {}
+permissions: {contents: write, pages: write, id-token: write}
 jobs:
   validate:
     uses: ./.github/workflows/_run.yml
