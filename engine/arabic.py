@@ -129,16 +129,24 @@ def gemini_generate(prompt):
     tried = []
     for m in [x for x in models if x]:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent"
+        r = None
         for attempt in range(3):
             # key goes in a header, never in the URL, so it can't leak into logs or error messages
-            r = net.session().post(url, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip()}, timeout=120, json={
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2}})
+            try:
+                r = net.session().post(url, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip()}, timeout=(10, 180), json={
+                    "contents": [{"parts": [{"text": prompt}]}],
+                    "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2}})
+            except Exception as e:
+                tried.append(f"{m}=timeout/{type(e).__name__}")
+                r = None
+                break
             if r.status_code in (429, 500, 502, 503, 504):
                 last = f"{m}: HTTP {r.status_code}"
                 time.sleep(8 * (attempt + 1))
                 continue
             break
+        if r is None:
+            continue
         if r.status_code in (404, 429, 500, 502, 503, 504):
             last = f"{m}: HTTP {r.status_code}"
             tried.append(f"{m}={r.status_code}:{_err(r)}")
@@ -171,9 +179,11 @@ def available_models():
                               headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"].strip()}, params={"pageSize": 200})
         names = [m["name"].split("/", 1)[1] for m in r.json().get("models", [])
                  if "generateContent" in m.get("supportedGenerationMethods", [])]
-        flash = [n for n in names if "flash" in n and not any(x in n for x in ("image", "tts", "audio", "live", "exp", "thinking"))]
-        rank = lambda n: (("lite" in n), ("preview" in n), -len(n))
-        _models_cache = sorted(flash, key=rank)[:6]
+        flash = [n for n in names if re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash(-lite)?|gemini-flash(-lite)?-latest", n)]
+        def rank(n):
+            v = re.match(r"gemini-(\d+(?:\.\d+)?)", n)
+            return (("lite" in n), -(float(v.group(1)) if v else 0.5))
+        _models_cache = sorted(flash, key=rank)[:5]
         log_once(f"available flash models: {_models_cache}")
     except Exception as e:
         log_once(f"model list failed: {type(e).__name__}")
@@ -209,15 +219,15 @@ def arabize(recs, log=print, limit=60):
         return recs
     done = False
     try:
-        for i in range(0, len(top), 20):
-            chunk = top[i:i + 20]
+        for i in range(0, len(top), 10):
+            chunk = top[i:i + 10]
             res = gemini_batch(chunk)
             if res is None:
                 break
             for r, d in zip(chunk, res):
                 r.update(headline_ar=d.get("headline_ar") or "", summary_ar=d.get("summary_ar") or "",
                          why_ar=d.get("why_ar") or r["why_ar"], angle_ar=d.get("angle_ar") or r["angle_ar"], translation="gemini")
-            done = i + 20 >= len(top)
+            done = i + 10 >= len(top)
         if done:
             log(f"[arabic] {len(top)} stories translated + analysed by Gemini")
             return recs
