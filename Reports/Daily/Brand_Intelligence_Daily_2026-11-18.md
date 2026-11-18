@@ -1,5 +1,5 @@
 # Brand Intelligence Daily Brief
-*Wednesday 18 November 2026 · generated 18 Nov 2026 10:46 (Cairo)*
+*Wednesday 18 November 2026 · generated 18 Nov 2026 10:48 (Cairo)*
 
 **79** Stories · **0** High priority · **15** Regional · **11** Tools & AI
 
