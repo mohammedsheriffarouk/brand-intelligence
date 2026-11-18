@@ -76,3 +76,15 @@
 09:29:01 [sheets] News: 200 rows -> ok
 09:29:07 [sheets] News: 139 rows -> ok
 09:29:09 [sheets] Runs: 1 rows -> ok
+09:31:17 [enrich] 0 Google News links resolved to original articles, 0 publisher summaries added
+09:45:21 [arabic] 40 stories translated + analysed by Gemini
+09:45:21 [rescore] 1339 articles re-scored, 238 marked as non-article pages
+09:45:25 [sheets] Sources: 102 rows -> ok
+09:45:31 [sheets] News: 200 rows -> ok
+09:45:35 [sheets] News: 200 rows -> ok
+09:45:40 [sheets] News: 200 rows -> ok
+09:45:45 [sheets] News: 200 rows -> ok
+09:45:49 [sheets] News: 200 rows -> ok
+09:45:53 [sheets] News: 200 rows -> ok
+09:45:58 [sheets] News: 139 rows -> ok
+09:46:00 [sheets] Runs: 1 rows -> ok

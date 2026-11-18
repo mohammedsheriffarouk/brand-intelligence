@@ -1,5 +1,5 @@
 # النشرة اليومية للبراندنج
-*الأربعاء 18 نوفمبر 2026 · 18 Nov 2026 11:29 (القاهرة)*
+*الأربعاء 18 نوفمبر 2026 · 18 Nov 2026 11:46 (القاهرة)*
 
 **79** خبر · **0** أولوية عالية · **14** إقليمي · **12** أدوات و AI
 
@@ -43,13 +43,13 @@
 - **ليه مهم:** يعكس دور الـ rebrand وتغيير الاسم كأداة استراتيجية أساسية لدعم التحول المؤسسي وتتويج مراحل النمو السريع.
 - **زاوية محتوى:** متى يكون تغيير اسم البراند والـ identity بالكامل خطوة ضرورية للشركات بعد تحقيق قفزات نمو؟
 
-### [Godawari Power & Ispat Ltd. Unveils New Brand Identity, Heralds a New Chapter of Growth](https://theprint.in/ani-press-releases/godawari-power-ispat-ltd-unveils-new-brand-identity-heralds-a-new-chapter-of-growth/3101022/)
+### [شركة Godawari Power & Ispat تطلق brand identity جديدة لتعزيز نموها](https://theprint.in/ani-press-releases/godawari-power-ispat-ltd-unveils-new-brand-identity-heralds-a-new-chapter-of-growth/3101022/)
 *Godawari Power & Ispat Ltd. Unveils New Brand Identity, Heralds a New Chapter of Growth*
 *إطلاق علامة جديدة · ThePrint · 17 نوفمبر 2026 · يستحق المتابعة 73/100*
 
-- **الملخص:** Stay updated with ThePrint: Preferred Source Google Discover VMPL Raipur (Chhattisgarh) [India], November 17: Godawari Power & Ispat Limited (GPIL) (NSE: GPIL | BSE: 532734), the flagship company of the Hira Group,…
-- **ليه مهم:** علامة جديدة بتدخل السوق: فرصة تدرس اختيارات الاسم والـ positioning والهوية من أول يوم.
-- **زاوية محتوى:** تحليل علامة جديدة: الاسم والـ positioning والهوية.
+- **الملخص:** أعلنت شركة Godawari Power & Ispat Limited (GPIL) التابعة لمجموعة Hira Group عن تحديث الـ brand identity الخاصة بها. وتم الكشف عن الـ corporate logo الجديد خلال اجتماع مجلس إدارة الشركة للربع الثاني لتأكيد مرحلة جديدة من النمو.
+- **ليه مهم:** يوضح هذا الخبر كيف تلجأ الشركات الصناعية الضخمة للـ rebrand للتعبير عن التوسع ومراحل النمو الجديد للـ brand.
+- **زاوية محتوى:** تحليل إزاي تغيير الـ logo لشركات الـ B2B والصناعات الثقيلة بيساعدهم في تطوير الـ corporate identity وإرسال رسائل ثقة للأسواق.
 
 ## البراندنج وإعادة الهوية (6)
 
@@ -112,21 +112,21 @@
 - **ليه مهم:** يبرز كيف تستخدم البراندات العالمية العملاقة ابتكارات المنتجات وتسمياتها كأداة قوية لإعادة تنشيط الـ brand perception.
 - **زاوية محتوى:** كيف تستخدم Nike إطلاق وتسمية التقنيات الجديدة كاستراتيجية branding مباشرة لتخطي الأزمات وتجديد الـ brand equity؟
 
-### [Sabika secures new investment to expand gold and silver trading platform](https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform)
+### [منصة Sabika تحصل على تمويل جديد للتوسع في تداول الذهب والفضة](https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform)
 *Sabika secures new investment to expand gold and silver trading platform*
 *نمو أعمال · Wamda · 16 نوفمبر 2026 · للبحث فقط 61/100*
 
-- **الملخص:** Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…
-- **ليه مهم:** سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **الملخص:** أعلنت منصة Sabika المصرية لتداول المعادن النفيسة عن إغلاق جولات استثمارية متعددة دون الإفصاح عن قيمتها. وتسعى المنصة للتوسع في السوق المصري بعد أن تجاوزت قاعدة مستخدميها 120 ألف مستخدم.
+- **ليه مهم:** نمو منصات الـ Fintech في مصر يعكس فرصة لاستوديوهات البراندنج لبناء visual identity تعزز ثقة المستثمرين والمستخدمين.
+- **زاوية محتوى:** كيف يساعد تصميم الـ identity لمنصات الاستثمار والتداول في بناء الثقة وشعور الأمان لدى العملاء؟
 
-### [Pentagram looks to Grand Central Oyster Bar’s iconic lettering for its gorgeously gaudy Storefront Gala 2026 identity](https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/)
+### [Pentagram تستوحي هوية حفل Storefront Gala 2026 من خطوط Grand Central Oyster Bar التاريخية](https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/)
 *Pentagram looks to Grand Central Oyster Bar’s iconic lettering for its gorgeously gaudy Storefront Gala 2026 identity*
 *نتائج مالية · BP&O · 22 أكتوبر 2026 · للبحث فقط 57/100*
 
-- **الملخص:** Storefront for Art and Architecture is a Manhattan, New York-based non-profit organisation that aims to explore the relationship between architecture, art and the wider world through exhibitions, public programmes,…
-- **ليه مهم:** أرقام مالية فعلية للسياق التجاري، من غير ما نفترض إن البراندنج هو السبب.
-- **زاوية محتوى:** قصة أعمال بالأرقام، مع توضيح صريح للي البراندنج يقدر ومايقدرش يدّعيه.
+- **الملخص:** تعتبر Storefront for Art and Architecture مؤسسة غير ربحية في نيويورك تهدف لاستكشاف العلاقة بين العمارة والفن من خلال المعارض والفعاليات. يعتمد جزء كبير من تمويل المؤسسة على حفلها السنوي الذي تتولى وكالة Pentagram تصميم هويته البصرية بشكل مستمر منذ عام 2012.
+- **ليه مهم:** الاستلهام من الخطوط والكتابات المعمارية في الأماكن التاريخية يعطي تصميم الـ Event Identity عمقاً ثقافياً وتفرداً بكتلة الهوية.
+- **زاوية محتوى:** تحدث عن كيفية استغلال الـ Environmental Lettering والتفاصيل المعمارية للمكان كمصدر إلهام أساسي لتصميم الـ Visual Identity للفعاليات الثقافية.
 
 ### [The long game: How brand equity fuels future performance](https://business.google.com/us/think/measurement/brand-equity-building-long-term-performance/?utm_source=twg-rss-reader&utm_medium=rss&utm_campaign=rss-feed)
 *The long game: How brand equity fuels future performance*
@@ -163,13 +163,13 @@
 - **ليه مهم:** يفتح آفاقاً رائدة أمام مصممي الهويات البصرية لدمج تقنيات الـ dynamic identity والذكاء الاصطناعي في الأنظمة البصرية التكيفية.
 - **زاوية محتوى:** هل يمثل هذا المشروع بداية النهاية لأدلة الهوية الثابتة لصالح visual identities حية تتغير بالـ AI؟
 
-### [Maker’s Mark unveils refreshed brand identity](https://thewhiskywire.com/2026/11/18/makers-mark-unveils-refreshed-brand-identity/)
+### [Maker’s Mark تكشف عن brand identity جديدة ومحدثة](https://thewhiskywire.com/2026/11/18/makers-mark-unveils-refreshed-brand-identity/)
 *Maker’s Mark unveils refreshed brand identity*
 *تحديث أداة تصميم · The Whisky Wire · 18 نوفمبر 2026 · للبحث فقط 67/100*
 
-- **الملخص:** The Kentucky-based Maker’s Mark Distillery, has unveiled a refreshed global brand identity for its Bourbon, featuring an updated colour palette, typography, photography and graphic elements that pl…
-- **ليه مهم:** بيوضّح إزاي العلامات بتعيد صياغة استراتيجيتها، ومفيد في نقاشات الاستشارات.
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **الملخص:** كشفت شركة Maker’s Mark في كنتاكي عن brand identity عالمية محدثة لمنتجها. يتضمن التحديث تطوير الـ colour palette والـ typography والـ photography والعناصر الجرافيكية للمنتج.
+- **ليه مهم:** التحديثات الشاملة للـ brand visual system تؤكد على أهمية تناغم الـ typography مع الـ photography لإبراز هوية المنتجات الكلاسيكية.
+- **زاوية محتوى:** استعراض نصائح عملية لتطوير الـ colour palette والـ typography للمنتجات ذات الطابع التراثي من غير ما تفقد الـ brand جوهرها.
 
 ### [صندوق Wa'ed Ventures يدعم شركة COGNNA السعودية المتخصصة في الأمن السيبراني](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
 *Wa'ed Ventures backs Saudi cybersecurity startup COGNNA*
@@ -206,21 +206,21 @@
 
 ## أخبار الوكالات والاستوديوهات (6)
 
-### [SWSH brand identity and website](https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website)
+### [استوديو New Studio Partners يصمم الـ brand identity والـ website لتطبيق SWSH](https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website)
 *SWSH brand identity and website*
 *أخبار الوكالات · Fonts In Use · 17 نوفمبر 2026 · للبحث فقط 63/100*
 
-- **الملخص:** Contributed by Jonathan Lin Source: new.studio New Studio Partners . License: All Rights Reserved . SWSH (Somewhere Somehow) is an app where fans and creators collect shared albums from concerts, festivals and live…
-- **ليه مهم:** تحركات الوكالات بتوضّح فين المواهب والعملاء والقدرات رايحة.
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **الملخص:** صمم استوديو New Studio Partners في نيويورك الـ brand identity لتطبيق SWSH المخصص لمشاركة ألبومات الفعاليات الحية. اعتمد التصميم على خط Gerstner-Programm FSL بوزنين مع اختيار wordmark بأحرف كابيتال لترك مساحة أكبر للـ photography لتعكس طاقة الـ brand.
+- **ليه مهم:** نموذج ممتاز يوضح كيف تساهم الـ visual hierarchy البسيطة والخطوط الهادئة في إعطاء المساحة الكاملة للـ photography لتتولى قيادة الـ identity.
+- **زاوية محتوى:** تحليل لتصميم SWSH وكيفية استخدام الـ typography البسيط لإبراز المحتوى البصري والـ photography في تطبيقات الموبايل.
 
-### [Dolly Parton told Elvis no. That decision is a master class in personal branding](https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
+### [قرار Dolly Parton برفض طلب Elvis يعتبر درساً رائعاً في الـ personal branding](https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss)
 *Dolly Parton told Elvis no. That decision is a master class in personal branding*
 *جوائز · Fast Company Co.Design · 16 نوفمبر 2026 · للبحث فقط 59/100*
 
-- **الملخص:** Even in death, Dolly Parton showed up on her own terms. Last month at the Americana Honors, she accepted a Lifetime Achievement Award through a video she recorded before she died in August at 80 , a final reminder of…
-- **ليه مهم:** الجوائز بتوري الصناعة بتكافئ إيه دلوقتي، ومعيار للجودة.
-- **زاوية محتوى:** تسليط الضوء على الشغل الفائز والدرس منه.
+- **الملخص:** أظهرت الفنانة Dolly Parton حرصاً كبيراً على إدارة قصتها وسيرتها بنفسها طوال مسيرتها الفنية. وأثبتت أن الـ personal brand الأقوى هو الذي يُبنى على القيم الحقيقية للشخص وليس على رغبات الآخرين.
+- **ليه مهم:** يسلط الضوء على أهمية تحديد الـ positioning والالتزام بالقيم الأساسية عند بناء الـ personal brand للرواد والأفراد.
+- **زاوية محتوى:** دروس في الـ personal branding: كيف تساهم القرارات الصعبة في حماية موقع وقيمة علامتك الشخصية في السوق؟
 
 ### [andstudio’s identity for new Rotterdam bar Werf is a brilliant lesson in graphic simplicity and abstraction](https://bpando.org/2026/10/27/andstudio-werf-rotterdam-bar-identity-design/)
 *andstudio’s identity for new Rotterdam bar Werf is a brilliant lesson in graphic simplicity and abstraction*
@@ -256,14 +256,14 @@
 
 ## الأبحاث ورؤى الصناعة (3)
 
-### [Social media stopped being social. Most brands did not notice](https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/)
+### [وسائل التواصل الاجتماعي لم تعد اجتماعية ومعظم الـ brands لم تلاحظ ذلك](https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/)
 *Social media stopped being social. Most brands did not notice*
 *سلوك المستهلك · Communicate · 17 نوفمبر 2026 · للبحث فقط 62/100*
 
-- **الملخص:** In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…
-- **ليه مهم:** تغيّر سلوك المستهلك لازم ينعكس على استراتيجية العلامة ورسائلها.
+- **الملخص:** أثبتت شركة Meta أمام المحكمة أن تطبيقاتها لم تعد منصات تواصل اجتماعي شخصية بل أصبحت منصات محتوى تنافس TikTok وYouTube. وتشير البيانات إلى تغير كبير في سلوك المستخدمين وطريقة قضائهم للوقت على المنصات.
+- **ليه مهم:** يغير طريقة تفكير استوديوهات التصميم في بناء الـ visual content وكيفية تصميم الـ social media assets كمنصات بث محتوى وليس مجرد منشورات تفاعلية.
 - **رقم:** 17%: Unlabelled figure (Publisher claim — not independently verified)
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **زاوية محتوى:** كيف تطور استراتيجية الـ visual content للـ brands على السوشيال ميديا بعد تحول المنصات من التفاعل البشري إلى صناعة المحتوى الترفيهي.
 
 ### [Why a Fast-Growing Supplement Brand Ditched the Badges, Flags, and Gold Lids](https://thedieline.com/why-a-fast-growing-supplement-brand-ditched-the-badges-flags-and-gold-lids/)
 *Why a Fast-Growing Supplement Brand Ditched the Badges, Flags, and Gold Lids*
@@ -308,30 +308,30 @@
 - **ليه مهم:** يعكس كيف يقود التوسع من النطاق الإقليمي إلى الدولي ضرورة إعادة هيكلة الاسم والـ corporate identity بما يناسب الأسواق العالمية.
 - **زاوية محتوى:** متى يستدعي التحول من نطاق إقليمي إلى منافس دولي تغيير اسم البراند وإعادة بناء الـ brand architecture؟
 
-### [Social media stopped being social. Most brands did not notice](https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/)
+### [وسائل التواصل الاجتماعي لم تعد اجتماعية ومعظم الـ brands لم تلاحظ ذلك](https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/)
 *Social media stopped being social. Most brands did not notice*
 *سلوك المستهلك · Communicate · 17 نوفمبر 2026 · للبحث فقط 62/100*
 
-- **الملخص:** In 2025, Meta stood in a US courtroom and proved that its own apps are no longer social. It was fighting an antitrust case brought by the FTC, and its defence was that it competes with TikTok and YouTube, so it cannot…
-- **ليه مهم:** تغيّر سلوك المستهلك لازم ينعكس على استراتيجية العلامة ورسائلها.
+- **الملخص:** أثبتت شركة Meta أمام المحكمة أن تطبيقاتها لم تعد منصات تواصل اجتماعي شخصية بل أصبحت منصات محتوى تنافس TikTok وYouTube. وتشير البيانات إلى تغير كبير في سلوك المستخدمين وطريقة قضائهم للوقت على المنصات.
+- **ليه مهم:** يغير طريقة تفكير استوديوهات التصميم في بناء الـ visual content وكيفية تصميم الـ social media assets كمنصات بث محتوى وليس مجرد منشورات تفاعلية.
 - **رقم:** 17%: Unlabelled figure (Publisher claim — not independently verified)
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **زاوية محتوى:** كيف تطور استراتيجية الـ visual content للـ brands على السوشيال ميديا بعد تحول المنصات من التفاعل البشري إلى صناعة المحتوى الترفيهي.
 
-### [Sabika secures new investment to expand gold and silver trading platform](https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform)
+### [منصة Sabika تحصل على تمويل جديد للتوسع في تداول الذهب والفضة](https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform)
 *Sabika secures new investment to expand gold and silver trading platform*
 *نمو أعمال · Wamda · 16 نوفمبر 2026 · للبحث فقط 61/100*
 
-- **الملخص:** Egypt-based digital precious metals investment platform Sabika has announced the completion of multiple funding rounds for an undisclosed amount. The company did not reveal the investors, funding stages or the number of…
-- **ليه مهم:** سياق النمو بيساعد تربط قرارات العلامة بالنتائج التجارية (ارتباط مش إثبات سببية).
-- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+- **الملخص:** أعلنت منصة Sabika المصرية لتداول المعادن النفيسة عن إغلاق جولات استثمارية متعددة دون الإفصاح عن قيمتها. وتسعى المنصة للتوسع في السوق المصري بعد أن تجاوزت قاعدة مستخدميها 120 ألف مستخدم.
+- **ليه مهم:** نمو منصات الـ Fintech في مصر يعكس فرصة لاستوديوهات البراندنج لبناء visual identity تعزز ثقة المستثمرين والمستخدمين.
+- **زاوية محتوى:** كيف يساعد تصميم الـ identity لمنصات الاستثمار والتداول في بناء الثقة وشعور الأمان لدى العملاء؟
 
-### [Microsoft CEO Satya Nadella unveils new models for coding, cybersecurity](https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity)
+### [رئيس Microsoft التنفيذي Satya Nadella يكشف عن نماذج جديدة للبرمجة والأمن السيبراني](https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity)
 *Microsoft CEO Satya Nadella unveils new models for coding, cybersecurity*
 *ذكاء اصطناعي · Times of Oman · 18 نوفمبر 2026 · للبحث فقط 59/100*
 
-- **الملخص:** San Francisco: Microsoft CEO Satya Nadella on Tuesday underlined the company's vision to become a complete infrastructure provider for enterprise AI,...
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
+- **الملخص:** أكد Satya Nadella المدير التنفيذي لـ Microsoft على رؤية الشركة للتوسع في تقديم بنية تحتية متكاملة لـ Enterprise AI. تهدف هذه الخطوة لتوفير حلول ذكاء اصطناعي شاملة للمؤسسات والشركات الكبرى.
+- **ليه مهم:** التطور السريع في خدمات الـ Enterprise AI يفرض على استوديوهات البراندنج فهم كيفية إعادة تقديم هذه التقنيات المعقدة للمستخدمين بأسلوب بصري بسيط ومباشر.
+- **زاوية محتوى:** ناقش كيف يمكن لمصممي الهوية البصرية ترجمة مفاهيم الـ AI والـ Cybersecurity إلى عناصر بصريّة وبناء Positioning قوي لشركات التقنية.
 
 ## المصادر
 1. FutureBrand: https://www.futurebrand.com/thinking/a-new-positioning-for-futurebrand/
