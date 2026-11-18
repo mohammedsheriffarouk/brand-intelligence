@@ -1,7 +1,7 @@
 # النشرة اليومية للبراندنج
-*الأربعاء 18 نوفمبر 2026 · 18 Nov 2026 11:12 (القاهرة)*
+*الأربعاء 18 نوفمبر 2026 · 18 Nov 2026 11:19 (القاهرة)*
 
-**79** خبر · **0** أولوية عالية · **14** إقليمي · **11** أدوات و AI
+**79** خبر · **0** أولوية عالية · **14** إقليمي · **12** أدوات و AI
 
 ## الملخص التنفيذي
 - 79 خبر مهم (0 أولوية عالية) من أصل 1304 خبر اتجمعوا.
@@ -13,7 +13,7 @@
 
 ### [FutureBrand تطلق تموضعاً جديداً يتمحور حول سلوك البراند](https://www.futurebrand.com/thinking/a-new-positioning-for-futurebrand/)
 *Unmistakable brand behaviour for brands to own their futures: a new positioning for FutureBrand*
-*إعادة هوية (Rebranding) · FutureBrand · 17 نوفمبر 2026 · يستحق المتابعة 80/100*
+*إعادة هوية (Rebranding) · FutureBrand · 17 نوفمبر 2026 · يستحق المتابعة 81/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
 - **ليه مهم:** يوضح الخبر كيف تعيد وكالات الـ branding العالمية صياغة الـ positioning الخاص بها لربط استراتيجية الهوية بسلوك البراند الفعلي.
@@ -29,11 +29,19 @@
 
 ### [BrandMe تقدم rebrand لمنتج تمور الشوكولاتة الأصلي في دبي](https://www.transformmagazine.net/articles/2026/brandme-gives-dubai-s-original-chocolate-date-a-refreshed-identity/)
 *BrandMe gives Dubai’s original chocolate date a refreshed identity - 2026 - Articles*
-*إعادة هوية (Rebranding) · Transform magazine · 17 نوفمبر 2026 · يستحق المتابعة 75/100*
+*إعادة هوية (Rebranding) · Transform magazine · 17 نوفمبر 2026 · يستحق المتابعة 76/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
 - **ليه مهم:** يوضح أهمية تحديث الـ packaging والـ identity للمنتجات التراثية الشهيرة للمحافظة على تنافسيتها أمام المنتجات المعاصرة.
 - **زاوية محتوى:** كيف تطور packaging لمنتج تراثي في الخليج ليلائم معايير الرفوف العالمية دون فقدان أصالته؟
+
+### [PPHA تغير اسمها وتطلق rebrand باسم Archie Homes بعد عام من النمو القياسي](https://www.transformmagazine.net/articles/2026/ppha-rebrands-as-archie-homes-following-landmark-year-of-growth/)
+*PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles*
+*إعادة هوية (Rebranding) · Transform magazine · 16 نوفمبر 2026 · يستحق المتابعة 73/100*
+
+- **الملخص:** No summary provided by the feed — open the original article.
+- **ليه مهم:** يعكس دور الـ rebrand وتغيير الاسم كأداة استراتيجية أساسية لدعم التحول المؤسسي وتتويج مراحل النمو السريع.
+- **زاوية محتوى:** متى يكون تغيير اسم البراند والـ identity بالكامل خطوة ضرورية للشركات بعد تحقيق قفزات نمو؟
 
 ### [Godawari Power & Ispat Ltd. Unveils New Brand Identity, Heralds a New Chapter of Growth](https://theprint.in/ani-press-releases/godawari-power-ispat-ltd-unveils-new-brand-identity-heralds-a-new-chapter-of-growth/3101022/)
 *Godawari Power & Ispat Ltd. Unveils New Brand Identity, Heralds a New Chapter of Growth*
@@ -43,19 +51,11 @@
 - **ليه مهم:** علامة جديدة بتدخل السوق: فرصة تدرس اختيارات الاسم والـ positioning والهوية من أول يوم.
 - **زاوية محتوى:** تحليل علامة جديدة: الاسم والـ positioning والهوية.
 
-### [PPHA تغير اسمها وتطلق rebrand باسم Archie Homes بعد عام من النمو القياسي](https://www.transformmagazine.net/articles/2026/ppha-rebrands-as-archie-homes-following-landmark-year-of-growth/)
-*PPHA rebrands as Archie Homes following landmark year of growth - 2026 - Articles*
-*إعادة هوية (Rebranding) · Transform magazine · 16 نوفمبر 2026 · يستحق المتابعة 72/100*
-
-- **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** يعكس دور الـ rebrand وتغيير الاسم كأداة استراتيجية أساسية لدعم التحول المؤسسي وتتويج مراحل النمو السريع.
-- **زاوية محتوى:** متى يكون تغيير اسم البراند والـ identity بالكامل خطوة ضرورية للشركات بعد تحقيق قفزات نمو؟
-
 ## البراندنج وإعادة الهوية (6)
 
 ### [استوديو Evers + de Gier يصمم rebrand لافتاً لـ Theater Amsterdam](https://www.transformmagazine.net/articles/2026/evers-plus-de-gier-crafts-unignorable-rebrand-for-theater-amsterdam/)
 *Evers + de Gier crafts unignorable rebrand for Theater Amsterdam - 2026 - Articles*
-*إعادة هوية (Rebranding) · Transform magazine · 16 نوفمبر 2026 · للبحث فقط 69/100*
+*إعادة هوية (Rebranding) · Transform magazine · 16 نوفمبر 2026 · يستحق المتابعة 70/100*
 
 - **الملخص:** No summary provided by the feed — open the original article.
 - **ليه مهم:** يقدم نموذجاً ملهماً لكيفية تصميم visual identity جريئة للقطاعات الثقافية والمسارح لجذب انتباه الجمهور الحديث.
@@ -163,6 +163,14 @@
 - **ليه مهم:** يفتح آفاقاً رائدة أمام مصممي الهويات البصرية لدمج تقنيات الـ dynamic identity والذكاء الاصطناعي في الأنظمة البصرية التكيفية.
 - **زاوية محتوى:** هل يمثل هذا المشروع بداية النهاية لأدلة الهوية الثابتة لصالح visual identities حية تتغير بالـ AI؟
 
+### [Maker’s Mark unveils refreshed brand identity](https://thewhiskywire.com/2026/11/18/makers-mark-unveils-refreshed-brand-identity/)
+*Maker’s Mark unveils refreshed brand identity*
+*تحديث أداة تصميم · The Whisky Wire · 18 نوفمبر 2026 · للبحث فقط 67/100*
+
+- **الملخص:** The Kentucky-based Maker’s Mark Distillery, has unveiled a refreshed global brand identity for its Bourbon, featuring an updated colour palette, typography, photography and graphic elements that pl…
+- **ليه مهم:** بيوضّح إزاي العلامات بتعيد صياغة استراتيجيتها، ومفيد في نقاشات الاستشارات.
+- **زاوية محتوى:** بوست قصير يشرح الخبر مع لينك المصدر.
+
 ### [صندوق Wa'ed Ventures يدعم شركة COGNNA السعودية المتخصصة في الأمن السيبراني](https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna)
 *Wa'ed Ventures backs Saudi cybersecurity startup COGNNA*
 *ذكاء اصطناعي · Wamda · 16 نوفمبر 2026 · للبحث فقط 66/100*
@@ -195,14 +203,6 @@
 - **الملخص:** شهدت الهوية البصرية لعلامة Maker’s Mark تحديثاً عالمياً على يد وكالة Turner Duckworth في لندن. ويركز هذا التحديث الجديد على تقاليد العلامة العريقة المتمثلة في غمس الزجاجات يدوياً داخل الشمع الأحمر.
 - **ليه مهم:** يعرض براعة استوديو Turner Duckworth في استخلاص جوهر الـ craftsmanship وتحويله إلى بطل بصري أساسي للعلامة.
 - **زاوية محتوى:** كيف تستخرج عنصراً يدوياً أصيلاً وتجعله المحور البصري الأساسي في تحديث الـ identity لبراند عالمي؟
-
-### [Intuitus Unveils Native Edge-AI Vision Frameworks Under Its Distinctive Brand Identity "INTUITUS"– MAKING SENSE OF WHAT IS SENSED](https://easternherald.com/press-release/intuitus-unveils-native-edge-ai-vision-frameworks-under-its-distinctive-brand-identity-intuitus-making-sense-of-what-is-sensed/)
-*Intuitus Unveils Native Edge-AI Vision Frameworks Under Its Distinctive Brand Identity "INTUITUS"– MAKING SENSE OF WHAT IS SENSED*
-*ذكاء اصطناعي · The Eastern Herald · 18 نوفمبر 2026 · للبحث فقط 62/100*
-
-- **الملخص:** No summary provided by the feed — open the original article.
-- **ليه مهم:** قدرات الـ AI بتغيّر الإنتاج الإبداعي وتوقعات العملاء.
-- **زاوية محتوى:** رأي: الخبر ده معناه إيه لاستوديوهات البراندنج وعملائها.
 
 ## أخبار الوكالات والاستوديوهات (6)
 
@@ -337,56 +337,56 @@
 1. FutureBrand: https://www.futurebrand.com/thinking/a-new-positioning-for-futurebrand/
 2. Zawya: https://www.zawya.com/en/press-release/companies-news/kfh-bahrain-unveils-kfh-private-as-the-new-brand-identity-for-its-private-banking-and-wealth-management-business-2292372
 3. Transform magazine: https://www.transformmagazine.net/articles/2026/brandme-gives-dubai-s-original-chocolate-date-a-refreshed-identity/
-4. ThePrint: https://theprint.in/ani-press-releases/godawari-power-ispat-ltd-unveils-new-brand-identity-heralds-a-new-chapter-of-growth/3101022/
-5. Transform magazine: https://www.transformmagazine.net/articles/2026/ppha-rebrands-as-archie-homes-following-landmark-year-of-growth/
+4. Transform magazine: https://www.transformmagazine.net/articles/2026/ppha-rebrands-as-archie-homes-following-landmark-year-of-growth/
+5. ThePrint: https://theprint.in/ani-press-releases/godawari-power-ispat-ltd-unveils-new-brand-identity-heralds-a-new-chapter-of-growth/3101022/
 6. Transform magazine: https://www.transformmagazine.net/articles/2026/evers-plus-de-gier-crafts-unignorable-rebrand-for-theater-amsterdam/
 7. How&How: https://news.google.com/rss/articles/CBMiQEFVX3lxTFBWb01yQkt2N0VkSHJLQjNDRU1UZ2dUcnBXYkltbHM0dXVYRER5NVNSdkNqc3hZMEhyaVZTTXl3V3I?oc=5
 8. Red Dot Design Award: https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMnhjdHVRYUtFOXVIbVNucEVPSzVVVExlZ29SZFY1Z0k3aXNqY3psS190d0d2LW1ILWI3ek1pTWx6dVN4VFNYZUoxUkpyQW53bl9tVGZZNkduamkzQjhlLTNDaXU2X2t2Y2Y1OEJoOUJZYWVJVl84QzdOYjVEd1lwZzNrSjFhcFBDenYw?oc=5
-9. BP&O: https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/
-10. BP&O: https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/
-11. Wamda: https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna
-12. Pentawards: https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5
-13. The Peninsula Qatar: https://thepeninsulaqatar.com/article/16/11/2026/energy-minister-witnesses-gulf-helicopters-rebranding-as-global-helicopter-company
-14. Fast Company Co.Design: https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
-15. ascoltitv.it: https://www.ascoltitv.it/picture/20479731/
-16. Creative Boom: https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/
-17. BP&O: https://bpando.org/2026/11/12/smk-statens-museum-for-kunst-etypes-brand-identity-design/
-18. How&How: https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xS0dmVFlMUXFkT3NQZXJab0l6LWs4cXlic0FuUjZZQnJ3V3o3ekZvNHlSZ2VfR0RqdGxzbnZDV2hTbE9SbDk0?oc=5
-19. Fast Company Co.Design: https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
-20. Fast Company Co.Design: https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
-21. The Dieline: https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/
-22. Fonts In Use: https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website
-23. BP&O: https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-design/
-24. Fast Company Co.Design: https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus-logo?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
-25. Communicate: https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/
-26. MediaNews4U: https://www.medianews4u.com/godawari-power-ispat-unveils-new-brand-identity-to-mark-next-phase-of-growth/
-27. The Eastern Herald: https://easternherald.com/press-release/intuitus-unveils-native-edge-ai-vision-frameworks-under-its-distinctive-brand-identity-intuitus-making-sense-of-what-is-sensed/
-28. Dezeen (Design): https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/
-29. Wamda: https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform
-30. IMPACT Magazine: https://www.impactonnet.com/impact-stories/luminous-unveils-new-brand-identity-targets-3x-growth-by-2030-17683.html
-31. Boating New Zealand: https://www.boatingnz.co.nz/2026/11/mastervolt-introduces-next-generation-solutions-to-power-the-future-of-connected-energy-and-unveils-new-brand-identity/
-32. BellaNaija: https://www.bellanaija.com/2026/11/mss-at-20/
-33. Energetica India Magazine: https://www.energetica-india.net/news/luminous-power-technologies-unveils-new-brand-identity-and-tagline
-34. Transform magazine: https://www.transformmagazine.net/articles/2026/bruce-mau-design-crafts-new-modular-identity-for-the-lind-initiative/
-35. Branding Strategy Insider: https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/
-36. The Dieline: https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/
-37. BP&O: https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/
-38. Fast Company Co.Design: https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
-39. Times of Oman: https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity
-40. It's Nice That: https://www.itsnicethat.com/articles/mother-design-major-league-baseball-brand-refresh-graphic-design-project-161126
-41. Dezeen (Design): https://www.dezeen.com/2026/11/17/dezeen-20x20-birthday/
-42. How&How: https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h6YlpZZWRGdmJVQ3NJWDNFSEthbmcxMHNmOGpqcUFUd21iVkdrQnE1Y2Z1bklyZGFPZU1YQ0l4eHpoWGlSaDhJdUpSeVFnd2pYTFRGcHJR?oc=5
-43. Packaging of the World: https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html
-44. Packaging of the World: https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html
-45. Communicate: https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/
-46. The National Law Review: https://natlawreview.com/press-releases/amiviz-unveils-new-brand-identity-reflecting-expanded-technology-advisory
-47. Facebook: https://www.facebook.com/DailyGuardianPH/posts/the-provincial-government-unveiled-a-new-brand-identity-for-kasadyahan-sa-kabanw/1586390693517708/
-48. BP&O: https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/
-49. Brandingmag: https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/
-50. The Dieline: https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/
-51. Figma Release Notes: https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans
-52. The Whisky Wire: https://news.google.com/rss/articles/CBMiigFBVV95cUxOa0tWTGdmQ3VUdUNFd295blJwNnJBWGR2eFAxNFRqLXZhemhsY1k5THRwRVRJQ3RhRzBXMl9kTmhDQUdmamlfRE1Wdk9tbnc0eHp1dzIyME1TeDZrcmNCSEk0Nk5YcVhFVjZnZ0F2N0F5VzJHdHlvallqajdMZ1NhUU9VUjNPVmZ4a2c?oc=5
-53. ET BrandEquity: https://news.google.com/rss/articles/CBMihAJBVV95cUxNOTdyaVFUMHhQSTlBbGVSQjZpek1YbTgtN2RoZVFmdHBEalNDMjVEejhsRV96NmY2WHA4cDAwWi0tbkZsODhzeHdfYnEyNzNqallFcWlPTjlUcnZ2LVdiQWN2S0VPOVd0Qlg4ZU4zNFNORTU5YTZZUGw4WjdjU09ZUGo3dy1NbWJHRnE1RmR2MENMbUxmLS1Ja0JsNzhSU0ZuNjJha2xzWGxfdHBiOHY2cjFCMWN5WWN0Uy0zU3ZzNjVNWEx3M2FrUTdHa3ZYNHoxbTlGZmJBblpBNXYwcnJuS3laQVlKWlM3a3ZXb2pUdmE2VDVLdC1zWDJ3OGVwb1hHM2ZtYtIBigJBVV95cUxQaHdnTzRqN1pXQUo2VEFwTmlwZjdpaGRhNUw0REo2TkVMX2xkMUgtank0NHNVU2ZEY0FMdVZXZ281T3VvZGRublJEZGVmM1drMF9yZWJPYllEc2x6Y3RjZzEwVklJVjE0Wm4zdUl5WFdPM05BR1YxNXFIVnk1X0M4Q0hBU0dyM3VnWDJjLUJpZlNyZjlhNlMtSkRjaWxVY2xHekFJT3dydTZzMGg1OFhkWEJwUlFUUzRucXJJRFVDem1qWG1RVTVGSEJlMF9lRC03aTJSc1NvNW1JUlhkcmlsY21uaUhBdmI1TXFPTzNheXhnQW5McldCUXlGZ0NxZl83Vi1CQ1lDejA1QQ?oc=5
+9. The Whisky Wire: https://thewhiskywire.com/2026/11/18/makers-mark-unveils-refreshed-brand-identity/
+10. BP&O: https://bpando.org/2026/11/17/m-otg-visual-identity-packaging-heritage-kosher-brand-jj-dairy/
+11. BP&O: https://bpando.org/2026/11/03/ragged-edge-tabby-branding-identity-design/
+12. Wamda: https://www.wamda.com/2026/11/waed-ventures-backs-saudi-cybersecurity-startup-cognna
+13. Pentawards: https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNEJNNHowOFJlSUh6VVJSdzlmXzVESm9jNC0yQ2ZMTnhGWEcwZEt2N1ZxbjdEZFYwTkl2WEhtX0FvMkN5Q2I4T2x4WW5pUjV3NUNTblUwNkdtd1V0Tkh1dUhaUHNFRkNVMkdLd3BVVEIzXy1wNTJwcUQzNy1MTFcwV2xmMXRFdUFHWmczOHZYUm5SWlNQWkJ4a2ZWQjUwRUtqU1lNNVNJZ0p6amZ2UzM1eTJNX0hVMU9vZzBlWWVQUVk5ZGE4WDI1dVl4WEVXeW1MajJrU3p3?oc=5
+14. The Peninsula Qatar: https://thepeninsulaqatar.com/article/16/11/2026/energy-minister-witnesses-gulf-helicopters-rebranding-as-global-helicopter-company
+15. Fast Company Co.Design: https://www.fastcompany.com/91641174/nike-tuned-air-reinventing-air-technology?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
+16. ascoltitv.it: https://www.ascoltitv.it/picture/20479731/
+17. Creative Boom: https://www.creativeboom.com/news/koto-points-giffgaff-towards-its-next-chapter-with-an-arrow-led-rebrand/
+18. BP&O: https://bpando.org/2026/11/12/smk-statens-museum-for-kunst-etypes-brand-identity-design/
+19. How&How: https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xS0dmVFlMUXFkT3NQZXJab0l6LWs4cXlic0FuUjZZQnJ3V3o3ekZvNHlSZ2VfR0RqdGxzbnZDV2hTbE9SbDk0?oc=5
+20. Fast Company Co.Design: https://www.fastcompany.com/91641387/the-young-rebel-alliance-trying-to-get-people-to-love-technology-again?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
+21. Fast Company Co.Design: https://www.fastcompany.com/91635810/ai-firms-are-missing-a-key-reason-people-hate-data-centers-theyre-ugly-data-centers-aesthetics-technology-industrial-design?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
+22. The Dieline: https://thedieline.com/turner-duckworth-londons-makers-mark-update-celebrates-the-brands-wax-dipped-handmade-tradition/
+23. Fonts In Use: https://fontsinuse.com/uses/81072/swsh-brand-identity-and-website
+24. BP&O: https://bpando.org/2026/11/10/otherway-the-whisky-exchange-contemporary-heritage-brand-identity-design/
+25. Fast Company Co.Design: https://www.fastcompany.com/91641155/we-asked-4-designers-what-they-think-of-billy-evanss-haemanthus-logo?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
+26. Communicate: https://communicateonline.me/the-view/social-media-stopped-being-social-most-brands-did-not-notice/
+27. MediaNews4U: https://www.medianews4u.com/godawari-power-ispat-unveils-new-brand-identity-to-mark-next-phase-of-growth/
+28. The Eastern Herald: https://easternherald.com/press-release/intuitus-unveils-native-edge-ai-vision-frameworks-under-its-distinctive-brand-identity-intuitus-making-sense-of-what-is-sensed/
+29. Transform magazine: https://www.transformmagazine.net/articles/2026/bruce-mau-design-crafts-new-modular-identity-for-the-lind-initiative/
+30. Dezeen (Design): https://www.dezeen.com/2026/11/16/nike-tuned-air-new-era/
+31. Wamda: https://www.wamda.com/2026/11/sabika-secures-new-investment-expand-gold-silver-trading-platform
+32. IMPACT Magazine: https://www.impactonnet.com/impact-stories/luminous-unveils-new-brand-identity-targets-3x-growth-by-2030-17683.html
+33. Boating New Zealand: https://www.boatingnz.co.nz/2026/11/mastervolt-introduces-next-generation-solutions-to-power-the-future-of-connected-energy-and-unveils-new-brand-identity/
+34. BellaNaija: https://www.bellanaija.com/2026/11/mss-at-20/
+35. Energetica India Magazine: https://www.energetica-india.net/news/luminous-power-technologies-unveils-new-brand-identity-and-tagline
+36. Branding Strategy Insider: https://brandingstrategyinsider.com/2026/11/your-brand-problem-may-be-a-perspective-problem/
+37. The Dieline: https://thedieline.com/saint-urbain-leans-into-the-family-first-brand-story-of-masani-pizza/
+38. ET BrandEquity: https://brandequity.economictimes.indiatimes.com/news/research/advertising/luminous-refreshes-brand-identity-launches-solar-wali-soch-campaign-with-sachin-tendulkar/135887319
+39. BP&O: https://bpando.org/2026/11/05/mother-design-brand-identity-spirituality-app-purple-garden/
+40. Fast Company Co.Design: https://www.fastcompany.com/91635165/dolly-parton-elvis-personal-branding?partner=rss&utm_source=rss&utm_medium=feed&utm_campaign=rss+fastcompany&utm_content=rss
+41. Times of Oman: https://timesofoman.com//article/179300-microsoft-ceo-satya-nadella-unveils-new-models-for-coding-cybersecurity
+42. It's Nice That: https://www.itsnicethat.com/articles/mother-design-major-league-baseball-brand-refresh-graphic-design-project-161126
+43. Dezeen (Design): https://www.dezeen.com/2026/11/17/dezeen-20x20-birthday/
+44. How&How: https://news.google.com/rss/articles/CBMiekFVX3lxTE1QdzFqMjV5a01RaVFzQlRudFdyVktmcUN5RWtaa04tNVBCa0h6YlpZZWRGdmJVQ3NJWDNFSEthbmcxMHNmOGpqcUFUd21iVkdrQnE1Y2Z1bklyZGFPZU1YQ0l4eHpoWGlSaDhJdUpSeVFnd2pYTFRGcHJR?oc=5
+45. Packaging of the World: https://packagingoftheworld.com/2026/11/yokai-noodle-brand-identity-and-packaging-design.html
+46. Packaging of the World: https://packagingoftheworld.com/2026/11/manginis-pan-dulce-nuni-lab.html
+47. Communicate: https://communicateonline.me/brands/etisalats-aio-launch-puts-ai-infrastructure-on-the-cmos-agenda/
+48. The National Law Review: https://natlawreview.com/press-releases/amiviz-unveils-new-brand-identity-reflecting-expanded-technology-advisory
+49. Facebook: https://www.facebook.com/DailyGuardianPH/posts/the-provincial-government-unveiled-a-new-brand-identity-for-kasadyahan-sa-kabanw/1586390693517708/
+50. BP&O: https://bpando.org/2026/10/22/pentagram-new-york-storefront-gala-2026-event-identity-design/
+51. Brandingmag: https://www.brandingmag.com/felix-mathieu/branded-sentiments-absurdgasm-when-nonsense-branding-hits-right/
+52. The Dieline: https://thedieline.com/maqueis-skincare-packaging-delivers-everyday-acts-of-self-care/
+53. Figma Release Notes: https://www.figma.com/release-notes/?title=connect-google-drive-to-the-figma-agent-available-on-all-plans
 54. Bizcommunity: https://www.bizcommunity.com/article/woolworths-gives-wcafe-a-new-look-in-bold-woolies-cafe-rebrand-639391a
 55. The Brand Identity: https://news.google.com/rss/articles/CBMipAFBVV95cUxPblVhQURvX0dLQkxYVGY3c1pYNXZPY2RUaVNkNDFYNkhIcUdTYXprZldQOURNLS1ockZsZ2NUWDFOVi1WTUNGcWwxdThjb3c5Xzl5NWdXZ2dDRlNsVHRhNzkySW5RNUc3R0d5WmpsWXlxWk1wbkZDMGg3N3VKenhfRnpxVG9IeGJwU1d0cW5ELWFhQks5ZkNialdGU3NIV2Z4VjdOTA?oc=5
 56. The Brand Identity: https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQmlnSlJHSUxVMlA0cFFNWUNDanpTQkd4bXdFOVhIRUxHWTlxaTZmNnRmeEMzQXpLOWpoTFlUVDQzZGhNUUZtNUdoNWtiX1dIRjZkbE1sV0FldzF0b3ZJZlYxNm96ekgzckE2QzRjeFdDZko1Ykd6VGZFUUhySXppeUZQbnhZS19hNUdPZWM3LU1ZNE1xOUZKaDZGQmFWQnBsckFvTXdUS3Y?oc=5

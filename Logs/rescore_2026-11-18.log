@@ -48,3 +48,17 @@
 09:12:20 [sheets] News: 200 rows -> ok
 09:12:23 [sheets] News: 139 rows -> ok
 09:12:25 [sheets] Runs: 1 rows -> ok
+09:14:39 [enrich] 2 Google News links resolved to original articles, 2 publisher summaries added
+09:18:15 [arabic] Gemini failed, falling back to free translation: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120)
+09:18:15 [arabic] diagnostics: ["available flash models: ['gemini-omni-1.1-flash', 'gemini-omni-1.2-flash', 'gemini-flash-latest', 'gemini-2.5-flash', 'gemini-3.5-flash', 'gemini-3.6-flash']"]
+09:19:11 [arabic] 0/40 stories machine-translated (free) | first error: available flash models: ['gemini-omni-1.1-flash', 'gemini-omni-1.2-flash', 'gemini-flash-latest', 'gemini-2.5-flash', 'gemini-3.5-flash', 'gemini-3.6-flash']
+09:19:11 [rescore] 1339 articles re-scored, 238 marked as non-article pages
+09:19:14 [sheets] Sources: 102 rows -> ok
+09:19:18 [sheets] News: 200 rows -> ok
+09:19:23 [sheets] News: 200 rows -> ok
+09:19:27 [sheets] News: 200 rows -> ok
+09:19:31 [sheets] News: 200 rows -> ok
+09:19:35 [sheets] News: 200 rows -> ok
+09:19:39 [sheets] News: 200 rows -> ok
+09:19:42 [sheets] News: 139 rows -> ok
+09:19:44 [sheets] Runs: 1 rows -> ok
