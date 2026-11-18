@@ -128,6 +128,16 @@ def rescore(log=None, resend=False):
             row.update({k: v for k, v in rec.items() if k != "geo_hint"})
             if row.get("duplicate_of"):
                 row["editorial_status"] = "duplicate (linked to original)"
+    recent = [r for r in rows if r.get("date_status") == "fresh" and not r.get("duplicate_of")]
+    for r in recent:   # enrich() expects list fields as lists
+        r["evidence_links"] = db.loads(r.get("evidence_links"), [])
+    enrich.enrich(recent, log)
+    for r in recent:
+        if r.pop("_enriched", False):
+            rec = dict(r)
+            analyze.analyze(rec, _source_for(rec, by_id, by_domain))
+            rec.pop("_type", None)
+            r.update(rec)
     arabic.arabize(rows, log)
     for row in rows:
         db.upsert(con, "news", row, "news_id")
