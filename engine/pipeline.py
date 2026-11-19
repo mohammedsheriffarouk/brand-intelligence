@@ -48,8 +48,18 @@ def backup():
         old.unlink()
 
 
+def already_delivered_today():
+    from zoneinfo import ZoneInfo
+    day = datetime.now(ZoneInfo(settings()["timezone"])).strftime("%Y-%m-%d")
+    sent = json.loads(notify.SENT.read_text()) if notify.SENT.exists() else {}
+    return any(day in k and k.startswith(("email:", "telegram:")) and "Daily" in k for k in sent)
+
+
 def run_daily(notify_on=True, force=False):
     log = Logger("daily")
+    if notify_on and not force and already_delivered_today():
+        log("[skip] today's brief was already delivered by an earlier scheduled run")
+        return "ok"
     con = db.connect()
     run_id = "R" + datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
     started = datetime.now(timezone.utc).isoformat(timespec="seconds")

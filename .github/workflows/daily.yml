@@ -1,6 +1,12 @@
 name: Daily collection & brief
 on:
-  schedule: [{cron: "17 4 * * *"}]   # 04:17 UTC = 06:17 Cairo (07:17 in Egyptian summer time)
+  # GitHub cron is best-effort and sometimes drops runs, so there are 4 attempts.
+  # The pipeline skips itself once today's brief has been delivered, so only one actually runs.
+  schedule:
+    - {cron: "17 4 * * *"}    # 06:17 Cairo
+    - {cron: "43 5 * * *"}    # 07:43 Cairo (backup)
+    - {cron: "11 7 * * *"}    # 09:11 Cairo (backup)
+    - {cron: "37 9 * * *"}    # 11:37 Cairo (backup)
   workflow_dispatch: {}
 permissions: {contents: write, pages: write, id-token: write}
 jobs:
