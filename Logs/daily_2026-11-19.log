@@ -70,3 +70,4 @@
 10:21:47 [sheets] News: 50 rows -> ok
 10:21:50 [sheets] Runs: 1 rows -> ok
 10:21:50 [done] ok {"sources_checked": 45, "sources_failed": 0, "items_seen": 902, "items_new": 420, "duplicates_prevented": 407} ['email:sent', 'telegram:sent', 'alerts:0']
+13:20:43 [skip] today's brief was already delivered by an earlier scheduled run
