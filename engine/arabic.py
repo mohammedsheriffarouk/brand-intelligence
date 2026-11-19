@@ -155,6 +155,7 @@ def gemini_generate(prompt):
             raise RuntimeError(f"{m}: HTTP {r.status_code} {r.text[:150]}")
         _working_model = m
         return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+    _working_model = None   # next call retries the full model list instead of only the one that just failed
     raise RuntimeError("all models failed: " + " | ".join(tried)[:600] if tried else (last or "no Gemini model configured"))
 
 
