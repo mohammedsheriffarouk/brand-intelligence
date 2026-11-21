@@ -69,3 +69,4 @@
 12:48:25 [done] ok {"sources_checked": 45, "sources_failed": 0, "items_seen": 772, "items_new": 243, "duplicates_prevented": 452} ['email:sent', 'telegram:sent', 'alerts:0']
 13:44:58 [skip] today's brief was already delivered by an earlier scheduled run
 15:21:12 [skip] today's brief was already delivered by an earlier scheduled run
+16:56:05 [skip] today's brief was already delivered by an earlier scheduled run
