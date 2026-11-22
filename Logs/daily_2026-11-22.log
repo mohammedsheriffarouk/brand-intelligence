@@ -1,0 +1,69 @@
+12:39:30 [collect] A01 Creative Boom via rss: ok (20 items)
+12:39:30 [collect] A02 Design Week via google_news: ok (0 items)
+12:39:30 [collect] A03 Transform Magazine via google_news: ok (4 items)
+12:39:31 [collect] A04 Brand New via rss: ok (40 items)
+12:39:32 [collect] A05 The Brand Identity via google_news: ok (1 items)
+12:39:32 [collect] A06 BP&O via rss: ok (12 items)
+12:39:32 [collect] A07 It's Nice That via rss: ok (20 items)
+12:39:32 [collect] A08 Creative Review via google_news: ok (0 items)
+12:39:33 [collect] A09 World Brand Design Society via google_news: ok (1 items)
+12:39:33 [collect] A10 Brandemia via google_news: ok (0 items)
+12:39:34 [collect] A11 Dezeen (Design) via rss: ok (40 items)
+12:39:34 [collect] A12 Fast Company Co.Design via rss: ok (20 items)
+12:39:35 [collect] A13 Brandingmag via rss: ok (20 items)
+12:39:36 [collect] C03 Brand Finance via rss: ok (8 items)
+12:39:36 [collect] C11 Harvard Business Review via google_news: ok (22 items)
+12:39:36 [collect] D02 The Dieline via rss: ok (10 items)
+12:39:37 [collect] D03 Packaging of the World via rss: ok (10 items)
+12:39:37 [collect] E01 Adobe News via google_news: ok (0 items)
+12:39:37 [collect] E04 Adobe Firefly Blog via google_news: ok (0 items)
+12:39:38 [collect] E05 Figma Release Notes via rss: ok (40 items)
+12:39:38 [collect] E06 Canva Newsroom via google_news: ok (0 items)
+12:39:38 [collect] E09 OpenAI News via google_news: ok (0 items)
+12:39:38 [collect] G01 Campaign Middle East via rss: ok (10 items)
+12:39:39 [collect] G02 Communicate via rss: ok (10 items)
+12:39:39 [collect] G03 ArabAd via google_news: ok (0 items)
+12:39:39 [collect] G04 The Drum via google_news: ok (10 items)
+12:39:39 [collect] G05 Marketing Week via google_news: ok (2 items)
+12:39:39 [collect] G06 Enterprise via google_news: ok (0 items)
+12:39:40 [collect] G07 Zawya via google_news: ok (36 items)
+12:39:40 [collect] G09 Saudi Press Agency via google_news: ok (40 items)
+12:39:40 [collect] G10 Arab News (Business) via google_news: ok (0 items)
+12:39:40 [collect] G11 Argaam via google_news: ok (25 items)
+12:39:40 [collect] G12 The National (Business) via google_news: ok (10 items)
+12:39:41 [collect] G13 Gulf News (Business) via rss: ok (27 items)
+12:39:41 [collect] G14 Khaleej Times (Business) via google_news: ok (12 items)
+12:39:41 [collect] G15 Times of Oman via rss: ok (30 items)
+12:39:41 [collect] G16 Muscat Daily via google_news: ok (4 items)
+12:39:42 [collect] G17 Oman News Agency via google_news: ok (36 items)
+12:39:42 [collect] G18 Ahram Online (Business) via google_news: ok (37 items)
+12:39:42 [collect] G19 Daily News Egypt via rss: ok (10 items)
+12:39:43 [collect] G20 Wamda via rss: ok (20 items)
+12:39:43 [collect] G21 Campaign (UK/Global) via google_news: ok (2 items)
+12:39:43 [collect] G22 Adweek via rss: ok (10 items)
+12:39:44 [collect] G23 Al Eqtisadiah (Arabic) via google_news: ok (7 items)
+12:39:44 [collect] G24 Al-Mal News (Arabic) via google_news: ok (0 items)
+12:39:44 [discover] 'rebrand OR rebranding "new logo"': 8 items
+12:39:44 [discover] '"brand identity" unveils': 8 items
+12:39:44 [discover] '"brand value" Brand Finance OR Kantar OR Interbrand': 5 items
+12:39:45 [discover] 'branding agency acquires OR acquisition': 27 items
+12:39:45 [discover] 'rebrand Saudi OR KSA "new identity"': 0 items
+12:39:45 [discover] 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"': 0 items
+12:39:45 [discover] 'rebrand Oman OR Muscat': 0 items
+12:39:45 [discover] 'rebrand Egypt OR Cairo "new identity" OR "new logo"': 0 items
+12:39:45 [discover] 'هوية بصرية جديدة': 17 items
+12:39:46 [discover] 'شعار جديد علامة تجارية السعودية': 8 items
+12:39:46 [discover] 'هوية جديدة مصر شركة': 20 items
+12:39:46 [discover] 'Adobe OR Figma OR Canva new feature designers': 8 items
+12:39:46 [process] 297 new records, 349 duplicates prevented/linked, 81 non-article pages skipped
+12:40:00 [enrich] 7 Google News links resolved to original articles, 0 publisher summaries added
+12:47:46 [arabic] 11 stories translated + analysed by Gemini
+12:47:46 [score] 0 high, 0 follow, 285 rejected
+12:47:50 [report] Brand_Intelligence_Daily_2026-11-22.html | pdf=yes | png=yes
+12:47:56 [email] sent via Apps Script
+12:47:58 [telegram] sent
+12:48:01 [sheets] Sources: 102 rows -> ok
+12:48:05 [sheets] News: 200 rows -> ok
+12:48:08 [sheets] News: 97 rows -> ok
+12:48:10 [sheets] Runs: 1 rows -> ok
+12:48:11 [done] ok {"sources_checked": 45, "sources_failed": 0, "items_seen": 707, "items_new": 277, "duplicates_prevented": 349} ['email:sent', 'telegram:sent', 'alerts:0']
