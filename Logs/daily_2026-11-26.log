@@ -1,0 +1,73 @@
+13:58:41 [collect] A01 Creative Boom via rss: ok (20 items)
+13:58:41 [collect] A02 Design Week via google_news: ok (0 items)
+13:58:41 [collect] A03 Transform Magazine via google_news: ok (9 items)
+13:58:42 [collect] A04 Brand New via rss: ok (40 items)
+13:58:42 [collect] A05 The Brand Identity via google_news: ok (9 items)
+13:58:43 [collect] A06 BP&O via rss: ok (12 items)
+13:58:43 [collect] A07 It's Nice That via rss: ok (20 items)
+13:58:43 [collect] A08 Creative Review via google_news: ok (1 items)
+13:58:44 [collect] A09 World Brand Design Society via google_news: ok (1 items)
+13:58:44 [collect] A10 Brandemia via google_news: ok (0 items)
+13:58:44 [collect] A11 Dezeen (Design) via rss: ok (40 items)
+13:58:44 [collect] A12 Fast Company Co.Design via rss: ok (20 items)
+13:58:45 [collect] A13 Brandingmag via rss: ok (20 items)
+13:58:46 [collect] C03 Brand Finance via rss: ok (8 items)
+13:58:46 [collect] C11 Harvard Business Review via google_news: ok (28 items)
+13:58:47 [collect] D02 The Dieline via rss: ok (10 items)
+13:58:48 [collect] D03 Packaging of the World via rss: ok (10 items)
+13:58:48 [collect] E01 Adobe News via google_news: ok (1 items)
+13:58:48 [collect] E04 Adobe Firefly Blog via google_news: ok (1 items)
+13:58:48 [collect] E05 Figma Release Notes via rss: ok (40 items)
+13:58:48 [collect] E06 Canva Newsroom via google_news: ok (1 items)
+13:58:49 [collect] E09 OpenAI News via google_news: ok (0 items)
+13:58:49 [collect] G01 Campaign Middle East via rss: ok (10 items)
+13:58:49 [collect] G02 Communicate via rss: ok (10 items)
+13:58:49 [collect] G03 ArabAd via google_news: ok (0 items)
+13:58:50 [collect] G04 The Drum via google_news: ok (32 items)
+13:58:50 [collect] G05 Marketing Week via google_news: ok (6 items)
+13:58:50 [collect] G06 Enterprise via google_news: ok (0 items)
+13:58:50 [collect] G07 Zawya via google_news: ok (40 items)
+13:58:50 [collect] G09 Saudi Press Agency via google_news: ok (40 items)
+13:58:51 [collect] G10 Arab News (Business) via google_news: ok (0 items)
+13:58:51 [collect] G11 Argaam via google_news: ok (40 items)
+13:58:51 [collect] G12 The National (Business) via google_news: ok (17 items)
+13:58:51 [collect] G13 Gulf News (Business) via rss: ok (40 items)
+13:58:51 [collect] G14 Khaleej Times (Business) via google_news: ok (40 items)
+13:58:52 [collect] G15 Times of Oman via rss: ok (30 items)
+13:58:52 [collect] G16 Muscat Daily via google_news: ok (2 items)
+13:58:52 [collect] G17 Oman News Agency via google_news: ok (40 items)
+13:58:52 [collect] G18 Ahram Online (Business) via google_news: ok (40 items)
+13:58:53 [collect] G19 Daily News Egypt via rss: ok (10 items)
+13:58:54 [collect] G20 Wamda via rss: ok (20 items)
+13:58:54 [collect] G21 Campaign (UK/Global) via google_news: ok (8 items)
+13:58:55 [collect] G22 Adweek via rss: ok (10 items)
+13:58:55 [collect] G23 Al Eqtisadiah (Arabic) via google_news: ok (3 items)
+13:58:55 [collect] G24 Al-Mal News (Arabic) via google_news: ok (0 items)
+13:58:55 [discover] 'rebrand OR rebranding "new logo"': 5 items
+13:58:55 [discover] '"brand identity" unveils': 36 items
+13:58:56 [discover] '"brand value" Brand Finance OR Kantar OR Interbrand': 25 items
+13:58:56 [discover] 'branding agency acquires OR acquisition': 40 items
+13:58:56 [discover] 'rebrand Saudi OR KSA "new identity"': 0 items
+13:58:56 [discover] 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"': 5 items
+13:58:56 [discover] 'rebrand Oman OR Muscat': 0 items
+13:58:57 [discover] 'rebrand Egypt OR Cairo "new identity" OR "new logo"': 0 items
+13:58:57 [discover] 'هوية بصرية جديدة': 40 items
+13:58:57 [discover] 'شعار جديد علامة تجارية السعودية': 21 items
+13:58:57 [discover] 'هوية جديدة مصر شركة': 8 items
+13:58:58 [discover] 'Adobe OR Figma OR Canva new feature designers': 13 items
+13:58:58 [process] 420 new records, 459 duplicates prevented/linked, 67 non-article pages skipped
+13:59:19 [enrich] 15 Google News links resolved to original articles, 2 publisher summaries added
+14:06:22 [arabic] Gemini busy, waiting 60s and retrying this batch once
+14:18:26 [arabic] Gemini failed, falling back to free translation: all models failed: gemini-3.8-flash=timeout/ReadTimeout | gemini-3.7-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-3.6-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-3.5-flash=503:This model is currently experiencing high demand. Spikes in demand are usually temporary.  | gemini-2.5-flash=404:This model models/gemini-2.5-flash is no longer available to new users. Please update your | gemini-flash-latest=timeout/ReadTimeout | gemini-2.5-flash-lite=404:This model models/gemini-2.5-flash-li
+14:18:26 [arabic] diagnostics: ["available flash models: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash']"]
+14:19:10 [arabic] 0/26 stories machine-translated (free) | first error: available flash models: ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-3.5-flash', 'gemini-2.5-flash']
+14:19:10 [score] 0 high, 2 follow, 392 rejected
+14:19:14 [report] Brand_Intelligence_Daily_2026-11-26.html | pdf=yes | png=yes
+14:19:20 [email] sent via Apps Script
+14:19:22 [telegram] sent
+14:19:26 [sheets] Sources: 102 rows -> ok
+14:19:31 [sheets] News: 200 rows -> ok
+14:19:37 [sheets] News: 200 rows -> ok
+14:19:41 [sheets] News: 20 rows -> ok
+14:19:44 [sheets] Runs: 1 rows -> ok
+14:19:44 [done] ok {"sources_checked": 45, "sources_failed": 0, "items_seen": 922, "items_new": 396, "duplicates_prevented": 459} ['email:sent', 'telegram:sent', 'alerts:0']
