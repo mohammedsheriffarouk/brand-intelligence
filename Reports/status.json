@@ -5,13 +5,13 @@
   "Working RSS feeds": 29,
   "Sources using other methods": 73,
   "Pending validation": 0,
-  "Total collected articles": 4810,
-  "New articles today": 396,
-  "High priority articles (all time)": 0,
-  "Duplicate articles prevented": 3532,
+  "Total collected articles": 5177,
+  "New articles today": 337,
+  "High priority articles (all time)": 1,
+  "Duplicate articles prevented": 3968,
   "Failed sources (current)": 0,
-  "Last successful execution (UTC)": "2026-11-26T14:19:22+00:00",
-  "Next scheduled execution (UTC, approx.)": "2026-11-27 04:17"
+  "Last successful execution (UTC)": "2026-11-27T14:06:56+00:00",
+  "Next scheduled execution (UTC, approx.)": "2026-11-28 04:17"
  },
  "failed_sources": []
 }
