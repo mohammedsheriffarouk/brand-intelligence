@@ -68,3 +68,4 @@
 14:07:12 [sheets] Runs: 1 rows -> ok
 14:07:13 [done] ok {"sources_checked": 45, "sources_failed": 0, "items_seen": 837, "items_new": 337, "duplicates_prevented": 436} ['email:sent', "telegram:failed: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))", 'alerts:0']
 15:37:49 [skip] today's brief was already delivered by an earlier scheduled run
+17:27:21 [skip] today's brief was already delivered by an earlier scheduled run
