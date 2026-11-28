@@ -1,0 +1,69 @@
+13:08:14 [collect] A01 Creative Boom via rss: ok (20 items)
+13:08:14 [collect] A02 Design Week via google_news: ok (0 items)
+13:08:14 [collect] A03 Transform Magazine via google_news: ok (1 items)
+13:08:15 [collect] A04 Brand New via rss: ok (40 items)
+13:08:15 [collect] A05 The Brand Identity via google_news: ok (13 items)
+13:08:15 [collect] A06 BP&O via rss: ok (12 items)
+13:08:15 [collect] A07 It's Nice That via rss: ok (20 items)
+13:08:16 [collect] A08 Creative Review via google_news: ok (1 items)
+13:08:16 [collect] A09 World Brand Design Society via google_news: ok (5 items)
+13:08:16 [collect] A10 Brandemia via google_news: ok (0 items)
+13:08:17 [collect] A11 Dezeen (Design) via rss: ok (40 items)
+13:08:17 [collect] A12 Fast Company Co.Design via rss: ok (20 items)
+13:08:17 [collect] A13 Brandingmag via rss: ok (20 items)
+13:08:18 [collect] C03 Brand Finance via rss: ok (8 items)
+13:08:18 [collect] C11 Harvard Business Review via google_news: ok (20 items)
+13:08:18 [collect] D02 The Dieline via rss: ok (10 items)
+13:08:20 [collect] D03 Packaging of the World via rss: ok (10 items)
+13:08:20 [collect] E01 Adobe News via google_news: ok (0 items)
+13:08:20 [collect] E04 Adobe Firefly Blog via google_news: ok (0 items)
+13:08:21 [collect] E05 Figma Release Notes via rss: ok (40 items)
+13:08:21 [collect] E06 Canva Newsroom via google_news: ok (3 items)
+13:08:21 [collect] E09 OpenAI News via google_news: ok (0 items)
+13:08:21 [collect] G01 Campaign Middle East via rss: ok (10 items)
+13:08:22 [collect] G02 Communicate via rss: ok (10 items)
+13:08:22 [collect] G03 ArabAd via google_news: ok (0 items)
+13:08:22 [collect] G04 The Drum via google_news: ok (22 items)
+13:08:22 [collect] G05 Marketing Week via google_news: ok (13 items)
+13:08:22 [collect] G06 Enterprise via google_news: ok (0 items)
+13:08:23 [collect] G07 Zawya via google_news: ok (40 items)
+13:08:23 [collect] G09 Saudi Press Agency via google_news: ok (40 items)
+13:08:23 [collect] G10 Arab News (Business) via google_news: ok (0 items)
+13:08:24 [collect] G11 Argaam via google_news: ok (40 items)
+13:08:24 [collect] G12 The National (Business) via google_news: ok (13 items)
+13:08:24 [collect] G13 Gulf News (Business) via rss: ok (16 items)
+13:08:24 [collect] G14 Khaleej Times (Business) via google_news: ok (31 items)
+13:08:24 [collect] G15 Times of Oman via rss: ok (30 items)
+13:08:25 [collect] G16 Muscat Daily via google_news: ok (0 items)
+13:08:25 [collect] G17 Oman News Agency via google_news: ok (12 items)
+13:08:25 [collect] G18 Ahram Online (Business) via google_news: ok (40 items)
+13:08:26 [collect] G19 Daily News Egypt via rss: ok (10 items)
+13:09:18 [collect] G20 Wamda via rss: failed (0 items) ReadTimeout: HTTPSConnectionPool(host='www.wamda.com', port=443): Read timed out. (read timeout=20)
+13:09:18 [collect] G21 Campaign (UK/Global) via google_news: ok (4 items)
+13:09:18 [collect] G22 Adweek via rss: ok (10 items)
+13:09:19 [collect] G23 Al Eqtisadiah (Arabic) via google_news: ok (0 items)
+13:09:19 [collect] G24 Al-Mal News (Arabic) via google_news: ok (0 items)
+13:09:19 [discover] 'rebrand OR rebranding "new logo"': 8 items
+13:09:19 [discover] '"brand identity" unveils': 12 items
+13:09:19 [discover] '"brand value" Brand Finance OR Kantar OR Interbrand': 8 items
+13:09:20 [discover] 'branding agency acquires OR acquisition': 40 items
+13:09:20 [discover] 'rebrand Saudi OR KSA "new identity"': 0 items
+13:09:20 [discover] 'rebrand UAE OR Dubai OR "Abu Dhabi" "new identity"': 0 items
+13:09:20 [discover] 'rebrand Oman OR Muscat': 0 items
+13:09:21 [discover] 'rebrand Egypt OR Cairo "new identity" OR "new logo"': 0 items
+13:09:21 [discover] 'هوية بصرية جديدة': 11 items
+13:09:21 [discover] 'شعار جديد علامة تجارية السعودية': 12 items
+13:09:21 [discover] 'هوية جديدة مصر شركة': 14 items
+13:09:22 [discover] 'Adobe OR Figma OR Canva new feature designers': 7 items
+13:09:22 [process] 280 new records, 406 duplicates prevented/linked, 69 non-article pages skipped
+13:09:32 [enrich] 10 Google News links resolved to original articles, 4 publisher summaries added | first decode error: Failed to fetch data attributes from Google News.
+13:16:04 [arabic] 13 stories translated + analysed by Gemini
+13:16:04 [score] 0 high, 1 follow, 264 rejected
+13:16:10 [report] Brand_Intelligence_Daily_2026-11-28.html | pdf=yes | png=yes
+13:16:20 [email] sent via Apps Script
+13:16:21 [telegram] sent
+13:16:24 [sheets] Sources: 102 rows -> ok
+13:16:29 [sheets] News: 200 rows -> ok
+13:16:33 [sheets] News: 80 rows -> ok
+13:16:35 [sheets] Runs: 1 rows -> ok
+13:16:36 [done] ok {"sources_checked": 45, "sources_failed": 1, "items_seen": 736, "items_new": 261, "duplicates_prevented": 406} ['email:sent', 'telegram:sent', 'alerts:0']

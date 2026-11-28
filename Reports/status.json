@@ -5,13 +5,19 @@
   "Working RSS feeds": 29,
   "Sources using other methods": 73,
   "Pending validation": 0,
-  "Total collected articles": 5177,
-  "New articles today": 337,
+  "Total collected articles": 5457,
+  "New articles today": 261,
   "High priority articles (all time)": 1,
-  "Duplicate articles prevented": 3968,
-  "Failed sources (current)": 0,
-  "Last successful execution (UTC)": "2026-11-27T14:06:56+00:00",
-  "Next scheduled execution (UTC, approx.)": "2026-11-28 04:17"
+  "Duplicate articles prevented": 4374,
+  "Failed sources (current)": 1,
+  "Last successful execution (UTC)": "2026-11-28T13:16:21+00:00",
+  "Next scheduled execution (UTC, approx.)": "2026-11-29 04:17"
  },
- "failed_sources": []
+ "failed_sources": [
+  {
+   "id": "G20",
+   "name": "Wamda",
+   "error": "2026-11-28T13:08:13+00:00 rss: ReadTimeout: HTTPSConnectionPool(host='www.wamda.com', port=443): Read timed out. (read timeout=20)"
+  }
+ ]
 }
